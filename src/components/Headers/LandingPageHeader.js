@@ -27,9 +27,9 @@ const items = [
       content: (
         <Container>
           <Row>
-            <Col className="text-left" md="8" style ={{marginTop: '45%', fontWeight: '500'}}>
-              <h1 className="title">Grown With Passion <br /> 
-              <span style ={{marginLeft: '10%'}}>Delivered With Care</span></h1>
+            <Col className="text-left" md="8" style ={{marginTop: '50%', fontWeight: '400'}}>
+              <h2 className="title">Grown With Passion <br /> 
+              <span style ={{marginLeft: '5%'}}>Delivered With Care</span></h2>
               {/* <h5>
                 Now you have no excuses, it's time to surprise your clients, your
                 competitors, and why not, the world. You probably won't have a
@@ -98,9 +98,9 @@ const items = [
       content: (
         <Container>
           <Row>
-            <Col md="8">
-              <h2 className="title" style = {{marginTop: '83%', fontWeight: '500'}}>Doing Good... <br />
-              <span style = {{marginLeft: '5%'}}>As We Do Well</span></h2>
+          <Col className="text-left" md="8" style ={{marginTop: '50%', fontWeight: '400'}}>
+              <h2 className="title">Doing Good <br /> 
+              <span style ={{marginLeft: '5%'}}>As we do well</span></h2>
               {/* <h5>
                 Now you have no excuses, it's time to surprise your clients, your
                 competitors, and why not, the world. You probably won't have an
@@ -143,7 +143,7 @@ const items = [
         <Container>
           <Row>
             <Col md="2">
-              <h2 className="title" style = {{marginTop: '90%', fontWeight: '500'}}>#AddingLifeToFruit</h2>
+              <h2 className="title" style = {{marginTop: '50%', fontWeight: '400'}}>#AddingLifeToFruit</h2>
               {/* <h5>
                 Now you have no excuses, it's time to surprise your clients, your
                 competitors, and why not, the world. You probably won't have a

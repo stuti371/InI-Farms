@@ -321,7 +321,7 @@ function SectionProduct(){
                     <h6 className="card-category text-muted">Premium UI kit</h6> */}
                     <p className="card-description" style = {{fontWeight: '400'}}>
                       Pomegranates & Coconuts are peeled, cubed or shredded for convenience or on-the-go consumption.
-                      Firm and Juicy our Fresh Cuts are here to make your life easy!
+                      Firm and Juicy, our Fresh Cuts are here to make your life easy!
                     </p>
                   </CardBody>
                 </Card>
@@ -422,40 +422,11 @@ function SectionProduct(){
                 </Row>
               </Col>
               <Col className="ml-auto" md="5" >
-                <div>
-                <Row md = "6" style = {{marginTop: '8%'}}>
-                <Col md="6">
-                <img style = {{border: 'black', borderRadius: '25px', marginTop: '25%'}}
-              alt="..."
-              src={require("assets/kimaye/Pom1.png")}
-                />
-                </Col>
-                <Col md="6">
-                <img style = {{borderRadius: '25px', marginLeft: '15%', marginTop: '25%'}}
-              alt="..."
-              src={require("assets/kimaye/Pom2.png")}
-                />
-                </Col>
-            </Row><br />
-            <Row md = "6">
-                <Col md="6">
-                <img style = {{border: 'black',borderRadius: '25px', marginLeft: '15%'}}
-              alt="..."
-              src={require("assets/kimaye/Pom3.png")}
-                />
-                </Col>
-                <Col md="6">
-                <img style = {{borderRadius: '25px'}}
-              alt="..."
-              src={require("assets/kimaye/Pom4.png")}
-                />
-                </Col>
-                </Row>
+                <div style = {{marginTop: '25%' ,}}>
+                  <img alt="..."
+                    style = {{ width: '100%', height: '110%'}}
+                     src={require("assets/kimaye/Pom Products.png")}/>
                 </div>
-                {/* <img style = {{marginTop: '20%'}}
-                    alt="..."
-                    src={require("assets/kimaye/pomfinal.png")}
-                    /> */}
               </Col>
             </Row>
             </Container>
@@ -476,39 +447,12 @@ function SectionProduct(){
       </Row>
       <Row>
         <Col md="7">
-          <div >
-            {/* <img
+          <div  style = {{marginTop: '12%' ,}}>
+            <img
               alt="..."
-              src={require("assets/kimaye/pombarcode.jpg")}
-            /> */}
-            <Row md = "6" style = {{marginTop: '10%'}}>
-            <Col md="6">
-                <img style = {{borderRadius: '25px'}}
-              alt="..."
-              src={require("assets/kimaye/bananabox1.jpg")}
-                />
-                </Col>
-                <Col md="6">
-                <img style = {{borderRadius: '25px'}}
-              alt="..."
-              src={require("assets/kimaye/banded.jpg")}
-                />
-                </Col>
-            </Row><br />
-            <Row md = "6">
-                <Col md="6">
-                <img style = {{borderRadius: '25px'}}
-              alt="..."
-              src={require("assets/kimaye/bananac2.jpg")}
-                />
-                </Col>
-                <Col md="6">
-                <img style = {{borderRadius: '25px'}}
-              alt="..."
-              src={require("assets/kimaye/yellaki.jpg")}
-                />
-                </Col>
-            </Row>
+              style = {{ width: '100%', height: '110%'}}
+              src={require("assets/kimaye/Banana Products.png")}
+            />
           </div>
         </Col>
         <Col className="offset-1" md="4">
@@ -553,7 +497,7 @@ function SectionProduct(){
   <div className="features-3" style = {{backgroundColor: '#fffaef'}}>
           <Container>
             <Row>
-              <Col md="7">
+              <Col md="6">
                 <Row>
                   <Container>
                     <h2 className="title">Never Feel Low...<br/>Pop the <span style = {{color: '#800000', fontWeight: '400'}}>Arils</span> on the Go</h2>
@@ -642,42 +586,13 @@ function SectionProduct(){
                   </Col>
                 </Row>
               </Col>
-                    <Col className="ml-auto" md="5" >
-                        <div>
-                        <Row md = "6" style = {{marginTop: '30%', }}>
-                        <Col md="6">
-                        <img style = {{border: 'black', borderRadius: '25px',}}
-                    alt="..."
-                    src={require("assets/kimaye/Aril1.jpg")}
-                        />
-                        </Col>
-                        <Col md="6" style = {{justifyContent: 'center'}}>
-                        <img style = {{borderRadius: '25px', marginTop: '20%', marginLeft: '5%'}}
-                    alt="..."
-                    src={require("assets/kimaye/aril4.JPG")}
-                        />
-                        </Col>
-                    </Row>
-                    {/* <br /> */}
-                    {/* <Row md = "6">
-                        <Col md="6">
-                        <img style = {{border: 'black',borderRadius: '25px'}}
-                    alt="..."
-                    src={require("assets/kimaye/barcode1.jpg")}
-                        />
-                        </Col>
-                        <Col md="6">
-                        <img style = {{borderRadius: '25px'}}
-                    alt="..."
-                    src={require("assets/kimaye/Pom Consumer Final - Small.png")}
-                        />
-                        </Col>
-                        </Row> */}
-                        </div>
-                        {/* <img style = {{marginTop: '20%'}}
+                    <Col className="ml-auto" md="6" >
+                        <div style = {{marginTop: '33%'}}>
+                        <img style = {{width: '100%', height: '110%'}}
                             alt="..."
-                            src={require("assets/kimaye/pomfinal.png")}
-                            /> */}
+                            src={require("assets/kimaye/Arils Products.png")}
+                            />
+                        </div>
                     </Col>
                     </Row>
                     </Container>
@@ -698,12 +613,13 @@ function SectionProduct(){
             </Row>
             <Row>
                 <Col md="7">
-                <div >
-                    {/* <img
+                <div style = {{marginTop: '5%'}}>
+                    <img
                     alt="..."
-                    src={require("assets/kimaye/pombarcode.jpg")}
-                    /> */}
-                    <Row md = "6" >
+                    style = {{width: '100%', height: '100%'}}
+                    src={require("assets/kimaye/Coconut Products.png")}
+                    />
+                    {/* <Row md = "6" >
                     <Col md="6">
                         <img style = {{borderRadius: '25px', marginLeft: '15%', marginTop: '10%'}}
                     alt="..."
@@ -730,7 +646,7 @@ function SectionProduct(){
                     src={require("assets/kimaye/mix2.jpg")}
                         />
                         </Col>
-                    </Row>
+                    </Row> */}
                 </div>
                 </Col>
                 <Col className="offset-1" md="4">

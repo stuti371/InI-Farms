@@ -1,9 +1,11 @@
 {
   "name": "paper-kit-pro-react",
+  "homepage": "http://www.inifarms.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "classnames": "2.2.6",
+    "emailjs-com": "^2.6.3",
     "headroom.js": "0.11.0",
     "moment": "2.26.0",
     "node-sass": "4.14.1",
@@ -15,7 +17,7 @@
     "react-google-maps": "9.4.5",
     "react-photoswipe": "1.3.0",
     "react-router-dom": "5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^3.4.3",
     "react-select": "3.1.0",
     "react-tagsinput": "3.19.0",
     "reactstrap": "8.4.1"

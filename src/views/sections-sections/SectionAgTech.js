@@ -90,7 +90,7 @@ export default function SectionAgTech(){
               <Col md="6">
                 <Row>
                   <Container>
-                    <h2  style = {{color: '#dbac00'}}>Digital Farmer Aggregation</h2>
+                    <h2  style = {{color: '#dbac00', textAlign: 'center'}}>Digital Farmer Aggregation</h2><br />
                     <h5 style = {{color: 'white', textAlign: 'center'}}>Tech solutions for improving crop productivity/
                     quality and large scale aggregation</h5>
                   </Container>
@@ -161,7 +161,7 @@ export default function SectionAgTech(){
                         <i className="nc-icon nc-delivery-fast" />
                       </div>
                       <div className="description">
-                        <h4  style = {{fontWeight:'500', color: 'white'}}>Supervisor Performance</h4>
+                        <h4  style = {{fontWeight:'500', color: 'white'}}>Frontline Team Performance</h4>
                         <p style ={{color:'white'}}>
                         Beat Planning for supervisors<br />
                         Real-time performance monitoring
@@ -203,7 +203,7 @@ export default function SectionAgTech(){
               <Col md="6">
                 <Row>
                   <Container>
-                    <h2  style = {{color: '#800000', fontWeight: '400', textAlign: 'center'}}>Supply Chain Automation</h2>
+                    <h2  style = {{color: '#800000', fontWeight: '400', textAlign: 'center'}}>Supply Chain Automation</h2><br />
                     <h5 style = {{color: 'black', fontWeight:'400', textAlign: 'center'}}>Improving post harvest efficiency and reducing wastage</h5>
                   </Container>
                 </Row>
@@ -313,7 +313,7 @@ export default function SectionAgTech(){
           <Container>
             <Row >
               <Col className="ml-auto mr-auto text-center" md="10">
-                <h2 style = {{color: '#dbac00'}}>Digital Marketing & Consumer Engagement</h2>
+                <h2 style = {{color: '#dbac00'}}>Digital Marketing & Consumer Engagement</h2><br />
                 <h5 style = {{color: 'white'}}>
                  Online Platform connecting consumers with farmers driven by traceability 
                 </h5>

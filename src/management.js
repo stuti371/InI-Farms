@@ -25,14 +25,14 @@ import {
 
 export default function Management(){
     return(
-        <div className="team-2" style = {{
+        <div className="section section-team cd-section" id="teams" style = {{
           backgroundImage:
           "url(" + require("assets/kimaye/BG3.jpg") + ")",}}>
           <Container >
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title">Management</h2>
-                <h5 className="description">
+                <h2 className="title" style = {{color: '#800000', fontWeight: '450'}}>Management</h2>
+                <h5 className="description" style = {{color: 'black', fontWeight: '450'}}>
                   Individually we are one drop, together we are an ocean
                 </h5>
               </Col>
@@ -59,7 +59,7 @@ export default function Management(){
                     </a>
                     <p className="card-description text-center" style = {{color: 'black'}}>
                       
-                      MSc (Agriculture) <br />
+                      MSc Agri <br />
                       FreshAcres, Moody 
                     </p>
                   </CardBody>
@@ -67,8 +67,8 @@ export default function Management(){
                     <Button
                       className="btn-link btn-just-icon mr-1"
                       color="twitter"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://twitter.com/raghuwanshiash?s=20"
+                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-twitter" />
                     </Button>
@@ -83,8 +83,8 @@ export default function Management(){
                     <Button
                       className="btn-link btn-just-icon"
                       color="linkedin"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://www.linkedin.com/in/ashwin-raghuwanshi-51b1416"
+                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-linkedin" />
                     </Button>
@@ -119,7 +119,7 @@ export default function Management(){
                     <Button
                       className="btn-link btn-just-icon mr-1"
                       color="twitter"
-                      href="#pablo"
+                      href="https://twitter.com/sushilparikh?s=20"
                       onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-twitter" />
@@ -135,8 +135,8 @@ export default function Management(){
                     <Button
                       className="btn-link btn-just-icon"
                       color="linkedin"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://www.linkedin.com/in/sushil-parikh-pareek-6b8a9123"
+                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-linkedin" />
                     </Button>
@@ -163,7 +163,7 @@ export default function Management(){
                       </div>
                     </a>
                     <p className="card-description text-center" style = {{color: 'black'}}>
-                      PhD Horticulture GBPAU <br />
+                      PhD (GBPAU) <br />
                       World Bank, Mother Dairy
                     </p>
                   </CardBody>
@@ -172,7 +172,7 @@ export default function Management(){
                       className="btn-link btn-just-icon mr-1"
                       color="twitter"
                       href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      //onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-twitter" />
                     </Button>
@@ -187,8 +187,8 @@ export default function Management(){
                     <Button
                       className="btn-link btn-just-icon"
                       color="linkedin"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://www.linkedin.com/in/ajit-kumar-36ab8168"
+                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-linkedin" />
                     </Button>
@@ -215,7 +215,7 @@ export default function Management(){
                       </div>
                     </a>
                     <p className="card-description text-center" style = {{color: 'black'}}>
-                      B.Tech IITB <br />
+                      B.Tech. (IITB) <br />
                       InI Consulting 
                     </p>
                   </CardBody>
@@ -224,7 +224,7 @@ export default function Management(){
                       className="btn-link btn-just-icon mr-1"
                       color="twitter"
                       href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      //onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-twitter" />
                     </Button>
@@ -239,8 +239,8 @@ export default function Management(){
                     <Button
                       className="btn-link btn-just-icon"
                       color="linkedin"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://www.linkedin.com/in/kalpeshk"
+                      //onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-linkedin" />
                     </Button>
@@ -279,7 +279,7 @@ export default function Management(){
                       </div>
                     </a>
                     <p className="card-description text-center" style = {{color: 'black'}}>
-                      B.Com, IIMA <br />
+                      B.Com, MBA (IIMA) <br />
                       DCM Shriram 
                     </p>
                   </CardBody>
@@ -287,8 +287,8 @@ export default function Management(){
                     <Button
                       className="btn-link btn-just-icon mr-1"
                       color="twitter"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://twitter.com/iamsarabjeetk"
+                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-twitter" />
                     </Button>
@@ -303,8 +303,8 @@ export default function Management(){
                     <Button
                       className="btn-link btn-just-icon"
                       color="linkedin"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://www.linkedin.com/in/sarabjeet-kaur-174a7420"
+                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-linkedin" />
                     </Button>
@@ -340,7 +340,7 @@ export default function Management(){
                       className="btn-link btn-just-icon mr-1"
                       color="twitter"
                       href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-twitter" />
                     </Button>
@@ -355,8 +355,8 @@ export default function Management(){
                     <Button
                       className="btn-link btn-just-icon"
                       color="linkedin"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://www.linkedin.com/in/prachi-singh-5a691821"
+                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-linkedin" />
                     </Button>
@@ -391,8 +391,8 @@ export default function Management(){
                     <Button
                       className="btn-link btn-just-icon mr-1"
                       color="twitter"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://mobile.twitter.com/ShalabhAgrawa14"
+                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-twitter" />
                     </Button>
@@ -407,8 +407,8 @@ export default function Management(){
                     <Button
                       className="btn-link btn-just-icon"
                       color="linkedin"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://www.linkedin.com/in/shalabh-agrawal-239300b"
+                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-linkedin" />
                     </Button>
@@ -444,7 +444,7 @@ export default function Management(){
                       className="btn-link btn-just-icon mr-1"
                       color="twitter"
                       href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-twitter" />
                     </Button>
@@ -459,8 +459,8 @@ export default function Management(){
                     <Button
                       className="btn-link btn-just-icon"
                       color="linkedin"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://www.linkedin.com/in/indravadanjadav"
+                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-linkedin" />
                     </Button>

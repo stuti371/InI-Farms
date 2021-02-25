@@ -22,15 +22,14 @@ export default function SectionBM(){
     return(
     <div>
         <WhiteNavbar />
-        <div >
-          <div className = 'section-image'
-            style ={{
+        <div
+            className="page-header"
+            style={{
               backgroundImage:
-              "url(" + require("assets/kimaye/BGN2.jpg") + ")",}}
+                "url(" + require("assets/kimaye/about.jpg") + ")",
+            }}
           >
-            <img src = {require("assets/kimaye/leftwall.jpg")} style = {{marginLeft: '13%',  marginTop: '6%'}}/>
-            {/* <div className="filter" />
-            <div className="content-center">
+            {/* <div className="content-center">
               <Container>
                 <Row>
                   <Col md="5">
@@ -63,10 +62,9 @@ export default function SectionBM(){
                     </Button>
                   </Col>
                 </Row>
-              </Container>
-            </div> */}
+              </Container> */}
+            {/* </div> */}
           </div>
-        </div>
         <div className="section-image" style ={{
             backgroundImage:
             "url(" + require("assets/kimaye/BGN2.jpg") + ")",
@@ -154,7 +152,7 @@ export default function SectionBM(){
                   <div className="clearfix" />
                   <p className="card-description" style = {{color: 'white', fontWeight: '400'}}>
                     All our products are sold under the brand name Kimaye.
-                    Kimaye, which means divine in Sanskrit, aspires to earn Love,
+                    Kimaye, which means divine in Sanskrit, has earned Love,
                     Trust and Respect from our key stakeholders: farmers and consumers.
                   </p>
                 </CardBody>
@@ -182,9 +180,9 @@ export default function SectionBM(){
                   </span> */}
                   <div className="clearfix" />
                   <p className="card-description" style = {{color: 'white', fontWeight: '400'}}>
-                    We believe that goodness can be achieved by a simple act of producing
-                    and delivering a fruit. Our work is focused on  achieving goals of sustainable
-                    production, improving livelihood and gender and financial inclusion. 
+                    Our work enables massive impact for Consumers (Safe Food), Farmers (Ethical Treatment
+                    & 30-40% additional profits), environment (Sustainable Production) and 
+                    People (Gender Equality and Improved Livelihood). 
                   </p>
                 </CardBody>
               </Card>
@@ -199,7 +197,7 @@ export default function SectionBM(){
                         className="avatar img-raised"
                         src={require("assets/kimaye/equitable.jpg")}
                       />
-                      <span style = {{color: '#f49f00', fontSize: '102%', fontWeight: '600'}}>Equitable Partnership</span>
+                      <span style = {{color: '#f49f00', fontSize: '102%', fontWeight: '600'}}>Equitable Partnerships</span>
                     </a>
                   </div>
                   {/* <span className="category-social pull-right">
@@ -217,62 +215,300 @@ export default function SectionBM(){
           </Row>
         </Container>
       </div>
-      <div className="header-1">
-          <div
-            className="page-header"
-            style={{
-              backgroundImage:
-                "url(" + require("assets/kimaye/BM2.jpg") + ")",
-            }}
-          >
-            {/* <div className="filter" /> */}
-            <div>
-              <Container>
-                <Row>
-                  {/* <Col md="5">
-                    <div className="iframe-container">
-                      <iframe
-                        title="iframe-container"
-                        allowFullScreen=""
-                        frameBorder="0"
-                        height="250"
-                        src="https://www.youtube.com/embed/RcmrbNRK-jY?modestbranding=1&amp;autohide=1&amp;showinfo=0"
-                      />
-                    </div>
-                  </Col> */}
-                  <Col className="ml-auto" md="10">
-                    <h2 className="title" style = {{color: 'black', marginTop: '5%'}}>
-                        Scaleable & Sustainable Value Chain
-                    </h2>
-                    {/* <h5 className="description">
-                      There's no doubt that Tesla is delighted with the
-                      interest, but the data also raises a few questions. How
-                      long will it take for Tesla to fulfill all those extra
-                      orders?
-                    </h5> */}
-                    <br />
-                    {/* <Button
-                      color="danger"
-                      href="https://www.youtube.com/watch?v=RcmrbNRK-jY?ref=creativetim"
-                      target="_blank"
+      <div
+          // className="team-4"
+          style = {{backgroundColor: '#fffaef'}}
+        >
+          <Container>
+            <br />
+            <Row>
+              <Col className="ml-auto mr-auto text-center" md="8">
+                <h2 className="title" style = {{color: '#800000', fontWeight: '500'}}>Scalable & Sustainable Value Chain</h2>
+                {/* <h5 className="description" style = {{color: 'black',fontWeight: '400'}}>
+                of consistently delivering the safest and superior quality fruits.
+                <br />Our roots lie in the principles of cooperation and partnership.
+                </h5> */}
+                <br />
+              </Col>
+            </Row>
+            <Row>
+              <Col md="4">
+                <Card className="card-profile" style = {{backgroundColor: '#4d0000'}}>
+                  <CardBody>
+                  <h6 className="card-category" style = {{color: 'white'}}>
+                      <i className="fa fa-newspaper-o mr-1" />
+                      Premium for Quality
+                    </h6>
+                      <CardTitle tag="h3" style = {{color: '#dbac00', fontWeight: '500'}}>
+                      Farmer Aggregation  
+                      </CardTitle>
+                    <p className="card-description" style = {{color: 'white', fontWeight: '500'}}>
+                    Deep farmer engagement improving product quality.
+                    Premium over market price to increase income by 30-40% with over
+                    95% farmer retention – highly scalable model
+                    </p>
+                  </CardBody>
+                  {/* <CardFooter className="text-center">
+                    <Button
+                      className="btn-just-icon mr-1"
+                      color="linkedin"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
                     >
-                      <i className="nc-icon nc-cart-simple mr-1" />
-                      Order Now
-                    </Button> */}
-                  </Col>
-                </Row>
-              </Container>
-            </div>
-          </div>
+                      <i className="fa fa-linkedin" />
+                    </Button>
+                    <Button
+                      className="btn-just-icon mr-1"
+                      color="dribbble"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-dribbble" />
+                    </Button>
+                    <Button
+                      className="btn-just-icon"
+                      color="pinterest"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-pinterest" />
+                    </Button>
+                  </CardFooter> */}
+                </Card>
+              </Col>
+              <Col md="4">
+                <Card className="card-profile" style = {{backgroundColor: '#4d0000'}}>
+                  <CardBody>
+                  <h6 className="card-category" style = {{color: 'white'}}>
+                      <i className="fa fa-newspaper-o mr-1" />
+                      World’s Lowest Wastage
+                    </h6>
+                      <CardTitle tag="h3" style = {{color: '#dbac00', fontWeight: '500'}}>
+                      Supply Chain 
+                      </CardTitle>
+                    <p className="card-description" style = {{color: 'white', fontWeight: '500'}}>
+                    R&D and modern infrastructure (packhouses, cold stores, ripening centers) leading
+                    to less than 2% wastage and more than 50% longer shelf life allowing access
+                    to long distance markets
+                    </p>
+                  </CardBody>
+                  {/* <CardFooter className="text-center">
+                    <Button
+                      className="btn-just-icon mr-1"
+                      color="youtube"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-youtube" />
+                    </Button>
+                    <Button
+                      className="btn-just-icon mr-1"
+                      color="twitter"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-twitter" />
+                    </Button>
+                    <Button
+                      className="btn-just-icon"
+                      color="instagram"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-instagram" />
+                    </Button>
+                  </CardFooter> */}
+                </Card>
+              </Col>
+              <Col md="4">   
+                <Card className="card-profile" style = {{backgroundColor: '#4d0000'}}>
+                  <CardBody>
+                    <h6 className="card-category" style = {{color: 'white'}}>
+                      <i className="fa fa-newspaper-o mr-1" />
+                       Delivering the Best
+                    </h6>
+                      <CardTitle tag="h3" style = {{color: '#dbac00', fontWeight: '500'}}>
+                       Distribution & Retail
+                      </CardTitle>
+                    <p className="card-description" style = {{color: 'white', fontWeight: '500'}}>
+                    We are completely integrated from farm to home working with retailers
+                    in 35 countries and Direct-to-Consumer through kimaye.com and online aggregators
+                    </p>
+                  </CardBody>
+                  {/* <CardFooter className="text-center">
+                    <Button
+                      className="btn-just-icon mr-1"
+                      color="linkedin"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-linkedin" />
+                    </Button>
+                    <Button
+                      className="btn-just-icon mr-1"
+                      color="dribbble"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-dribbble" />
+                    </Button>
+                    <Button
+                      className="btn-just-icon"
+                      color="instagram"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-instagram" />
+                    </Button>
+                  </CardFooter> */}
+                </Card>
+              </Col>
+            </Row>
+            <Row>
+              <Col md="4">
+                <Card className="card-profile" style = {{backgroundColor: '#4d0000'}}>
+                  <CardBody>
+                  <h6 className="card-category" style = {{color: 'white'}}>
+                      <i className="fa fa-newspaper-o mr-1" />
+                      Commodity to Brand
+                    </h6>
+                      <CardTitle tag="h3" style = {{color: '#dbac00', fontWeight: '500'}}>
+                      Productize 
+                      </CardTitle>
+                    <p className="card-description" style = {{color: 'white', fontWeight: '500'}}>
+                    Our fruits are standardized on variety, size, cosmetics, packaging and goodness enhancing
+                    fruit consumption experience. Achieved through strict implementation of pre
+                    and post-harvest processes
+                    </p>
+                  </CardBody>
+                  {/* <CardFooter className="text-center">
+                    <Button
+                      className="btn-just-icon mr-1"
+                      color="linkedin"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-linkedin" />
+                    </Button>
+                    <Button
+                      className="btn-just-icon mr-1"
+                      color="dribbble"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-dribbble" />
+                    </Button>
+                    <Button
+                      className="btn-just-icon"
+                      color="pinterest"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-pinterest" />
+                    </Button>
+                  </CardFooter> */}
+                </Card>
+              </Col>
+              <Col md="4">
+                <Card className="card-profile" style = {{backgroundColor: '#4d0000'}}>
+                  <CardBody>
+                  <h6 className="card-category" style = {{color: 'white'}}>
+                      <i className="fa fa-newspaper-o mr-1" />
+                      Benchmark in Perishables
+                    </h6>
+                      <CardTitle tag="h3" style = {{color: '#dbac00', fontWeight: '500'}}>
+                      Consistent 
+                      </CardTitle>
+                    <p className="card-description" style = {{color: 'white', fontWeight: '500'}}>
+                    Our products are consistent across seasons, geographies and sourcing locations
+                    meeting customer specific requirements. Achieved through multi-point
+                    quality-gate system and traceability
+                    </p>
+                  </CardBody>
+                  {/* <CardFooter className="text-center">
+                    <Button
+                      className="btn-just-icon mr-1"
+                      color="youtube"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-youtube" />
+                    </Button>
+                    <Button
+                      className="btn-just-icon mr-1"
+                      color="twitter"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-twitter" />
+                    </Button>
+                    <Button
+                      className="btn-just-icon"
+                      color="instagram"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-instagram" />
+                    </Button>
+                  </CardFooter> */}
+                </Card>
+              </Col>
+              <Col md="4">   
+                <Card className="card-profile" style = {{backgroundColor: '#4d0000'}}>
+                  <CardBody>
+                    <h6 className="card-category" style = {{color: 'white'}}>
+                      <i className="fa fa-newspaper-o mr-1" />
+                      Saving for Next Generation
+                    </h6>
+                      <CardTitle tag="h3" style = {{color: '#dbac00', fontWeight: '500'}}>
+                      Sustainable 
+                      </CardTitle>
+                    <p className="card-description" style = {{color: 'white', fontWeight: '500'}}>
+                    Our processes from production (70% water saving) to consumption (low wastage)
+                    are certified sustainable. We deliver best-in-class environmental, social and
+                    governance goals compliant with UN-SDGs.
+                    </p>
+                  </CardBody>
+                  {/* <CardFooter className="text-center">
+                    <Button
+                      className="btn-just-icon mr-1"
+                      color="linkedin"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-linkedin" />
+                    </Button>
+                    <Button
+                      className="btn-just-icon mr-1"
+                      color="dribbble"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-dribbble" />
+                    </Button>
+                    <Button
+                      className="btn-just-icon"
+                      color="instagram"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-instagram" />
+                    </Button>
+                  </CardFooter> */}
+                </Card>
+              </Col>
+            </Row>
+          </Container>
+          <br /><br />
         </div>
-        <div className="projects-2 section section-image" style ={{
+        <div className="section-image" style ={{
             backgroundImage:
             "url(" + require("assets/kimaye/BGN2.jpg") + ")",}}>
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="12">
                 {/* <h6 className="text-muted">Our work</h6> */}
-                <h2 style = {{color: '#dbac00'}}>Integrated platform providing branded, safe fruits</h2>
+                <h2 style = {{color: 'white'}}>Integrated Platform providing Branded Safe Fruits</h2>
                 {/* <h5 style = {{color: 'white'}}>
                   Integrated platform providing branded safe fruits
                 </h5> */}<br />
@@ -299,7 +535,7 @@ export default function SectionBM(){
                       href="http://www.creative-tim.com/product/paper-kit-react?ref=pkpr-sections-page"
                       target="_blank"
                     > */}
-                      <CardTitle tag="h4" style = {{color: 'white', fontWeight: '500'}}>Our Award Winning Farmers</CardTitle>
+                     <CardTitle tag="h4" style = {{color: '#dbac00', fontWeight: '500'}}>Our Award Winning Farmers</CardTitle>
                     {/* </a> */}
                     {/* <h6 className="card-category text-muted">Free Ui kit</h6> */}
                     <p className="card-description" style = {{color: 'white'}}>
@@ -367,7 +603,7 @@ export default function SectionBM(){
                     {/* </a> */}
                     {/* <h6 className="card-category text-muted">Premium UI kit</h6> */}
                     <p className="card-description" style = {{color: 'white'}}>
-                    We are on a mission to provide safe fruits - hygienic, contamination-free,
+                    We are on a mission to provide safe fruits. Hygienic, contamination-free,
                     zero health-risk and nutritious products are available to consumers in 35+
                     countries today.<br />And we do this with complete traceability and transparency
                     </p>

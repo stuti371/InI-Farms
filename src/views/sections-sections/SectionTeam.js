@@ -301,7 +301,7 @@ export default function SectionTeam() {
                       className="page-header"
                       style={{ backgroundImage: item.src }}
                     >
-                      {/* <div className="filter" /> */}
+                      <div className="filter" />
                       <div className="content-center">{item.content}</div>
                     </div>
                   </CarouselItem>
@@ -336,13 +336,11 @@ export default function SectionTeam() {
             </Carousel>
           </div>
         </div>
-      <div className="section section-team cd-section" id="teams" style = {{backgroundColor: '#f8f9fa'}}>
         <Board />
         <Founders />
         <Management />
         <Investors />
         <FooterFinal />
-      </div>
     </>
   );
 }

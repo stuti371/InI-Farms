@@ -25,16 +25,15 @@ import {
 
 export default function board(){
     return(
-        <div className="team-1 " style = {{
+        <div className="section section-team cd-section" id="teams"  style = {{
           backgroundImage:
           "url(" + require("assets/kimaye/BG3.jpg") + ")",}}>
           <Container >
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title">Board</h2>
-                <h5 className="description">
-                  This is the paragraph where you can write more details about
-                  your team. Keep you 
+                <h2 className="title" style = {{color: '#800000', fontWeight: '450'}}>Board</h2>
+                <h5 className="description" style = {{fontWeight: '500', color: 'black'}} >
+                Build and Translate Vision into Reality 
                 </h5>
               </Col>
             </Row>
@@ -167,8 +166,7 @@ export default function board(){
                     <Button
                       className="btn-link btn-just-icon mr-1"
                       color="twitter"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href=""
                     >
                       <i className="fa fa-twitter" />
                     </Button>
@@ -220,8 +218,8 @@ export default function board(){
                     <Button
                       className="btn-link btn-just-icon mr-1"
                       color="twitter"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://twitter.com/SudhirKamath2?s=20"
+                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-twitter" />
                     </Button>
@@ -389,8 +387,8 @@ export default function board(){
                     <Button
                       className="btn-link btn-just-icon mr-1"
                       color="twitter"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://twitter.com/AjayManiar?s=20"
+                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-twitter" />
                     </Button>
@@ -405,8 +403,8 @@ export default function board(){
                     <Button
                       className="btn-link btn-just-icon"
                       color="linkedin"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://www.linkedin.com/in/ajay-maniar-6b229622"
+                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-linkedin" />
                     </Button>
@@ -440,8 +438,8 @@ export default function board(){
                     <Button
                       className="btn-link btn-just-icon mr-1"
                       color="twitter"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://twitter.com/kartik_srivatsa?s=20"
+                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-twitter" />
                     </Button>
@@ -456,8 +454,8 @@ export default function board(){
                     <Button
                       className="btn-link btn-just-icon"
                       color="linkedin"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://www.linkedin.com/in/kartiksrivatsa"
+                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-linkedin" />
                     </Button>
@@ -493,8 +491,8 @@ export default function board(){
                     <Button
                       className="btn-link btn-just-icon mr-1"
                       color="twitter"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://twitter.com/ChetanJuthani?s=20"
+                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-twitter" />
                     </Button>
@@ -509,8 +507,8 @@ export default function board(){
                     <Button
                       className="btn-link btn-just-icon"
                       color="linkedin"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://www.linkedin.com/in/chetan-juthani-6b8b0811"
+                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-linkedin" />
                     </Button>

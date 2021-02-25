@@ -266,7 +266,7 @@ export default function SectionBrand(){
                         {/* <CardTitle tag="h4">Lucas Andrew</CardTitle> */}
                       </a>
                     </div>
-                    <h6 style = {{color: '#dbac00', fontWeight: '600'}}>Highest Consistency</h6>
+                    <h6 style = {{color: '#dbac00', fontWeight: '600', marginTop: '4%'}}>Highest Consistency</h6>
                     <p className="card-description text-center" 
                        style = {{color: 'white', fontWeight:'400'}}>
                     Our technology platform across the supply chain
@@ -328,9 +328,8 @@ export default function SectionBrand(){
                                     <h6 style = {{color: '#800000', fontWeight: '700'}}>Grown Responsibly</h6>
                                     <p className="card-description text-center" 
                                     style = {{color: 'black', fontWeight:'400'}}>
-                                    Our technology platform across the supply chain
-                                    ensures that each fruit is consistently good in
-                                    taste & 
+                                    Our products are grown using organic fertilizers,
+                                    100% drip irrigation & safe chemicals
                                     </p>
                                 </CardBody>
                             </Card>
@@ -348,9 +347,9 @@ export default function SectionBrand(){
                                     <h6 style = {{color: '#800000', fontWeight: '700'}}>Handpicked at Farms</h6>
                                     <p className="card-description text-center" 
                                     style = {{color: 'black', fontWeight:'400'}}>
-                                    Our technology platform across the supply chain
-                                    ensures that each fruit is consistently good in
-                                    taste & 
+                                    Our trained harvesting team ensure that the fruits
+                                    are picked at perfect maturity, right taste and
+                                    freshness 
                                     </p>
                                 </CardBody>
                             </Card>
@@ -375,9 +374,9 @@ export default function SectionBrand(){
                                     <h6 style = {{color: '#800000', fontWeight: '700'}}>Earning the Kimaye Badge</h6>
                                     <p className="card-description text-center" 
                                     style = {{color: 'black', fontWeight:'400'}}>
-                                    Our technology platform across the supply chain
-                                    ensures that each fruit is consistently good in
-                                    taste & 
+                                    Our modern infra, tech & stringent
+                                    processes select only the best fruits that deserve Kimaye
+                                    badge 
                                     </p>
                                 </CardBody>
                             </Card>
@@ -395,9 +394,9 @@ export default function SectionBrand(){
                                     <h6 style = {{color: '#800000', fontWeight: '700'}}>No-Touch Delivery</h6>
                                     <p className="card-description text-center" 
                                     style = {{color: 'black', fontWeight:'400'}}>
-                                    Our technology platform across the supply chain
-                                    ensures that each fruit is consistently good in
-                                    taste & 
+                                    Our packaging is specially designed to keep the
+                                    fruit fresh & no touch assurance till it reaches
+                                    consumer 
                                     </p>
                                 </CardBody>
                             </Card>
@@ -459,8 +458,8 @@ export default function SectionBrand(){
                         </div>
                     <CardBody>
                         <p style = {{color: 'white',fontWeight: '400', fontSize: '7'}}>
-                        Both our own farms & our farmer grps are certified for Good Agriculture Practices to
-                        ensure that Kimaye fruits are 100% safe to 
+                        Both our own farms & our farmer groups are certified for Good Agriculture Practices to
+                        ensure that Kimaye fruits are 100% safe 
                         </p><br />
                                 <Row style = {{justifyContent: 'center'}}>
                                     <Col md = '3' style = {{justifyContent: 'center'}}>
@@ -533,7 +532,7 @@ export default function SectionBrand(){
                                  <Col md = '3' style = {{justifyContent: 'center'}}>
                                     <img src={require("assets/kimaye/GRASP.png")} width ='120' height = '150' style = {{borderRadius: '0'}}/>
                                     <br /><br />
-                                    <h6 style = {{color: 'white'}}>Grasp</h6>
+                                    <h6 style = {{color: 'white'}}>Grasp</h6><br />
                                 </Col> 
                             </Row>
                         </CardBody>

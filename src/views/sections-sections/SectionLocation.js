@@ -24,6 +24,7 @@ import {
 } from "reactstrap";
 // import SectionContactUs from './SectionContactUs.js'
 import WhiteNavbar from 'components/Navbars/WhiteNavbar'
+import FooterFinal from "FooterFinal";
 
 export default function SectionLocation(){
     return(
@@ -137,7 +138,7 @@ export default function SectionLocation(){
                     <p style = {{color: 'black', fontWeight: '400'}}>
                       IPH - Kurkumbh <br />
                       Cold Store - Tadipatri <br />
-                      Collection Center - Neelgaon Ketaki
+                      Collection Center - Nimgaon Ketaki
                     </p>
                   </CardBody>
                 </Card>
@@ -161,7 +162,7 @@ export default function SectionLocation(){
                     {/* <CardTitle tag="h4">Analytics for Android</CardTitle> */}
                     <p style = {{color: 'black', fontWeight: '400'}}>
                       Delhi, Mumbai <br />
-                      Bangaluru, Hyderabad
+                      Bengaluru, Hyderabad
                     </p>
                   </CardBody>
                 </Card>
@@ -184,8 +185,8 @@ export default function SectionLocation(){
                     <h6 className="card-category" style = {{color: '#800000'}}>Farms</h6>
                     {/* <CardTitle tag="h4">How to find the contacts.</CardTitle> */}
                     <p style = {{color: 'black', fontWeight: '400'}}>
-                      Saswad, Miri, Dhamangaon <br />
-                      Atoot, Bhikangaon, Shajapur
+                      Saswad, Miri, Dhamangaon (Mah)<br />
+                      Atoot, Bhikangaon, Shajapur (MP)
                     </p>
                   </CardBody>
                 </Card>
@@ -241,6 +242,7 @@ export default function SectionLocation(){
                       </CardBody>
                     </Col>
                     <Col className="mr-auto" md="5">
+                      {/* <a>pankaj.khandelwal@inifarms.com</a> */}
                       <Form id="contact-form" method="post" role="form">
                         <CardBody>
                           <Row>
@@ -306,6 +308,7 @@ export default function SectionLocation(){
                                 className="pull-right"
                                 color="primary"
                                 type="submit"
+                                onClick = {(e) => e.preventDefault()}
                               >
                                 Send Message
                               </Button>
@@ -320,6 +323,7 @@ export default function SectionLocation(){
             </Row>
           </Container>
         </div>
+        <FooterFinal />
           </>
     );
 }

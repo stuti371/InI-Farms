@@ -17,33 +17,53 @@ import {
 
 export default function LandingPage1(){
     return(
-        <div className="wrapper">
+        <div className="wrapper" id = 'root'>
         <div className="section text-center landing-section" style = {{backgroundColor: '#fffaef'}}>
           <Container>
-            <Row style = {{justifyContent: 'center'}}>
-                    <img src = {require("assets/kimaye/pomologo.jpeg")} width="100px" height="70px"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    <img src = {require("assets/kimaye/bananalogo.jpeg")} width="100px" height="70px"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    <img src = {require("assets/kimaye/arilslogo.jpeg")} width="100px" height="70px"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    <img src = {require("assets/kimaye/cocologo.jpeg")} width="100px" height="70px"/>
+            <Row >
+              <Col md = '6' sm = '6'>
+                <Row style ={{justifyContent: 'space-around'}}>
+                  <img src = {require("assets/kimaye/pomologo.jpeg")} style = {{width: '25%', height: '15%'}}/>
+                  <img src = {require("assets/kimaye/bananalogo.jpeg")} style = {{width: '25%', height: '15%'}}/>
+                </Row>
+              </Col>
+              <Col md = '6' sm = '6'>
+              <Row style ={{justifyContent: 'space-around'}}>
+                  <img src = {require("assets/kimaye/arilslogo.jpeg")} style = {{width: '25%', height: '15%'}}/>
+                  <img src = {require("assets/kimaye/cocologo.jpeg")} style = {{width: '25%', height: '15%'}}/>
+                </Row>
+              </Col>
+              {/* <Col sm = '3' md = '3' style ={{justifyContent: 'center', alignItems: 'center'}}>
+                
+              </Col>
+              <Col sm = '3' md = '3' style ={{justifyContent: 'center', alignItems: 'center'}}>
+                 
+              </Col>
+              <Col sm = '3' md = '3' style ={{justifyContent: 'center', alignItems: 'center'}}>
+                
+              </Col>
+              <Col sm = '3' md = '3' style ={{justifyContent: 'center', alignItems: 'center'}}>
+                <
+              </Col> */}
             </Row><br /><br />
             <Row >
-              <Col  md="5" style ={{justifyItems: 'start', marginTop: 55}}>
+              <Col  md="5"  sm = '5' style ={{justifyItems: 'start', marginTop: 55}}>
                 
-                  <img src = {require("assets/kimaye/talk2.jpg")} width = '400' height = '400'/>
+                  <img src = {require("assets/kimaye/talk2.jpg")} width = '95%' height = '90%'/>
                 
                </Col> <br />
-               <Col md="7" style ={{alignItems: 'center'}}>
+               <Col md="7" sm = '7' style ={{alignItems: 'center'}}>
                     
                       <h2 className="title" style = {{fontWeight: '500', textAlign: 'center', marginTop: '8%', color: '#800000'}}>The Divine World of Kimaye</h2>
                       <h6 style = {{textAlign: 'center'}}>At InI Farms we are changing the horticulture landscape of India</h6><br />
                       <p style = {{textAlign: 'center'}}>
-                        <span style = {{fontSize: 18, fontWeight: 400}}> Reducing post-harvest losses </span> <span style = {{color: "red", fontSize: 20, fontWeight: 400}}>&</span><br /> 
-                        <span style = {{fontSize: 18, fontWeight: 400}}> Leveraging Ag-Tech to drive scale </span> <br /> <br />
+                        <span style = {{fontSize: 18, fontWeight: 400}}> Disintermediating the supply chain </span> <span style = {{color: "red", fontSize: 20, fontWeight: 400}}>&</span><br /> 
+                        <span style = {{fontSize: 18, fontWeight: 400}}> Reducing post-harvest losses </span> <br /> <br />
                         <span style ={{fontSize: 18, fontWeight: 400}}> Growing-Delivering worldwide </span><span style = {{color: "red", fontSize: 20, fontWeight: 400}}>&</span><br />
                         <span style ={{fontSize: 18, fontWeight: 400}}> Meeting global food safety standards </span><br /><br />
                         <span style = {{fontSize: 18, fontWeight: 400}}> Improving fruit quality</span> <span style = {{color: "red", fontSize: 20, fontWeight: 400}}>&</span> <br />
                         <span style = {{fontSize: 18, fontWeight: 400, marginLeft: 12}}>  Bringing smiles to thousands of farmers </span><br /><br />
-                        <span style = {{fontSize: 18, fontWeight: 400}}> Increasing farm productivity</span> <span style = {{color: "red", fontSize: 20, fontWeight: 400}}>&</span> <br />
+                        <span style = {{fontSize: 18, fontWeight: 400}}> Leveraging Ag-Tech to drive scale</span> <span style = {{color: "red", fontSize: 20, fontWeight: 400}}>&</span> <br />
                         <span style = {{fontSize: 18, fontWeight: 400}}> Making agriculture gender neutral </span>
                       </p>
 
@@ -68,7 +88,7 @@ export default function LandingPage1(){
                   <div className="description">
                     <h4 className="info-title" style = {{color: '#800000', fontWeight: 500}}>35 Countries</h4>
                     <p className="description" style = {{ fontWeight: 500}}>
-                      North America, Europe, India, Middle-East, South-East Asia, <br /> New Zealand
+                      Middle East, Europe, India, North America, South-East Asia, <br /> New Zealand
                     </p>
                     {/* <Button
                       className="btn-link"
@@ -110,7 +130,7 @@ export default function LandingPage1(){
                   <div className="description" >
                     <h4 className="info-title" style = {{color: '#800000', fontWeight: 500}}>5000+ Farmers</h4>
                     <p className="description" style = {{ fontWeight: 500}}>
-                      Premium for quality <br /> Improving Farmer profits by 40%
+                      Premium for quality model<br /> Improving Farmer profits by 40%
                     </p>
                     {/* <Button
                       className="btn-link"

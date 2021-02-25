@@ -3098,15 +3098,15 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     border-top-color: #FFFFFF; }
 
 .btn-neutral {
-  background-color: #FFFFFF;
-  border-color: #FFFFFF;
-  color: #FFFFFF;
+  background-color: #bbbbbb;
+  border-color: #bbbbbb;
+  color: #800000;
   opacity: 1;
   filter: alpha(opacity=100); }
   .btn-neutral:hover, .btn-neutral:focus, .btn-neutral:active, .btn-neutral.active, .btn-neutral:active:focus, .btn-neutral:active:hover, .btn-neutral.active:focus, .btn-neutral:not(:disabled):not(.disabled):active:focus, .btn-neutral:not(:disabled):not(.disabled):active, .btn-neutral:not(:disabled):not(.disabled).active, .btn-neutral:not(:disabled):not(.disabled).active:focus,
   .show > .btn-neutral.dropdown-toggle {
     background-color: #403D39;
-    color: #FFFFFF;
+    color: #bbbbbb;
     border-color: #403D39;
     box-shadow: none; }
   .btn-neutral .caret {
@@ -4636,8 +4636,8 @@ textarea.form-control {
       color: #FFFFFF;
       line-height: 20px;
       float: left;
-      margin-left: 10px;
-      margin-top: 5px;
+      /* margin-left: 10px; */
+      /* margin-top: 5px; */
       width: 75px;
       height: 50px; }
 
@@ -10464,7 +10464,7 @@ body {
     right: 0;
     z-index: 1032;
     visibility: visible;
-    background-color: #999;
+    background-color: #323232;
     overflow-y: visible;
     border-top: none;
     text-align: left;
@@ -10504,7 +10504,7 @@ body {
       height: 100%;
       width: 100%;
       position: absolute;
-      background-color: #FFFCF5;
+      background-color: #323232;
       background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(112, 112, 112, 0) 60%, rgba(186, 186, 186, 0.15) 100%);
       display: block;
       content: "";
@@ -10680,7 +10680,7 @@ body {
       height: 100%;
       width: 100%;
       position: absolute;
-      background-color: #FFFCF5;
+      background-color: #323232;
       background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(112, 112, 112, 0) 60%, rgba(186, 186, 186, 0.15) 100%);
       display: block;
       content: "";

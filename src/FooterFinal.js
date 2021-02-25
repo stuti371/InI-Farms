@@ -13,22 +13,24 @@ export default function FooterFinal() {
         <Col className="text-center ml-auto mr-auto" md="3" sm="3" xs="12">
             <h4>InI Farms</h4>
             <div className="social-area">
-            <Button className="btn-just-icon btn-round" color="linkedin">
+            <Button className="btn-just-icon btn-round" color="linkedin" href = 'https://www.linkedin.com/company/ini-farms/?originalSubdomain=in'>
                 <i className="fa fa-linkedin" />
             </Button>&emsp;
             <Button
                 className="btn-just-icon btn-round mr-1"
                 color="facebook"
+                href= 'https://www.facebook.com/KimayeFruits/'
             >
                 <i className="fa fa-facebook" />
             </Button>&emsp;
             <Button
                 className="btn-just-icon btn-round mr-1"
                 color="twitter"
+                href = 'https://twitter.com/Kimaye_INI'
             >
                 <i className="fa fa-twitter" />
             </Button>&emsp;
-            <Button className="btn-just-icon btn-round" color="instagram">
+            <Button className="btn-just-icon btn-round" color="instagram" href= 'https://www.instagram.com/kimayefruits/'>
                 <i className="fa fa-instagram" />
             </Button>
             </div>
@@ -39,17 +41,17 @@ export default function FooterFinal() {
                 <div className="links">
                 <ul className="uppercase-links stacked-links">
                     <li>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <a href="http://inifarms.com/homepage" >
                         Home
                     </a>
                     </li>
                     <li>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <a href="http://inifarms.com/Location" >
                         Locations
                     </a>
                     </li>
                     <li>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <a href="http://inifarms.com/Media" >
                         Media
                     </a>
                     </li>
@@ -70,17 +72,17 @@ export default function FooterFinal() {
                 <div className="links">
                 <ul className="uppercase-links stacked-links">
                     <li>
-                    <a href="#pablo" >
+                    <a href="http://inifarms.com/AboutUs" >
                         About Us
                     </a>
                     </li>
                     <li>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <a href="http://inifarms.com/AgTech" >
                         Ag-Tech
                     </a>
                     </li>
                     <li>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <a href="http://inifarms.com/Soulful" >
                         Soulful
                     </a>
                     </li>
@@ -91,12 +93,12 @@ export default function FooterFinal() {
                 <div className="links">
                 <ul className="uppercase-links stacked-links">
                     <li>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <a href="http://inifarms.com/Location" >
                         Contact Us
                     </a>
                     </li>
                     <li>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <a to = '/PrivacyPolicy' tag = 'link' >
                         Privacy Policy
                     </a>
                     </li>
@@ -127,7 +129,40 @@ export default function FooterFinal() {
                 </div>
             </Col> */}
             </Row>
-            <hr />
+            {/* <hr />
+            <div className="copyright">
+            <div className="pull-left">
+                © {new Date().getFullYear()} InI Farms Pvt Ltd, All Rights Reserved
+            </div> */}
+            {/* <div className="links pull-right">
+                <ul>
+                <li className="mr-1">
+                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                    Company Policy
+                    </a>
+                </li>
+                |{" "}
+                <li className="mr-1">
+                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                    Terms
+                    </a>
+                </li>
+                |{" "}
+                <li>
+                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                    Privacy
+                    </a>
+                </li>
+                </ul>
+            </div> */}
+            {/* </div> */}
+        </Col>
+        <Col className="text-center ml-auto mr-auto" md="2" sm="2" xs="12">
+            <h4>Kimaye</h4>
+            <a href="http://www.kimaye.com/"  style = {{color: '#dbac00', fontWeight:'500', }}>www.kimaye.com</a>
+        </Col>
+        </Row>
+        <hr />
             <div className="copyright">
             <div className="pull-left">
                 © {new Date().getFullYear()} InI Farms Pvt Ltd, All Rights Reserved
@@ -154,12 +189,6 @@ export default function FooterFinal() {
                 </ul>
             </div> */}
             </div>
-        </Col>
-        <Col className="text-center ml-auto mr-auto" md="2" sm="2" xs="12">
-            <h4>Kimaye</h4>
-            <a href="#pablo" onClick={(e) => e.preventDefault()} style = {{color: '#dbac00', fontWeight:'500', }}>www.kimaye.com</a>
-        </Col>
-        </Row>
     </Container>
     </footer>
     </>

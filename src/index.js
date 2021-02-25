@@ -56,6 +56,7 @@ import SectionProducts from 'views/sections-sections/SectionProducts.js'
 import SectionBrand from 'views/sections-sections/SectionBrand.js'
 import SectionBM from 'views/sections-sections/SectionBM.js'
 import SectionAgTech from 'views/sections-sections/SectionAgTech.js'
+import PrivacyPolicy from 'views/sections-sections/PrivacyPolicy.js'
 // others
 
 ReactDOM.render(
@@ -68,7 +69,7 @@ ReactDOM.render(
       />
       <Route path="/sections" render={(props) => <Sections {...props} />} />
       <Route
-        path="/landing-page"
+        path="/homepage"
         render={(props) => <LandingPage {...props} />}
       />
       <Route path="/about-us" render={(props) => <AboutUs {...props} />} />
@@ -81,13 +82,17 @@ ReactDOM.render(
       <Route path="/contact-us" render={(props) => <ContactUs {...props} />} />
       <Route path="/Products" render={(props) => <SectionProducts {...props} />} />
       <Route path="/Brand" render={(props) => <SectionBrand {...props} />} />
-      <Route path="/BM" render={(props) => <SectionBM {...props} />} />
+      <Route path="/AboutUs" render={(props) => <SectionBM {...props} />} />
       <Route path="/AgTech" render={(props) => <SectionAgTech {...props} />} />
       <Route path="/Media" render={(props) => <SectionMedia {...props} />} />
       <Route path="/Soulful" render={(props) => <SectionSoulful {...props} />} />
       <Route
-        path="/landing-page"
+        path="/homepage"
         render={(props) => <LandingPage {...props} />}
+      />
+      <Route
+        path="/Privacypolicy"
+        render={(props) => <PrivacyPolicy {...props} />}
       />
       <Route path="/login-page" render={(props) => <LoginPage {...props} />} />
       <Route
@@ -111,7 +116,7 @@ ReactDOM.render(
         path="/twitter-redesign"
         render={(props) => <TwitterRedesign {...props} />}
       />
-      <Redirect to="/landing-page" />
+      <Redirect to="/homepage" />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")

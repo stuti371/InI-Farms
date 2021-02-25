@@ -466,24 +466,31 @@ export default function SectionHeader() {
                 <Col className="ml-auto mr-auto text-center" md="8">
                 <h2 style = {{color: '#dbac00', fontWeight: '400'}}>Our Online Partners</h2>
               </Col>
-                </Row><br /><br />
-                <Row>
-                    <Col md = '2' style = {{justifyContent: 'center', alignItems: 'center'}}>
+              </Row><br /><br />
+              <Col className="ml-auto mr-auto text-center" md="12">
+              <Row  >
+                    <Col   md ='4' xs = '12' style = {{ marginTop: '2%'}}>
                         <img src={require("assets/kimaye/swiggy.png")}/>
                     </Col>
-                    <Col md = '3' style = {{justifyContent: 'center', alignItems: 'center', marginTop: '3%'}}>
-                        <img src={require("assets/kimaye/bbrrmm.jpg")}/>
+                    <Col  md ='4' xs = '12' style = {{ marginTop: '2%'}}>
+                        <img src={require("assets/kimaye/nearstores.jpg")}/>
+                    </Col><br />
+                    <Col  md ='4' xs = '12' style = {{ marginTop: '2%'}}>
+                        <img src={require("assets/kimaye/dunzo.jpg")}/>
                     </Col>
-                    <Col md = '2' style = {{justifyContent: 'center', alignItems: 'center'}}>
+                </Row><br />
+                <Row >
+                    <Col md = '4'  xs ='12 ' style = {{marginTop: '3%'}}>
                         <img src={require("assets/kimaye/staples.jpg")}/>
                     </Col>
-                    <Col md = '3' style = {{justifyContent: 'center', alignItems: 'center', marginTop: '2%'}}>
-                        <img src={require("assets/kimaye/nearstores.jpg")}/>
+                    <Col md = '4' xs = '12' style = {{ marginTop: '3%'}}>
+                        <img src={require("assets/kimaye/bbrrmm.jpg")}/>
                     </Col>
-                    <Col md = '2' style = {{justifyContent: 'center', alignItems: 'center'}}>
+                    <Col md = '4' xs = '12' style = {{marginTop: '3%'}}>
                         <img src={require("assets/kimaye/lokal.png")}/>
                     </Col>
                 </Row>
+              </Col>
             </Container>
         </div>
         <FooterFinal />

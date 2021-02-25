@@ -39,7 +39,6 @@ export default function Founders(){
                 </h5> }
               </Col>
             </Row>
-            <div className="space-top" />
             <Row>
               <Col md="6">
                 <Card className="card-profile card-plain">
@@ -56,14 +55,14 @@ export default function Founders(){
                       </CardImg>
                     </Col>
                     <Col md="7">
-                      <CardBody className="text-left">
+                      <CardBody className="text-center">
                         <CardTitle tag="h4">Pankaj Khandelwal</CardTitle>
-                        <h6 className="card-category" style = {{fontWeight: '400', color: '#dbac00'}}>Chairman & Managing Director</h6>
-                        <p className="card-description">
+                        <h6 className="card-category, text-center" style = {{fontWeight: '400', color: '#dbac00'}}>Chairman & Managing Director</h6><br />
+                        <p style = {{color: 'white'}}>
                           IITK, IIMC, McKinsey <br/>
                           VeriFone, InI Consulting <br/>
                         </p>
-                        <CardFooter className="pull-left">
+                        <CardFooter className="text-center">
                           <Button
                             className="btn-just-icon btn-link mr-1"
                             color="twitter"
@@ -170,14 +169,14 @@ export default function Founders(){
                       </CardImg>
                     </Col>
                     <Col md="7">
-                      <CardBody className="text-left">
+                      <CardBody className="text-center">
                         <CardTitle tag="h4">Purnima Khandelwal</CardTitle>
-                        <h6 className="card-category" style = {{color: '#dbac00', fontWeight: '400'}}>Chief Executive Officer</h6>
-                        <p className="card-description">
+                        <h6 className="card-category, text-center" style = {{color: '#dbac00', fontWeight: '400'}}>Chief Executive Officer</h6><br />
+                        <p style ={{color: 'white'}}>
                           Economics (St Xaviers), MBA (TAPMI) <br/>
                           Rawatsons, InI Consulting <br/>
                         </p>
-                        <CardFooter className="pull-left">
+                        <CardFooter className="text-center">
                          <Button
                             className="btn-just-icon btn-link mr-1"
                             color="twitter"
@@ -189,7 +188,7 @@ export default function Founders(){
                           <Button
                             className="btn-just-icon btn-link mr-1"
                             color="linkedin"
-                            href="https://www.linkedin.com/in/purnima-khandelwal-90591517"
+                            href="https://www.linkedin.com/in/purnima-khandelwal-05038526"
                             // onClick={(e) => e.preventDefault()}
                           >
                             <i className="fa fa-linkedin" />

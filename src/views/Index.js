@@ -23,6 +23,7 @@ import SectionCommentsAreaSmall from "./index-sections/SectionCommentsAreaSmall.
 import SectionJavaScript from "./index-sections/SectionJavaScript.js";
 import SectionCards from "./index-sections/SectionCards.js";
 
+
 function Index() {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {

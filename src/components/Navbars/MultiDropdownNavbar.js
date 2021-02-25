@@ -95,7 +95,7 @@ function MultiDropdownNavbar() {
                   Company
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-danger" right>
-                  <DropdownItem to="/BM" tag={Link}>
+                  <DropdownItem to="/AboutUs" tag={Link}>
                     About Us
                   </DropdownItem>
                   <DropdownItem to="/Team" tag={Link}>

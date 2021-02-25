@@ -173,7 +173,7 @@ className="team-2 section-image" style = {{
     <Col className="ml-auto mr-auto text-center" md="8">
       {/* <h2 className="title">Our Stunning Team 1</h2> */}
       <h3 style = {{color: '#dcab00'}}>
-        Angels
+        Angels <br /> <br /> <br/>
       </h3>
     </Col>
   </Row>
