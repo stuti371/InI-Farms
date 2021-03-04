@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 // nodejs library that concatenates strings
 import classnames from "classnames";
 // JavaScript plugin that hides or shows a component based on your scroll
@@ -70,8 +70,8 @@ function MultiDropdownNavbar() {
       >
         <Container>
           <div className="navbar-translate">
-            <NavbarBrand id="navbar-brand" >
-              <img src = {require("assets/kimaye/ini-farms.png")} width = "90px" height = "40px"/>
+            <NavbarBrand id="navbar-brand" href="/homepage">
+              <img alt="logo" src={require("assets/kimaye/ini-farms.png")} width="90px" height="40px" />
             </NavbarBrand>
             <button
               className="navbar-toggler"
@@ -89,9 +89,9 @@ function MultiDropdownNavbar() {
             </button>
           </div>
           <Collapse navbar isOpen={collapseOpen}>
-            <Nav  className = 'ml-auto' navbar>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle className="mr-2" color="default" caret nav>
+            <Nav className='ml-auto' navbar>
+              <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle className="mr-2" color="default" caret nav>
                   Company
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-danger" right>
@@ -109,7 +109,7 @@ function MultiDropdownNavbar() {
                 </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle className="mr-2" color="default" caret nav>
+                <DropdownToggle className="mr-2" color="default" caret nav>
                   Our Work
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-danger" right>
@@ -128,29 +128,29 @@ function MultiDropdownNavbar() {
               </UncontrolledDropdown>
               <NavItem nav inNavbar>
                 <Button
-                      className="btn-neutral"
-                      color="link"
-                      // href="views/sections-sections/SectionAgTech.js"
-                      to = '/AgTech'
-                      tag={Link}
-                      // onClick={(e) => e.preventDefault()}
-                    >
-                      AgTech
+                  className="btn-neutral"
+                  color="link"
+                  // href="views/sections-sections/SectionAgTech.js"
+                  to='/AgTech'
+                  tag={Link}
+                // onClick={(e) => e.preventDefault()}
+                >
+                  AgTech
                   </Button>
               </NavItem>
               <NavItem nav inNavbar>
                 <Button
-                      className="btn-neutral"
-                      color="link"
-                      // href="views/sections-sections/SectionAgTech.js"
-                      to = '/Soulful'
-                      tag={Link}
-                      // onClick={(e) => e.preventDefault()}
-                    >
-                      Soulful
+                  className="btn-neutral"
+                  color="link"
+                  // href="views/sections-sections/SectionAgTech.js"
+                  to='/Soulful'
+                  tag={Link}
+                // onClick={(e) => e.preventDefault()}
+                >
+                  Soulful
                   </Button>
               </NavItem>
-                {/* <NavItem>
+              {/* <NavItem>
                   <NavLink to = '/AgTech' color="link">
                     AgTech
                 </NavLink>
@@ -159,7 +159,7 @@ function MultiDropdownNavbar() {
                 <DropdownToggle className="mr-2" color="default" caret nav>
                   Ag Tech
                 </DropdownToggle> */}
-                {/* <DropdownMenu className="dropdown-danger" right>
+              {/* <DropdownMenu className="dropdown-danger" right>
                   <DropdownItem to="/sections#headers" tag={Link}>
                     <i className="nc-icon nc-tile-56" />
                     Headers
@@ -263,14 +263,14 @@ function MultiDropdownNavbar() {
               </UncontrolledDropdown> */}
               <NavItem>
                 <Button
-                      className="btn-neutral"
-                      color="link"
-                      // href="views/sections-sections/SectionAgTech.js"
-                      // onClick={(e) => e.preventDefault()}
-                      to = '/Media'
-                      tag={Link}
-                    >
-                      Media
+                  className="btn-neutral"
+                  color="link"
+                  // href="views/sections-sections/SectionAgTech.js"
+                  // onClick={(e) => e.preventDefault()}
+                  to='/Media'
+                  tag={Link}
+                >
+                  Media
                   </Button>
               </NavItem>
             </Nav>

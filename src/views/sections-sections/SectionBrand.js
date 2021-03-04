@@ -15,12 +15,14 @@ import {
 import FooterFinal from "FooterFinal";
 import WhiteNavbar from 'components/Navbars/WhiteNavbar'
 
-export default function SectionBrand(){
-    return(
-        <>
-        <WhiteNavbar />
-         <div className="header-2">
-          {/* <Navbar className="navbar-transparent navbar-absolute" expand="lg">
+import styles from "./SectionStyles.module.css";
+
+export default function SectionBrand() {
+  return (
+    <>
+      <WhiteNavbar />
+      <div className="header-2">
+        {/* <Navbar className="navbar-transparent navbar-absolute" expand="lg">
             <Container>
               <NavbarBrand className="mb-0" href="www.creative-tim.com">
                 Creative Tim
@@ -74,15 +76,15 @@ export default function SectionBrand(){
               </UncontrolledCollapse>
             </Container>
           </Navbar> */}
-          <div
-            className="page-header"
-            style={{
-              backgroundImage:
-                "url(" + require("assets/kimaye/D2C5.png") + ")",
-            }}
-          >
-            {/* <div className="filter" /> */}
-            {/* <div className="content-center">
+        <div
+          className="page-header"
+          style={{
+            backgroundImage:
+              "url(" + require("assets/kimaye/D2C5.png") + ")",
+          }}
+        >
+          {/* <div className="filter" /> */}
+          {/* <div className="content-center">
               <Container>
                 <Row>
                   <Col className="ml-auto mr-auto text-center" md="8">
@@ -141,45 +143,45 @@ export default function SectionBrand(){
                 </Row>
               </Container>
             </div> */}
-          </div>
         </div>
-        <div
-          // className="team-4"
-          style = {{backgroundColor: '#fffaef'}}
-        >
-          <Container>
-            <Row>
-              <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title" style = {{color: '#800000', fontWeight: '500'}}>Kimaye is a Promise</h2>
-                <h5 className="description" style = {{color: 'black',fontWeight: '400'}}>
+      </div>
+      <div
+        // className="team-4"
+        style={{backgroundColor: '#fffaef'}}
+      >
+        <Container>
+          <Row>
+            <Col className="ml-auto mr-auto text-center" md="8">
+              <h2 className="title" style={{color: '#800000', fontWeight: '500'}}>Kimaye is a Promise</h2>
+              <h5 className="description" style={{color: 'black', fontWeight: '400'}}>
                 of consistently delivering the safest and superior quality fruits.
                 <br />Our roots lie in the principles of cooperation and partnership.
                 </h5>
-                <br />
-              </Col>
-            </Row>
-            <Row>
-              <Col md="4">   
-                <Card className="card-profile" style = {{backgroundColor: '#4d0000'}}>
-                  <CardBody>
-                    <div className="card-avatar">
-                      {/* <a href="#pablo" onClick={(e) => e.preventDefault()}> */}
-                        <img
-                          alt="..."
-                          src={require("assets/kimaye/Safety.png")}
-                        />
-                        <CardTitle tag="h4">Eric Thomson</CardTitle>
-                      {/* </a> */}
-                    </div>
-                    <h6 style = {{color: '#dbac00', fontWeight: '600'}}>Unparalleled Safety</h6>
-                    <p className="card-description text-center"
-                       style = {{color: 'white', fontWeight:'400'}}>
+              <br />
+            </Col>
+          </Row>
+          <Row>
+            <Col md="4">
+              <Card className="card-profile" style={{backgroundColor: '#4d0000'}}>
+                <CardBody>
+                  <div className="card-avatar">
+                    {/* <a href="#pablo" onClick={(e) => e.preventDefault()}> */}
+                    <img
+                      alt="..."
+                      src={require("assets/kimaye/Safety.png")}
+                    />
+                    <CardTitle tag="h4">Eric Thomson</CardTitle>
+                    {/* </a> */}
+                  </div>
+                  <h6 style={{color: '#dbac00', fontWeight: '600'}}>Unparalleled Safety</h6>
+                  <p className="card-description text-center"
+                    style={{color: 'white', fontWeight: '400'}}>
                     Every time a consumer eats Kimaye product,
                     she has assured food safety & freedom from
                     hygiene related worries
                     </p>
-                  </CardBody>
-                  {/* <CardFooter className="text-center">
+                </CardBody>
+                {/* <CardFooter className="text-center">
                     <Button
                       className="btn-just-icon mr-1"
                       color="linkedin"
@@ -205,28 +207,28 @@ export default function SectionBrand(){
                       <i className="fa fa-instagram" />
                     </Button>
                   </CardFooter> */}
-                </Card>
-              </Col>
-              <Col md="4">
-                <Card className="card-profile" style = {{backgroundColor: '#4d0000'}}>
-                  <CardBody>
-                    <div className="card-avatar">
-                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        <img
-                          alt="..."
-                          src={require("assets/kimaye/quality.png")}
-                        />
-                        <CardTitle tag="h4">Sophia West</CardTitle>
-                      </a>
-                    </div>
-                    <h6 style = {{color: '#dbac00', fontWeight: '600'}}>Benchmark Quality</h6>
-                    <p className="card-description text-center" 
-                       style = {{color: 'white', fontWeight:'400'}}>
+              </Card>
+            </Col>
+            <Col md="4">
+              <Card className="card-profile" style={{backgroundColor: '#4d0000'}}>
+                <CardBody>
+                  <div className="card-avatar">
+                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                      <img
+                        alt="..."
+                        src={require("assets/kimaye/quality.png")}
+                      />
+                      <CardTitle tag="h4">Sophia West</CardTitle>
+                    </a>
+                  </div>
+                  <h6 style={{color: '#dbac00', fontWeight: '600'}}>Benchmark Quality</h6>
+                  <p className="card-description text-center"
+                    style={{color: 'white', fontWeight: '400'}}>
                     Our stringent quality processes ensure that only
                     the best quality fruit earns the Kimaye badge.
                     </p>
-                  </CardBody>
-                  {/* <CardFooter className="text-center">
+                </CardBody>
+                {/* <CardFooter className="text-center">
                     <Button
                       className="btn-just-icon mr-1"
                       color="linkedin"
@@ -252,29 +254,29 @@ export default function SectionBrand(){
                       <i className="fa fa-pinterest" />
                     </Button>
                   </CardFooter> */}
-                </Card>
-              </Col>
-              <Col md="4">
-                <Card className="card-profile" style = {{backgroundColor: '#4d0000'}}>
-                  <CardBody>
-                    <div className="card-avatar">
-                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        <img
-                          alt="..."
-                          src={require("assets/kimaye/Consistency.png")}
-                        />
-                        {/* <CardTitle tag="h4">Lucas Andrew</CardTitle> */}
-                      </a>
-                    </div>
-                    <h6 style = {{color: '#dbac00', fontWeight: '600', marginTop: '4%'}}>Highest Consistency</h6>
-                    <p className="card-description text-center" 
-                       style = {{color: 'white', fontWeight:'400'}}>
+              </Card>
+            </Col>
+            <Col md="4">
+              <Card className="card-profile" style={{backgroundColor: '#4d0000'}}>
+                <CardBody>
+                  <div className="card-avatar">
+                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                      <img
+                        alt="..."
+                        src={require("assets/kimaye/Consistency.png")}
+                      />
+                      {/* <CardTitle tag="h4">Lucas Andrew</CardTitle> */}
+                    </a>
+                  </div>
+                  <h6 style={{color: '#dbac00', fontWeight: '600', marginTop: '4%'}}>Highest Consistency</h6>
+                  <p className="card-description text-center"
+                    style={{color: 'white', fontWeight: '400'}}>
                     Our technology platform across the supply chain
                     ensures that each fruit is consistently good in
                     taste & freshness
                     </p>
-                  </CardBody>
-                  {/* <CardFooter className="text-center">
+                </CardBody>
+                {/* <CardFooter className="text-center">
                     <Button
                       className="btn-just-icon mr-1"
                       color="youtube"
@@ -300,249 +302,250 @@ export default function SectionBrand(){
                       <i className="fa fa-instagram" />
                     </Button>
                   </CardFooter> */}
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <div className="team-4 section-image" style={{
+        backgroundImage:
+          "url(" + require("assets/kimaye/BG2.jpg") + ")",
+      }}>
+        <Container>
+          <Row>
+            <Col md='6'>
+              <Row md='2'>
+                <h2 className="title" style={{color: 'white', fontWeight: '500', marginLeft: '25%'}}>4 Steps to Perfection</h2>
+              </Row>
+              <Row md='10'>
+                <Col>
+                  <Card className='card-profile' style=
+                    {{backgroundColor: '#dbac00'}}>
+                    <CardBody>
+                      <div className='card-avatar'>
+                        <img
+                          alt="..."
+                          src={require("assets/kimaye/Grown Responsibly.png")}
+                        />
+                      </div>
+                      <h6 style={{color: '#800000', fontWeight: '700'}}>Grown Responsibly</h6>
+                      <p className="card-description text-center"
+                        style={{color: 'black', fontWeight: '400'}}>
+                        Our products are grown using organic fertilizers,
+                        100% drip irrigation & safe chemicals
+                                    </p>
+                    </CardBody>
+                  </Card>
+                </Col>
+                <Col>
+                  <Card className='card-profile' style=
+                    {{backgroundColor: '#dbac00', marginTop: '50%'}}>
+                    <CardBody>
+                      <div className='card-avatar'>
+                        <img
+                          alt="..."
+                          src={require("assets/kimaye/Handpicked.png")}
+                        />
+                      </div>
+                      <h6 style={{color: '#800000', fontWeight: '700'}}>Handpicked at Farms</h6>
+                      <p className="card-description text-center"
+                        style={{color: 'black', fontWeight: '400'}}>
+                        Our trained harvesting team ensure that the fruits
+                        are picked at perfect maturity, right taste and
+                        freshness
+                                    </p>
+                    </CardBody>
+                  </Card>
+                </Col>
+              </Row>
+            </Col>
+            <Col md='6'>
+              <Row md='2'>
+                <img src={require("assets/kimaye/flying.png")} alt="flying" className={`${styles.ImgFlying}`} />
+              </Row>
+              <Row md='10'>
+                <Col>
+                  <Card className='card-profile' style=
+                    {{backgroundColor: '#dbac00'}}>
+                    <CardBody>
+                      <div className='card-avatar'>
+                        <img
+                          alt="..."
+                          src={require("assets/kimaye/Kimaye Badge.png")}
+                        />
+                      </div>
+                      <h6 style={{color: '#800000', fontWeight: '700'}}>Earning the Kimaye Badge</h6>
+                      <p className="card-description text-center"
+                        style={{color: 'black', fontWeight: '400'}}>
+                        Our modern infra, tech & stringent
+                        processes select only the best fruits that deserve Kimaye
+                        badge
+                                    </p>
+                    </CardBody>
+                  </Card>
+                </Col>
+                <Col>
+                  <Card className='card-profile' style=
+                    {{backgroundColor: '#dbac00', marginTop: '50%'}}>
+                    <CardBody>
+                      <div className='card-avatar'>
+                        <img
+                          alt="..."
+                          src={require("assets/kimaye/Delivery.png")}
+                        />
+                      </div>
+                      <h6 style={{color: '#800000', fontWeight: '700'}}>No-Touch Delivery</h6>
+                      <p className="card-description text-center"
+                        style={{color: 'black', fontWeight: '400'}}>
+                        Our packaging is specially designed to keep the
+                        fruit fresh & no touch assurance till it reaches
+                        consumer
+                                    </p>
+                    </CardBody>
+                  </Card>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <div
+        className="team-4"
+        style={{backgroundColor: '#fffaef'}}
+      >
+        <Container>
+          <Row>
+            <Col className="ml-auto mr-auto text-center" md="8">
+              <h2 className="title" style={{color: '#800000', fontWeight: '500'}}>Certification</h2>
+              <h5 className="description" style={{color: 'black', fontWeight: '400'}}>
+                of consistently delivering the safest and superior quality fruits.
+                </h5><br />
+            </Col>
+          </Row>
+          <Row>
+            <Row md='6' style={{borderBottomColor: 'black', borderBottomWidth: 5}}>
+              <Col className='text-center' md='6' >
+                <Card className='card-category' style={{backgroundColor: '#4d0000'}}>
+                  <div className='card-avatar'>
+                    <h4 style={{color: '#dbac00', fontWeight: '500'}}>Food Safety</h4>
+                  </div>
+                  <CardBody>
+                    <p style={{color: 'white', fontWeight: '400', fontSize: '7'}}>
+                      Every step of our journey from farm to home is audited and certified to
+                      ensure that food safety and hygeine are never compromised.
+                        </p><br />
+                    <Row style={{justifyContent: 'center'}}>
+                      <Col md='3' style={{justifyContent: 'center'}}>
+                        <img src={require("assets/kimaye/HACCP.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <br /><br />
+                        <h6 style={{color: 'white'}}>HACCP</h6>
+                      </Col>
+                      <Col md='3' style={{justifyContent: 'center'}}>
+                        <img src={require("assets/kimaye/FSSC.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <br /><br />
+                        <h6 style={{color: 'white'}}>FSSC</h6>
+                      </Col>
+                      <Col md='3' style={{justifyContent: 'center'}}>
+                        <img src={require("assets/kimaye/FSSAI.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <br /><br />
+                        <h6 style={{color: 'white'}}>FSSAI</h6>
+                      </Col>
+                    </Row>
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col className='text-center' md='6'>
+                <Card className='card-category' style={{backgroundColor: '#4d0000'}}>
+                  <div className='card-avatar'>
+                    <h4 style={{color: '#dbac00', fontWeight: '500'}}>Field Certifications</h4>
+                  </div>
+                  <CardBody>
+                    <p style={{color: 'white', fontWeight: '400', fontSize: '7'}}>
+                      Both our own farms & our farmer groups are certified for Good Agriculture Practices to
+                      ensure that Kimaye fruits are 100% safe
+                        </p><br />
+                    <Row style={{justifyContent: 'center'}}>
+                      <Col md='3' style={{justifyContent: 'center'}}>
+                        <img src={require("assets/kimaye/GGAPOP2.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <br /><br />
+                        <h6 style={{color: 'white'}}>Group-GAP</h6>
+                      </Col>
+                      <Col md='3' style={{justifyContent: 'center'}}>
+                        <img src={require("assets/kimaye/GRASPOP2.png")} width='120' height='150' style={{borderRadius: '0', marginTop: '30%'}} />
+                        <br /><br />
+                        <h6 style={{color: 'white'}}>Group-GRASP</h6>
+                      </Col>
+                      <Col md='3' style={{justifyContent: 'center'}}>
+                        <img src={require("assets/kimaye/GGAP.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <br /><br />
+                        <h6 style={{color: 'white'}}>GlobalGap</h6>
+                      </Col>
+                    </Row>
+                  </CardBody>
                 </Card>
               </Col>
             </Row>
-          </Container>
-        </div>
-        <div className="team-4 section-image" style = {{
-          backgroundImage:
-          "url(" + require("assets/kimaye/BG2.jpg") + ")",}}>
-              <Container>
-                  <Row>
-                  <Col md = '6'>
-                      <Row md = '2'>
-                      <h2 className="title" style = {{color: 'white', fontWeight: '500', marginLeft: '25%'}}>4 Steps to Perfection</h2>
-                      </Row>
-                      <Row md = '10'>
-                        <Col>
-                            <Card className = 'card-profile' style = 
-                            {{backgroundColor: '#dbac00'}}>
-                                <CardBody>
-                                    <div className = 'card-avatar'>
-                                        <img
-                                        alt="..."
-                                        src={require("assets/kimaye/Grown Responsibly.png")}
-                                        />
-                                    </div>
-                                    <h6 style = {{color: '#800000', fontWeight: '700'}}>Grown Responsibly</h6>
-                                    <p className="card-description text-center" 
-                                    style = {{color: 'black', fontWeight:'400'}}>
-                                    Our products are grown using organic fertilizers,
-                                    100% drip irrigation & safe chemicals
-                                    </p>
-                                </CardBody>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card className = 'card-profile' style = 
-                            {{backgroundColor: '#dbac00', marginTop: '50%'}}>
-                                <CardBody>
-                                    <div className = 'card-avatar'>
-                                        <img
-                                        alt="..."
-                                        src={require("assets/kimaye/Handpicked.png")}
-                                        />
-                                    </div>
-                                    <h6 style = {{color: '#800000', fontWeight: '700'}}>Handpicked at Farms</h6>
-                                    <p className="card-description text-center" 
-                                    style = {{color: 'black', fontWeight:'400'}}>
-                                    Our trained harvesting team ensure that the fruits
-                                    are picked at perfect maturity, right taste and
-                                    freshness 
-                                    </p>
-                                </CardBody>
-                            </Card>
-                        </Col>
-                      </Row>
-                  </Col>
-                  <Col md = '6'>
-                      <Row md = '2'>
-                        <img src={require("assets/kimaye/flying.png")} style = {{marginLeft: '15%'}}/>
-                      </Row>
-                      <Row md = '10'>
-                      <Col>
-                        <Card className = 'card-profile' style = 
-                            {{backgroundColor: '#dbac00'}}>
-                                <CardBody>
-                                    <div className = 'card-avatar'>
-                                        <img
-                                        alt="..."
-                                        src={require("assets/kimaye/Kimaye Badge.png")}
-                                        />
-                                    </div>
-                                    <h6 style = {{color: '#800000', fontWeight: '700'}}>Earning the Kimaye Badge</h6>
-                                    <p className="card-description text-center" 
-                                    style = {{color: 'black', fontWeight:'400'}}>
-                                    Our modern infra, tech & stringent
-                                    processes select only the best fruits that deserve Kimaye
-                                    badge 
-                                    </p>
-                                </CardBody>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card className = 'card-profile' style = 
-                            {{backgroundColor: '#dbac00', marginTop: '50%'}}>
-                                <CardBody>
-                                    <div className = 'card-avatar'>
-                                        <img
-                                        alt="..."
-                                        src={require("assets/kimaye/Delivery.png")}
-                                        />
-                                    </div>
-                                    <h6 style = {{color: '#800000', fontWeight: '700'}}>No-Touch Delivery</h6>
-                                    <p className="card-description text-center" 
-                                    style = {{color: 'black', fontWeight:'400'}}>
-                                    Our packaging is specially designed to keep the
-                                    fruit fresh & no touch assurance till it reaches
-                                    consumer 
-                                    </p>
-                                </CardBody>
-                            </Card>
-                        </Col>
-                      </Row>
-                  </Col>
-                  </Row>
-              </Container>
-        </div>
-        <div
-        className="team-4"
-        style = {{backgroundColor: '#fffaef'}}
-      >
-        <Container>
-            <Row>
-               <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title" style = {{color: '#800000', fontWeight: '500'}}>Certification</h2>
-                <h5 className="description" style = {{color: 'black',fontWeight: '400'}}>
-                of consistently delivering the safest and superior quality fruits.
-                </h5><br />
+            <Row md='6'>
+              <Col className='text-center' md='6'>
+                <Card className='card-category' style={{backgroundColor: '#4d0000'}}>
+                  <div className='card-avatar'>
+                    <h4 style={{color: '#dbac00', fontWeight: '500'}}>Exports</h4>
+                  </div>
+                  <CardBody>
+                    <p style={{color: 'white', fontWeight: '400', fontSize: '7'}}>
+                      Our processes meet Global Retail and exports standards - they are fit to be
+                      retailed in most premium supermarkets worldwide
+                            </p><br />
+                    <Row style={{justifyContent: 'center'}}>
+                      <Col md='3' style={{justifyContent: 'center'}}>
+                        <img src={require("assets/kimaye/APEDA.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <br /><br />
+                        <h6 style={{color: 'white'}}>APEDA</h6>
+                      </Col>
+                      <Col md='3' style={{justifyContent: 'center'}}>
+                        <img src={require("assets/kimaye/BRC.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <br /><br />
+                        <h6 style={{color: 'white'}}>BRC</h6>
+                      </Col>
+                      <Col md='3' style={{justifyContent: 'center'}}>
+                        <img src={require("assets/kimaye/SEH.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <br /><br />
+                        <h6 style={{color: 'white'}}>star export HOUSE</h6>
+                      </Col>
+                    </Row>
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col className='text-center' md='6'>
+                <Card className='card-category' style={{backgroundColor: '#4d0000'}}>
+                  <div className='card-avatar'>
+                    <h4 style={{color: '#dbac00', fontWeight: '500'}}>Social</h4>
+                  </div>
+                  <CardBody>
+                    <p style={{color: 'white', fontWeight: '400', fontSize: '7'}}>
+                      Kimaye products are not only #AllSafe. They are also #AllGood. We meet world's highest
+                      social and ethical standards of doing business
+                            </p><br />
+                    <Row style={{justifyContent: 'center'}}>
+                      <Col md='3' style={{justifyContent: 'center'}}>
+                        <img src={require("assets/kimaye/SMETA.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <br /><br />
+                        <h6 style={{color: 'white'}}>SMETA</h6>
+                      </Col>
+                      <Col md='3' style={{justifyContent: 'center'}}>
+                        <img src={require("assets/kimaye/GRASP.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <br /><br />
+                        <h6 style={{color: 'white'}}>Grasp</h6><br />
+                      </Col>
+                    </Row>
+                  </CardBody>
+                </Card>
               </Col>
             </Row>
-            <Row>
-                <Row md = '6' style = {{borderBottomColor: 'black', borderBottomWidth: 5}}>
-                  <Col className = 'text-center' md = '6' >
-                  <Card className = 'card-category' style = {{backgroundColor: '#4d0000'}}>
-                        <div className = 'card-avatar'>
-                            <h4 style = {{color: '#dbac00', fontWeight: '500'}}>Food Safety</h4>
-                        </div>
-                    <CardBody>
-                        <p style = {{color: 'white',fontWeight: '400', fontSize: '7'}}>
-                        Every step of our journey from farm to home is audited and certified to
-                        ensure that food safety and hygeine are never compromised.
-                        </p><br />
-                                <Row style = {{justifyContent: 'center'}}>
-                                    <Col md = '3' style = {{justifyContent: 'center'}}>
-                                            <img src={require("assets/kimaye/HACCP.png")} width ='120' height = '150' style = {{borderRadius: '0'}}/>
-                                            <br /><br />
-                                            <h6 style = {{color: 'white'}}>HACCP</h6>
-                                    </Col>
-                                    <Col md = '3' style = {{justifyContent: 'center'}}>
-                                        <img src={require("assets/kimaye/FSSC.png")} width ='120' height = '150' style = {{borderRadius: '0'}}/>
-                                        <br /><br />
-                                        <h6 style = {{color: 'white'}}>FSSC</h6>
-                                    </Col>
-                                    <Col md = '3' style = {{justifyContent: 'center'}}>
-                                        <img src={require("assets/kimaye/FSSAI.png")} width ='120' height = '150' style = {{borderRadius: '0'}}/>
-                                        <br /><br />
-                                        <h6 style = {{color: 'white'}}>FSSAI</h6>
-                                    </Col>   
-                                </Row>
-                                </CardBody>
-                        </Card>
-                  </Col>
-                    <Col className = 'text-center' md = '6'>
-                    <Card className = 'card-category' style = {{backgroundColor: '#4d0000'}}>
-                        <div className = 'card-avatar'>
-                            <h4 style = {{color: '#dbac00', fontWeight: '500'}}>Field Certifications</h4>
-                        </div>
-                    <CardBody>
-                        <p style = {{color: 'white',fontWeight: '400', fontSize: '7'}}>
-                        Both our own farms & our farmer groups are certified for Good Agriculture Practices to
-                        ensure that Kimaye fruits are 100% safe 
-                        </p><br />
-                                <Row style = {{justifyContent: 'center'}}>
-                                    <Col md = '3' style = {{justifyContent: 'center'}}>
-                                            <img src={require("assets/kimaye/GGAPOP2.png")} width ='120' height = '150' style = {{borderRadius: '0'}}/>
-                                            <br /><br />
-                                            <h6 style = {{color: 'white'}}>Group-GAP</h6>
-                                    </Col>
-                                    <Col md = '3' style = {{justifyContent: 'center'}}>
-                                        <img src={require("assets/kimaye/GRASPOP2.png")} width ='120' height = '150' style = {{borderRadius: '0', marginTop: '30%'}}/>
-                                        <br /><br />
-                                        <h6 style = {{color: 'white'}}>Group-GRASP</h6>
-                                    </Col>
-                                    <Col md = '3' style = {{justifyContent: 'center'}}>
-                                        <img src={require("assets/kimaye/GGAP.png")} width ='120' height = '150' style = {{borderRadius: '0'}}/>
-                                        <br /><br />
-                                        <h6 style = {{color: 'white'}}>GlobalGap</h6>
-                                    </Col>   
-                                </Row>
-                                </CardBody>
-                        </Card>
-                    </Col>
-                </Row>
-                <Row md = '6'>
-                  <Col className = 'text-center' md = '6'>
-                  <Card className = 'card-category' style = {{backgroundColor: '#4d0000'}}>
-                        <div className = 'card-avatar'>
-                            <h4 style = {{color: '#dbac00', fontWeight: '500'}}>Exports</h4>
-                        </div>
-                        <CardBody>
-                            <p style = {{color: 'white',fontWeight: '400', fontSize: '7'}}>
-                            Our processes meet Global Retail and exports standards - they are fit to be
-                            retailed in most premium supermarkets worldwide
-                            </p><br />
-                            <Row style = {{justifyContent: 'center'}}>
-                                <Col md = '3' style = {{justifyContent: 'center'}}>
-                                        <img src={require("assets/kimaye/APEDA.png")} width ='120' height = '150' style = {{borderRadius: '0'}}/>
-                                        <br /><br />
-                                        <h6 style = {{color: 'white'}}>APEDA</h6>
-                                </Col>
-                                 <Col md = '3' style = {{justifyContent: 'center'}}>
-                                    <img src={require("assets/kimaye/BRC.png")} width ='120' height = '150' style = {{borderRadius: '0'}}/>
-                                    <br /><br />
-                                    <h6 style = {{color: 'white'}}>BRC</h6>
-                                </Col>
-                                <Col md = '3' style = {{justifyContent: 'center'}}>
-                                    <img src={require("assets/kimaye/SEH.png")} width ='120' height = '150' style = {{borderRadius: '0'}}/>
-                                    <br /><br />
-                                    <h6 style = {{color: 'white'}}>star export HOUSE</h6>
-                                </Col>   
-                            </Row>
-                        </CardBody>
-                    </Card>
-                  </Col>
-                  <Col className = 'text-center' md = '6'>
-                  <Card className = 'card-category' style = {{backgroundColor: '#4d0000'}}>
-                        <div className = 'card-avatar'>
-                            <h4 style = {{color: '#dbac00', fontWeight: '500'}}>Social</h4>
-                        </div>
-                        <CardBody>
-                            <p style = {{color: 'white',fontWeight: '400', fontSize: '7'}}>
-                            Kimaye products are not only #AllSafe. They are also #AllGood. We meet world's highest
-                            social and ethical standards of doing business
-                            </p><br />
-                            <Row style = {{justifyContent: 'center'}}>
-                                <Col md = '3' style = {{justifyContent: 'center'}}>
-                                        <img src={require("assets/kimaye/SMETA.png")} width ='120' height = '150' style = {{borderRadius: '0'}}/>
-                                        <br /><br />
-                                        <h6 style = {{color: 'white'}}>SMETA</h6>
-                                </Col>
-                                 <Col md = '3' style = {{justifyContent: 'center'}}>
-                                    <img src={require("assets/kimaye/GRASP.png")} width ='120' height = '150' style = {{borderRadius: '0'}}/>
-                                    <br /><br />
-                                    <h6 style = {{color: 'white'}}>Grasp</h6><br />
-                                </Col> 
-                            </Row>
-                        </CardBody>
-                    </Card>
-                  </Col>
-                </Row>
-            </Row>
+          </Row>
         </Container>
-        </div>
-        <FooterFinal />
+      </div>
+      <FooterFinal />
     </>
-    );
+  );
 }

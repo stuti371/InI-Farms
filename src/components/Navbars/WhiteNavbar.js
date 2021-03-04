@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 // JavaScript plugin that hides or shows a component based on your scroll
 import Headroom from "headroom.js";
 import classnames from "classnames";
@@ -40,11 +40,11 @@ function WhiteNavbar() {
           }}
         />
       ) : null}
-      <Navbar className='fixed-top' expand="lg" id="navbar-main" color = 'dark'>
+      <Navbar className='fixed-top' expand="lg" id="navbar-main" color='dark'>
         <Container>
           <div className="navbar-translate">
             <NavbarBrand id="navbar-brand" to="/index" tag={Link}>
-            <img src = {require("assets/kimaye/ini-farms.png")} width = "70px" height = "30px"/>
+              <img src={require("assets/kimaye/ini-farms.png")} width="70px" height="30px" />
             </NavbarBrand>
             {/* <UncontrolledTooltip placement="bottom" target="navbar-brand">
               Paper Kit PRO React
@@ -65,9 +65,9 @@ function WhiteNavbar() {
             </button>
           </div>
           <Collapse navbar isOpen={collapseOpen}>
-            <Nav  className = 'ml-auto' navbar>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle className="mr-2" color="default" caret nav>
+            <Nav className='ml-auto' navbar>
+              <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle className="mr-2" color="default" caret nav>
                   Company
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-danger" right>
@@ -85,7 +85,7 @@ function WhiteNavbar() {
                 </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle className="mr-2" color="default" caret nav>
+                <DropdownToggle className="mr-2" color="default" caret nav>
                   Our Work
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-danger" right>
@@ -104,29 +104,29 @@ function WhiteNavbar() {
               </UncontrolledDropdown>
               <NavItem nav inNavbar>
                 <Button
-                      className="btn-neutral"
-                      color="link"
-                      // href="views/sections-sections/SectionAgTech.js"
-                      to = '/AgTech'
-                      tag={Link}
-                      // onClick={(e) => e.preventDefault()}
-                    >
-                      AgTech
+                  className="btn-neutral"
+                  color="link"
+                  // href="views/sections-sections/SectionAgTech.js"
+                  to='/AgTech'
+                  tag={Link}
+                // onClick={(e) => e.preventDefault()}
+                >
+                  AgTech
                   </Button>
               </NavItem>
               <NavItem nav inNavbar>
                 <Button
-                      className="btn-neutral"
-                      color="link"
-                      // href="views/sections-sections/SectionAgTech.js"
-                      to = '/Soulful'
-                      tag={Link}
-                      // onClick={(e) => e.preventDefault()}
-                    >
-                      Soulful
+                  className="btn-neutral"
+                  color="link"
+                  // href="views/sections-sections/SectionAgTech.js"
+                  to='/Soulful'
+                  tag={Link}
+                // onClick={(e) => e.preventDefault()}
+                >
+                  Soulful
                   </Button>
               </NavItem>
-                {/* <NavItem>
+              {/* <NavItem>
                   <NavLink to = '/AgTech' color="link">
                     AgTech
                 </NavLink>
@@ -135,7 +135,7 @@ function WhiteNavbar() {
                 <DropdownToggle className="mr-2" color="default" caret nav>
                   Ag Tech
                 </DropdownToggle> */}
-                {/* <DropdownMenu className="dropdown-danger" right>
+              {/* <DropdownMenu className="dropdown-danger" right>
                   <DropdownItem to="/sections#headers" tag={Link}>
                     <i className="nc-icon nc-tile-56" />
                     Headers
@@ -239,14 +239,14 @@ function WhiteNavbar() {
               </UncontrolledDropdown> */}
               <NavItem>
                 <Button
-                      className="btn-neutral"
-                      color="link"
-                      // href="views/sections-sections/SectionAgTech.js"
-                      // onClick={(e) => e.preventDefault()}
-                      to = '/Media'
-                      tag={Link}
-                    >
-                      Media
+                  className="btn-neutral"
+                  color="link"
+                  // href="views/sections-sections/SectionAgTech.js"
+                  // onClick={(e) => e.preventDefault()}
+                  to='/Media'
+                  tag={Link}
+                >
+                  Media
                   </Button>
               </NavItem>
             </Nav>
