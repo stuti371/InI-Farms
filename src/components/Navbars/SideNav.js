@@ -1,57 +1,62 @@
-import React from "react";
+import React, {useState, useRef, useEffect} from "react";
 import {Link} from "react-router-dom"
 
 import {
   Collapse,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
   NavItem,
   Nav,
 } from "reactstrap";
 import styles from "./SideNav.module.css"
 
 const SideNav = ({collapseOpen}) => {
+
+  const [openCompany, setOpenCompany] = useState(false);
+  const [openWork, setOpenWork] = useState(false);
+
+  const companyRef = useRef();
+  const workRef = useRef();
+
+  useEffect(() => {
+    const handler = (e) => {
+      if (!companyRef.current?.contains(e.target)) {
+        setOpenCompany(false)
+      }
+
+    }
+    window.addEventListener("click", handler);
+    return () => window.removeEventListener("click", handler);
+  }, [])
+
+  useEffect(() => {
+    const handler = (e) => {
+      if (!workRef.current?.contains(e.target)) {
+        setOpenWork(false)
+      }
+
+    }
+    window.addEventListener("click", handler);
+    return () => window.removeEventListener("click", handler);
+  }, [])
+
   return (
     <Collapse navbar isOpen={collapseOpen}>
       <Nav className='ml-auto' navbar>
-        <UncontrolledDropdown nav inNavbar>
-          <DropdownToggle className="mr-2" color="default" caret nav>
-            Company
-          </DropdownToggle>
-          <DropdownMenu className="dropdown-danger" right>
-            <DropdownItem to="/AboutUs" tag={Link}>
-              About Us
-            </DropdownItem>
-            <DropdownItem to="/Team" tag={Link}>
-              Team
-            </DropdownItem>
-            <DropdownItem
-              to="/Location" tag={Link}
-            >
-              Locations
-            </DropdownItem>
-          </DropdownMenu>
-        </UncontrolledDropdown>
-        <UncontrolledDropdown nav inNavbar>
-          <DropdownToggle className="mr-2" color="default" caret nav>
-            Our Work
-          </DropdownToggle>
-          <DropdownMenu className="dropdown-danger" right>
-            <DropdownItem to="/Products" tag={Link}>
-              Products
-            </DropdownItem>
-            <DropdownItem to="/Brand" tag={Link}>
-              Brand
-            </DropdownItem>
-            <DropdownItem
-              to="/D2C" tag={Link}
-            >
-              D2C
-            </DropdownItem>
-          </DropdownMenu>
-        </UncontrolledDropdown>
+        <NavItem nav inNavbar>
+          <div ref={companyRef} className={` nav-link ${styles.Button} ${styles.Drop}`} onClick={() => setOpenCompany(!openCompany)}><span className={styles.toggle}>Company</span></div>
+          <div className={`${openCompany ? styles.DropMenu : ""} ${styles.DropShow}`}>
+            <Link to="/AboutUs" className={styles.DropLi}>About Us</Link>
+            <Link to="/Team" className={styles.DropLi}>Team</Link>
+            <Link to="/Locations" className={styles.DropLi}>Locations</Link>
+          </div>
+        </NavItem>
+        <NavItem nav inNavbar>
+          <div ref={workRef} className={` nav-link ${styles.Button} ${styles.Drop}`} onClick={() => setOpenWork(!openWork)}><span className={styles.toggle}>Our Work</span></div>
+          <div className={`${openWork ? styles.DropMenu : ""} ${styles.DropShow}`}>
+            <Link to="/Products" className={styles.DropLi}>Products</Link>
+            <Link to="/Brand" className={styles.DropLi}>Brand</Link>
+            <Link to="/D2C" className={styles.DropLi}>D2C</Link>
+          </div>
+        </NavItem>
         <NavItem nav inNavbar>
           <Link to="/AgTech" className={`nav-link ${styles.Button}`}>AgTech</Link>
         </NavItem>
