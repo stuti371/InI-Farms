@@ -12,6 +12,10 @@
   justify-content: center;
 }
 
+.povCard:nth-child(2n) {
+  flex-direction: column;
+}
+
 @media only screen and (min-width: 768px) {
   .povCard {
     flex-direction: row;
