@@ -1,0 +1,13 @@
+.JourneyContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+.CardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  gap: 1.5rem;
+  justify-content: center;
+}
