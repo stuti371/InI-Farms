@@ -1,13 +1,27 @@
 .JourneyContainer {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 
 .CardsContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-columns: repeat(auto-fit, 350px);
   gap: 1.5rem;
   justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .povCard {
+    flex-direction: row;
+  }
+
+  .povCard:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+
+  .CardsContainer {
+    grid-template-columns: repeat(auto-fit, 300px);
+  }
 }

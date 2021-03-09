@@ -268,8 +268,9 @@ function SectionMedia() {
             <Col className="ml-auto mr-auto" md="10"><br />
               <h2 style={{textAlign: 'center', color: '#800000', fontWeight: '500'}}>Point of View...</h2>
               <br />
-              <Card className="card-plain card-blog">
-                <Row>
+
+              <div className={styles.pov}>
+                <Card className={`${styles.povCard} card-plain card-blog`}>
                   <Col md="4">
                     <div className="card-image">
                       <img
@@ -290,38 +291,16 @@ function SectionMedia() {
                       <p style={{color: 'black'}}>
                         With the new law coming on the direct sale agreement under contract farming,
                         the agriculture industry is set to witness more and more private players entering in
-                        contract farming, which will lead to infrastructure development, capacity building and market access for farmers and FPOs— and…{" "}
+                            contract farming, which will lead to infrastructure development, capacity building and market access for farmers and FPOs— and…{" "}
                         <a href="https://www.thehindubusinessline.com/economy/agri-business/more-players-may-enter-contract-farming/article31741794.ece"
                           style={{color: '#800000', fontWeight: '500'}}>
                           Read More
-                          </a>
+                            </a>
                       </p>
                     </CardBody>
                   </Col>
-                </Row>
-              </Card>
-              <Card className="card-plain card-blog">
-                <Row>
-                  <Col md="8">
-                    <CardBody>
-                      <CardTitle tag="h3">
-                        <a href="https://www.businesstoday.in/magazine/cover-story/the-new-farm-formula/story/403592.html"
-                          style={{fontWeight: '500'}}>
-                          The New Farm Formula
-                          </a>
-                      </CardTitle>
-                      <p style={{color: 'black'}}>
-                        Lockdown has enabled new avenues for agriculture and horticulture companies to take a step
-                        in transforming the operations from physical to digital.
-                        Pankaj Khandelwal , MD InI Farms, mentions how INI Farms is making a shift towards
-                            digital space in various steps from procurement to last mile delivery.— and…{" "}
-                        <a href="https://www.businesstoday.in/magazine/cover-story/the-new-farm-formula/story/403592.html"
-                          style={{color: '#800000', fontWeight: '500'}} >
-                          Read More
-                          </a>
-                      </p>
-                    </CardBody>
-                  </Col>
+                </Card>
+                <Card className={`${styles.povCard} card-plain card-blog`}>
                   <Col md="4">
                     <div className="card-image">
                       <a href="https://www.newindianexpress.com/states/andhra-pradesh/2020/apr/12/despite-bumper-crop-horticulture-farmers-stare-at-huge-losses-2129035.html"
@@ -334,10 +313,28 @@ function SectionMedia() {
                       </a>
                     </div>
                   </Col>
-                </Row>
-              </Card>
-              <Card className="card-plain card-blog">
-                <Row>
+                  <Col md="8">
+                    <CardBody>
+                      <CardTitle tag="h3">
+                        <a href="https://www.businesstoday.in/magazine/cover-story/the-new-farm-formula/story/403592.html"
+                          style={{fontWeight: '500'}}>
+                          The New Farm Formula
+                        </a>
+                      </CardTitle>
+                      <p style={{color: 'black'}}>
+                        Lockdown has enabled new avenues for agriculture and horticulture companies to take a step
+                        in transforming the operations from physical to digital.
+                        Pankaj Khandelwal , MD InI Farms, mentions how INI Farms is making a shift towards
+                          digital space in various steps from procurement to last mile delivery.— and…{" "}
+                        <a href="https://www.businesstoday.in/magazine/cover-story/the-new-farm-formula/story/403592.html"
+                          style={{color: '#800000', fontWeight: '500'}} >
+                          Read More
+                          </a>
+                      </p>
+                    </CardBody>
+                  </Col>
+                </Card>
+                <Card className={`${styles.povCard} card-plain card-blog`}>
                   <Col md="4">
                     <div className="card-image">
                       <a href="https://www.newindianexpress.com/states/andhra-pradesh/2020/apr/12/despite-bumper-crop-horticulture-farmers-stare-at-huge-losses-2129035.html" >
@@ -352,7 +349,6 @@ function SectionMedia() {
                   </Col>
                   <Col md="8">
                     <CardBody>
-                      {/* <h6 className="card-category text-success">Startups</h6> */}
                       <CardTitle tag="h3">
                         <a href="https://www.newindianexpress.com/states/andhra-pradesh/2020/apr/12/despite-bumper-crop-horticulture-farmers-stare-at-huge-losses-2129035.html"
                           style={{fontWeight: '500'}}>
@@ -363,7 +359,7 @@ function SectionMedia() {
                         Due to sufficient water availability this season, farmers in AP produced bumper crop of
                         Banana. However due to the current scenario, they are on the verge of facing huge
                         losses. INI Farms alongwith Govt of AP are trying their best to procure the
-                        produce as much as possible to minimize the plight of farmers.{" "}
+                          produce as much as possible to minimize the plight of farmers.{" "}
                         <a href="https://www.newindianexpress.com/states/andhra-pradesh/2020/apr/12/despite-bumper-crop-horticulture-farmers-stare-at-huge-losses-2129035.html"
                           style={{color: '#800000', fontWeight: '500'}} >
                           Read More
@@ -371,8 +367,8 @@ function SectionMedia() {
                       </p>
                     </CardBody>
                   </Col>
-                </Row>
-              </Card>
+                </Card>
+              </div>
             </Col>
           </Row>
         </Container>
