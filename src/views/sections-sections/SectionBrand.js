@@ -422,7 +422,7 @@ export default function SectionBrand() {
           <Row>
             <Row md='6' style={{borderBottomColor: 'black', borderBottomWidth: 5}}>
               <Col className='text-center' md='6' >
-                <Card className='card-category' style={{backgroundColor: '#4d0000'}}>
+                <Card className={`card-category ${styles.BrandCertiCards}`} style={{backgroundColor: '#4d0000'}}>
                   <div className='card-avatar'>
                     <h4 style={{color: '#dbac00', fontWeight: '500'}}>Food Safety</h4>
                   </div>
@@ -433,17 +433,17 @@ export default function SectionBrand() {
                         </p><br />
                     <Row style={{justifyContent: 'center'}}>
                       <Col md='3' style={{justifyContent: 'center'}}>
-                        <img src={require("assets/kimaye/HACCP.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <img alt="..." src={require("assets/kimaye/HACCP.png")} width='120' height='150' style={{borderRadius: '0'}} />
                         <br /><br />
                         <h6 style={{color: 'white'}}>HACCP</h6>
                       </Col>
                       <Col md='3' style={{justifyContent: 'center'}}>
-                        <img src={require("assets/kimaye/FSSC.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <img alt="..." src={require("assets/kimaye/FSSC.png")} width='120' height='150' style={{borderRadius: '0'}} />
                         <br /><br />
                         <h6 style={{color: 'white'}}>FSSC</h6>
                       </Col>
                       <Col md='3' style={{justifyContent: 'center'}}>
-                        <img src={require("assets/kimaye/FSSAI.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <img alt="..." src={require("assets/kimaye/FSSAI.png")} width='120' height='150' style={{borderRadius: '0'}} />
                         <br /><br />
                         <h6 style={{color: 'white'}}>FSSAI</h6>
                       </Col>
@@ -452,7 +452,7 @@ export default function SectionBrand() {
                 </Card>
               </Col>
               <Col className='text-center' md='6'>
-                <Card className='card-category' style={{backgroundColor: '#4d0000'}}>
+                <Card className={`card-category ${styles.BrandCertiCards}`} style={{backgroundColor: '#4d0000'}}>
                   <div className='card-avatar'>
                     <h4 style={{color: '#dbac00', fontWeight: '500'}}>Field Certifications</h4>
                   </div>
@@ -463,17 +463,17 @@ export default function SectionBrand() {
                         </p><br />
                     <Row style={{justifyContent: 'center'}}>
                       <Col md='3' style={{justifyContent: 'center'}}>
-                        <img src={require("assets/kimaye/GGAPOP2.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <img alt="..." src={require("assets/kimaye/GGAPOP2.png")} width='120' height='150' style={{borderRadius: '0'}} />
                         <br /><br />
                         <h6 style={{color: 'white'}}>Group-GAP</h6>
                       </Col>
                       <Col md='3' style={{justifyContent: 'center'}}>
-                        <img src={require("assets/kimaye/GRASPOP2.png")} width='120' height='150' style={{borderRadius: '0', marginTop: '30%'}} />
+                        <img alt="..." src={require("assets/kimaye/GRASPOP2.png")} width='120' height='150' style={{borderRadius: '0', marginTop: '30%'}} />
                         <br /><br />
                         <h6 style={{color: 'white'}}>Group-GRASP</h6>
                       </Col>
                       <Col md='3' style={{justifyContent: 'center'}}>
-                        <img src={require("assets/kimaye/GGAP.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <img alt="..." src={require("assets/kimaye/GGAP.png")} width='120' height='150' style={{borderRadius: '0'}} />
                         <br /><br />
                         <h6 style={{color: 'white'}}>GlobalGap</h6>
                       </Col>
@@ -484,7 +484,7 @@ export default function SectionBrand() {
             </Row>
             <Row md='6'>
               <Col className='text-center' md='6'>
-                <Card className='card-category' style={{backgroundColor: '#4d0000'}}>
+                <Card className={`card-category ${styles.BrandCertiCards}`} style={{backgroundColor: '#4d0000'}}>
                   <div className='card-avatar'>
                     <h4 style={{color: '#dbac00', fontWeight: '500'}}>Exports</h4>
                   </div>
@@ -495,17 +495,17 @@ export default function SectionBrand() {
                             </p><br />
                     <Row style={{justifyContent: 'center'}}>
                       <Col md='3' style={{justifyContent: 'center'}}>
-                        <img src={require("assets/kimaye/APEDA.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <img alt="..." src={require("assets/kimaye/APEDA.png")} width='120' height='150' style={{borderRadius: '0'}} />
                         <br /><br />
                         <h6 style={{color: 'white'}}>APEDA</h6>
                       </Col>
                       <Col md='3' style={{justifyContent: 'center'}}>
-                        <img src={require("assets/kimaye/BRC.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <img alt="..." src={require("assets/kimaye/BRC.png")} width='120' height='150' style={{borderRadius: '0'}} />
                         <br /><br />
                         <h6 style={{color: 'white'}}>BRC</h6>
                       </Col>
                       <Col md='3' style={{justifyContent: 'center'}}>
-                        <img src={require("assets/kimaye/SEH.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <img alt="..." src={require("assets/kimaye/SEH.png")} width='120' height='150' style={{borderRadius: '0'}} />
                         <br /><br />
                         <h6 style={{color: 'white'}}>star export HOUSE</h6>
                       </Col>
@@ -514,7 +514,7 @@ export default function SectionBrand() {
                 </Card>
               </Col>
               <Col className='text-center' md='6'>
-                <Card className='card-category' style={{backgroundColor: '#4d0000'}}>
+                <Card className={`card-category ${styles.BrandCertiCards}`} style={{backgroundColor: '#4d0000'}}>
                   <div className='card-avatar'>
                     <h4 style={{color: '#dbac00', fontWeight: '500'}}>Social</h4>
                   </div>
@@ -525,12 +525,12 @@ export default function SectionBrand() {
                             </p><br />
                     <Row style={{justifyContent: 'center'}}>
                       <Col md='3' style={{justifyContent: 'center'}}>
-                        <img src={require("assets/kimaye/SMETA.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <img alt="..." src={require("assets/kimaye/SMETA.png")} width='120' height='150' style={{borderRadius: '0'}} />
                         <br /><br />
                         <h6 style={{color: 'white'}}>SMETA</h6>
                       </Col>
                       <Col md='3' style={{justifyContent: 'center'}}>
-                        <img src={require("assets/kimaye/GRASP.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <img alt="..." src={require("assets/kimaye/GRASP.png")} width='120' height='150' style={{borderRadius: '0'}} />
                         <br /><br />
                         <h6 style={{color: 'white'}}>Grasp</h6><br />
                       </Col>

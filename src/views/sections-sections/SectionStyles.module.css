@@ -7,9 +7,27 @@
   margin-top: 20%;
 }
 
+.BrandCertiCards {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 1.75rem;
+}
+
+.D2CCard {
+  gap: 1rem;
+}
 
 @media only screen and (min-width: 768px) {
   .ImgFlying {
     margin-left: 15%;
   }
+
+  .BrandCertiCards {
+    width: 100%;
+  }
+
+  .D2CCard {
+    gap: 0;
+  }
+
 }

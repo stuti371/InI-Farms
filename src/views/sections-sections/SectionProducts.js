@@ -18,12 +18,12 @@ import {
 import MultiDropdownNavbar from "components/Navbars/MultiDropdownNavbar.js";
 import FooterFinal from "FooterFinal";
 const items = [
-    {
-      src: "url(" + require("assets/kimaye/bananac1.jpg") + ")",
-      content: (
-        <Container>
-          <Row>
-            {/* <Col className="text-left" md="6">
+  {
+    src: "url(" + require("assets/kimaye/bananac1.jpg") + ")",
+    content: (
+      <Container>
+        <Row>
+          {/* <Col className="text-left" md="6">
               <h1 className="title">Paper Kit 2 PRO</h1>
               <h5>
                 Now you have no excuses, it's time to surprise your clients, your
@@ -68,18 +68,18 @@ const items = [
                 </Button>
               </div>
             </Col> */}
-          </Row>
-        </Container>
-      ),
-      altText: "",
-      caption: "",
-    },
-    {
-      src: "url(" + require("assets/kimaye/bananabox.jpg") + ")",
-      content: (
-        <Container>
-          <Row>
-            {/* <Col className="ml-auto mr-auto text-center" md="8">
+        </Row>
+      </Container>
+    ),
+    altText: "",
+    caption: "",
+  },
+  {
+    src: "url(" + require("assets/kimaye/bananabox.jpg") + ")",
+    content: (
+      <Container>
+        <Row>
+          {/* <Col className="ml-auto mr-auto text-center" md="8">
               <h1 className="title">Awesome Experiences</h1>
               <h5>
                 Now you have no excuses, it's time to surprise your clients, your
@@ -124,18 +124,18 @@ const items = [
                 </Button>
               </div>
             </Col> */}
-          </Row>
-        </Container>
-      ),
-      altText: "",
-      caption: "",
-    },
-    {
-      src: "url(" + require("assets/kimaye/bananac2.jpg") + ")",
-      content: (
-        <Container>
-          <Row>
-            {/* <Col className="ml-auto text-right" md="7">
+        </Row>
+      </Container>
+    ),
+    altText: "",
+    caption: "",
+  },
+  {
+    src: "url(" + require("assets/kimaye/bananac2.jpg") + ")",
+    content: (
+      <Container>
+        <Row>
+          {/* <Col className="ml-auto text-right" md="7">
               <h2 className="title">Premium Offers for Venice</h2>
               <h5>
                 Now you have no excuses, it's time to surprise your clients, your
@@ -167,57 +167,58 @@ const items = [
                 </Button>
               </div>
             </Col> */}
-          </Row>
-        </Container>
-      ),
-      altText: "",
-      caption: "",
-    },
-  ];
+        </Row>
+      </Container>
+    ),
+    altText: "",
+    caption: "",
+  },
+];
 
-function SectionProduct(){
-    const [activeIndex, setActiveIndex] = React.useState(0);
-    const [animating, setAnimating] = React.useState(false);
-    const onExiting = () => {
-      setAnimating(true);
-    };
-    const onExited = () => {
-      setAnimating(false);
-    };
-    const next = () => {
-      if (animating) return;
-      const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-      setActiveIndex(nextIndex);
-    };
-    const previous = () => {
-      if (animating) return;
-      const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-      setActiveIndex(nextIndex);
-    };
-    const goToIndex = (newIndex) => {
-      if (animating) return;
-      setActiveIndex(newIndex);
-    };
-    // video - header 4
-    const [videoPlaying, setVideoPlaying] = React.useState(false);
-    const videoRef = React.createRef();
-    const videoButtonClick = () => {
-      if (videoPlaying) {
-        setVideoPlaying(false);
-        videoRef.current.pause();
-      } else {
-        setVideoPlaying(true);
-        videoRef.current.play();
-      }
-    };
-    return(
+function SectionProduct() {
+  const [activeIndex, setActiveIndex] = React.useState(0);
+  const [animating, setAnimating] = React.useState(false);
+  const onExiting = () => {
+    setAnimating(true);
+  };
+  const onExited = () => {
+    setAnimating(false);
+  };
+  const next = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+    setActiveIndex(nextIndex);
+  };
+  const previous = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+    setActiveIndex(nextIndex);
+  };
+  const goToIndex = (newIndex) => {
+    if (animating) return;
+    setActiveIndex(newIndex);
+  };
+  // video - header 4
+  const [videoPlaying, setVideoPlaying] = React.useState(false);
+  const videoRef = React.createRef();
+  const videoButtonClick = () => {
+    if (videoPlaying) {
+      setVideoPlaying(false);
+      videoRef.current.pause();
+    } else {
+      setVideoPlaying(true);
+      videoRef.current.play();
+    }
+  };
+  return (
     <>
-    <MultiDropdownNavbar/>
-    <div  id="features">
-    <div className="projects-2 section section-image" 
-        style = {{
-        backgroundImage:
-        "url(" + require("assets/kimaye/BG2.jpg") + ")",}}>
+      <MultiDropdownNavbar />
+      <div id="features">
+        <div className="projects-2 section section-image"
+          style={{
+            backgroundImage:
+              "url(" + require("assets/kimaye/BG2.jpg") + ")",
+          }}>
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
@@ -239,11 +240,11 @@ function SectionProduct(){
                       href="http://www.creative-tim.com/product/paper-kit-react?ref=pkpr-sections-page"
                       target="_blank"
                     > */}
-                      <img
-                        alt="..."
-                        className="img"
-                        src={require("assets/kimaye/Pom Cover 2.jpg")}
-                      />
+                    <img
+                      alt="..."
+                      className="img"
+                      src={require("assets/kimaye/Pom Cover 2.jpg")}
+                    />
                     {/* </a> */}
                   </CardImg>
                   <CardBody>
@@ -251,13 +252,13 @@ function SectionProduct(){
                       href="http://www.creative-tim.com/product/paper-kit-react?ref=pkpr-sections-page"
                       target="_blank"
                     > */}
-                      <CardTitle tag="h3" style = {{fontWeight: '500'}}>Pomegranates</CardTitle>
-                      
-                    
+                    <CardTitle tag="h3" style={{fontWeight: '500'}}>Pomegranates</CardTitle>
+
+
                     {/* <h6 className="card-category text-muted">Free Ui kit</h6> */}
-                    <p className="card-description" style = {{fontWeight: '400'}}>
-                        India is the only grower of round the year variety of pomegranates.
-                        A rich, exotic and delicious fruit which is a healing powerhouse! 
+                    <p className="card-description" style={{fontWeight: '400'}}>
+                      India is the only grower of round the year variety of pomegranates.
+                      A rich, exotic and delicious fruit which is a healing powerhouse!
                     </p>
                   </CardBody>
                 </Card>
@@ -269,11 +270,11 @@ function SectionProduct(){
                       href="https://www.creative-tim.com/product/argon-dashboard-pro-react?ref=pkpr-sections-page"
                       target="_blank"
                     > */}
-                      <img
-                        alt="..."
-                        className="img"
-                        src={require("assets/kimaye/Banana cover.jpg")}
-                      />
+                    <img
+                      alt="..."
+                      className="img"
+                      src={require("assets/kimaye/Banana cover.jpg")}
+                    />
                     {/* </a> */}
                   </CardImg>
                   <CardBody>
@@ -281,16 +282,16 @@ function SectionProduct(){
                       href="https://www.creative-tim.com/product/argon-dashboard-pro-react?ref=pkpr-sections-page"
                       target="_blank"
                     > */}
-                      <CardTitle tag="h3" style = {{fontWeight: '500'}}>Bananas</CardTitle>
-                      {/* <br />
+                    <CardTitle tag="h3" style={{fontWeight: '500'}}>Bananas</CardTitle>
+                    {/* <br />
                     </a>
                     <h6 className="card-category text-muted">
                       Premium template
                     </h6> */}
-                    <p className="card-description" style = {{fontWeight: '400'}}>
-                    India is the largest producer of banana in the world.
-                    Its year round availability, varietal range, taste, 
-                    nutritive and medicinal value makes it the favourite fruit!
+                    <p className="card-description" style={{fontWeight: '400'}}>
+                      India is the largest producer of banana in the world.
+                      Its year round availability, varietal range, taste,
+                      nutritive and medicinal value makes it the favourite fruit!
                     </p>
                   </CardBody>
                 </Card>
@@ -302,11 +303,11 @@ function SectionProduct(){
                       href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=pkpr-sections-page"
                       target="_blank"
                     > */}
-                      <img
-                        alt="..."
-                        className="img"
-                        src={require("assets/kimaye/Fresh Cut.jpg")}
-                      />
+                    <img
+                      alt="..."
+                      className="img"
+                      src={require("assets/kimaye/Fresh Cut.jpg")}
+                    />
                     {/* </a> */}
                   </CardImg>
                   <CardBody>
@@ -314,12 +315,12 @@ function SectionProduct(){
                       href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=pkpr-sections-page"
                       target="_blank"
                     > */}
-                      <CardTitle tag="h3" style = {{fontWeight: '500'}}>
-                        Fresh Cuts
+                    <CardTitle tag="h3" style={{fontWeight: '500'}}>
+                      Fresh Cuts
                       </CardTitle>
                     {/* </a>
                     <h6 className="card-category text-muted">Premium UI kit</h6> */}
-                    <p className="card-description" style = {{fontWeight: '400'}}>
+                    <p className="card-description" style={{fontWeight: '400'}}>
                       Pomegranates & Coconuts are peeled, cubed or shredded for convenience or on-the-go consumption.
                       Firm and Juicy, our Fresh Cuts are here to make your life easy!
                     </p>
@@ -329,13 +330,13 @@ function SectionProduct(){
             </Row>
           </Container>
         </div>
-        <div className="features-3" style = {{backgroundColor: '#fffaef'}}>
+        <div className="features-3" style={{backgroundColor: '#fffaef'}}>
           <Container>
             <Row>
               <Col md="7">
                 <Row>
-                    <h2 className="title">Kick the Toxins Off...<br /><span>With Punch Of <span style = {{color: '#800000', fontWeight: '400'}}>Pomegranates</span></span></h2>
-                    {/* <h5 className="description">
+                  <h2 className="title" style={{marginLeft: "1rem"}}>Kick the Toxins Off...<br /><span>With Punch Of <span style={{color: '#800000', fontWeight: '400'}}>Pomegranates</span></span></h2>
+                  {/* <h5 className="description">
                     A rich, exotic and delicious fruit which is a healing powerhouse!
                     </h5> */}
                 </Row>
@@ -346,8 +347,8 @@ function SectionProduct(){
                         <i className="nc-icon nc-layout-11" />
                       </div>
                       <div className="description">
-                        <h4 className="info-title" style = {{fontWeight: '400'}}>Variety</h4>
-                        <p style = {{color: 'black'}}>
+                        <h4 className="info-title" style={{fontWeight: '400'}}>Variety</h4>
+                        <p style={{color: 'black'}}>
                           Bhagwa  <br />
                           Extra Sweet | Ultra Soft | Ruby Red Seeds
                         </p>
@@ -365,8 +366,8 @@ function SectionProduct(){
                         <i className="nc-icon nc-palette" />
                       </div>
                       <div className="description">
-                        <h4 className="info-title" style = {{fontWeight: '400'}}>Sourcing Locations</h4>
-                        <p style = {{color: 'black'}}>
+                        <h4 className="info-title" style={{fontWeight: '400'}}>Sourcing Locations</h4>
+                        <p style={{color: 'black'}}>
                           Maharashtra, Gujarat, Karnataka & Rajasthan
                         </p>
                         {/* <Button
@@ -385,8 +386,8 @@ function SectionProduct(){
                         <i className="nc-icon nc-touch-id" />
                       </div>
                       <div className="description">
-                        <h4 className="info-title" style = {{fontWeight: '400'}}>SKUs</h4>
-                        <p style = {{color: 'black'}}>
+                        <h4 className="info-title" style={{fontWeight: '400'}}>SKUs</h4>
+                        <p style={{color: 'black'}}>
                           Bulk - 3.5 kg | 10 kg <br />
                           Consumer - 2pc | 4pc | 6pc <br /> <br />
                         </p>
@@ -404,8 +405,8 @@ function SectionProduct(){
                         <i className="nc-icon nc-delivery-fast" />
                       </div>
                       <div className="description">
-                        <h4 className="info-title" style = {{fontWeight: '400'}}>Availability</h4>
-                        <p style = {{color: 'black'}}>
+                        <h4 className="info-title" style={{fontWeight: '400'}}>Availability</h4>
+                        <p style={{color: 'black'}}>
                           Round the year <br />
                           Shelf Life - 60 to 90 days
                         </p>
@@ -422,85 +423,86 @@ function SectionProduct(){
                 </Row>
               </Col>
               <Col className="ml-auto" md="5" >
-                <div style = {{marginTop: '25%' ,}}>
+                <div style={{marginTop: '25%', }}>
                   <img alt="..."
-                    style = {{ width: '100%', height: '110%'}}
-                     src={require("assets/kimaye/Pom Products.png")}/>
+                    style={{width: '100%', height: '110%'}}
+                    src={require("assets/kimaye/Pom Products.png")} />
                 </div>
               </Col>
             </Row>
-            </Container>
-            </div>
-    <div className="features-4 section-image" style = {{
-        backgroundImage:
-        "url(" + require("assets/kimaye/BG2.jpg") + ")",}}>
-    <Container>
-      <Row>
-        <Col className="ml-auto mr-auto text-center" md="8">
-          <h2 className="title">Peel your Stress Away...<br /><span style = {{marginLeft: '20%'}}>Go <span style = {{color: '#dbac00', fontWeight: '400'}}>Bananas</span> Everyday</span></h2>
-          {/* <h5 className="description">
+          </Container>
+        </div>
+        <div className="features-4 section-image" style={{
+          backgroundImage:
+            "url(" + require("assets/kimaye/BG2.jpg") + ")",
+        }}>
+          <Container>
+            <Row>
+              <Col className="ml-auto mr-auto text-center" md="8">
+                <h2 className="title">Peel your Stress Away...<br /><span style={{marginLeft: '20%'}}>Go <span style={{color: '#dbac00', fontWeight: '400'}}>Bananas</span> Everyday</span></h2>
+                {/* <h5 className="description">
           India is the largest producer of banana in the world.
           Its year round availability, varietal range, taste, 
           nutritive and medicinal value makes it the favourite fruit!
           </h5> */}
-        </Col>
-      </Row>
-      <Row>
-        <Col md="7">
-          <div  style = {{marginTop: '12%' ,}}>
-            <img
-              alt="..."
-              style = {{ width: '100%', height: '110%'}}
-              src={require("assets/kimaye/Banana Products.png")}
-            />
-          </div>
-        </Col>
-        <Col className="offset-1" md="4">
-          <div className="info info-horizontal">
-            <div className="icon icon-success">
-              <i aria-hidden={true} className="nc-icon nc-ruler-pencil" />
-            </div>
-            <div className="description">
-              <h4 className="info-title" style = {{fontWeight: '400'}}>Varieties</h4>
-              <p style = {{fontSize: '115%', fontWeight: '400'}}> 
-                Cavendish  <br /> Yellakki, Nendran - Native Indian varieties
+              </Col>
+            </Row>
+            <Row>
+              <Col md="7">
+                <div style={{marginTop: '12%', }}>
+                  <img
+                    alt="..."
+                    style={{width: '100%', height: '110%'}}
+                    src={require("assets/kimaye/Banana Products.png")}
+                  />
+                </div>
+              </Col>
+              <Col className="offset-1" md="4">
+                <div className="info info-horizontal">
+                  <div className="icon icon-success">
+                    <i aria-hidden={true} className="nc-icon nc-ruler-pencil" />
+                  </div>
+                  <div className="description">
+                    <h4 className="info-title" style={{fontWeight: '400'}}>Varieties</h4>
+                    <p style={{fontSize: '115%', fontWeight: '400'}}>
+                      Cavendish  <br /> Yellakki, Nendran - Native Indian varieties
               </p>
-            </div>
-          </div>
-          <div className="info info-horizontal">
-            <div className="icon icon-danger">
-              <i aria-hidden={true} className="nc-icon nc-tie-bow" />
-            </div>
-            <div className="description">
-              <h4 className="info-title" style = {{fontWeight: '400'}}>SKUs</h4>
-              <p style = {{fontSize: '115%', fontWeight: '400'}}>
-                Bulk - 3kg | 7kg | 13kg <br />
+                  </div>
+                </div>
+                <div className="info info-horizontal">
+                  <div className="icon icon-danger">
+                    <i aria-hidden={true} className="nc-icon nc-tie-bow" />
+                  </div>
+                  <div className="description">
+                    <h4 className="info-title" style={{fontWeight: '400'}}>SKUs</h4>
+                    <p style={{fontSize: '115%', fontWeight: '400'}}>
+                      Bulk - 3kg | 7kg | 13kg <br />
                 Consumer - Banded cluster | Baby banana
               </p>
-            </div>
-          </div>
-          <div className="info info-horizontal">
-            <div className="icon icon-info">
-              <i aria-hidden={true} className="nc-icon nc-atom" />
-            </div>
-            <div className="description">
-              <h4 className="info-title"style = {{fontWeight: '400'}}>Source Locations</h4>
-              <p style = {{fontSize: '115%', fontWeight: '400'}}>
-                Maharashtra, Andhra Pradesh, Madhya Pradesh, Karnataka, Tamil Nadu & Kerala
+                  </div>
+                </div>
+                <div className="info info-horizontal">
+                  <div className="icon icon-info">
+                    <i aria-hidden={true} className="nc-icon nc-atom" />
+                  </div>
+                  <div className="description">
+                    <h4 className="info-title" style={{fontWeight: '400'}}>Source Locations</h4>
+                    <p style={{fontSize: '115%', fontWeight: '400'}}>
+                      Maharashtra, Andhra Pradesh, Madhya Pradesh, Karnataka, Tamil Nadu & Kerala
               </p>
-            </div>
-          </div>
-        </Col>
-      </Row>
-    </Container>
-  </div>
-  <div className="features-3" style = {{backgroundColor: '#fffaef'}}>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+        <div className="features-3" style={{backgroundColor: '#fffaef'}}>
           <Container>
             <Row>
               <Col md="6">
                 <Row>
                   <Container>
-                    <h2 className="title">Never Feel Low...<br/>Pop the <span style = {{color: '#800000', fontWeight: '400'}}>Arils</span> on the Go</h2>
+                    <h2 className="title">Never Feel Low...<br />Pop the <span style={{color: '#800000', fontWeight: '400'}}>Arils</span> on the Go</h2>
                   </Container>
                 </Row>
                 <Row>
@@ -510,8 +512,8 @@ function SectionProduct(){
                         <i className="nc-icon nc-layout-11" />
                       </div>
                       <div className="description">
-                        <h4 className="info-title" style = {{fontWeight: '400'}}>Variety</h4>
-                        <p style = {{color: 'black'}}>
+                        <h4 className="info-title" style={{fontWeight: '400'}}>Variety</h4>
+                        <p style={{color: 'black'}}>
                           Bhagwa  <br />
                           Extra Sweet | Ultra Soft | Ruby Red Seeds
                         </p>
@@ -529,8 +531,8 @@ function SectionProduct(){
                         <i className="nc-icon nc-palette" />
                       </div>
                       <div className="description">
-                        <h4 className="info-title" style = {{fontWeight: '400'}}>Availability</h4>
-                        <p style = {{color: 'black'}}>
+                        <h4 className="info-title" style={{fontWeight: '400'}}>Availability</h4>
+                        <p style={{color: 'black'}}>
                           Round the year
                         </p>
                         {/* <Button
@@ -549,11 +551,11 @@ function SectionProduct(){
                         <i className="nc-icon nc-touch-id" />
                       </div>
                       <div className="description">
-                        <h4 className="info-title" style = {{fontWeight: '400'}}>SKUs</h4>
-                        <p style = {{color: 'black'}}>
+                        <h4 className="info-title" style={{fontWeight: '400'}}>SKUs</h4>
+                        <p style={{color: 'black'}}>
                           Bulk - 1 kg | 5 kg | 6 kg <br />
                           Consumer - Cups | Punnets <br />
-                          <span style = {{marginLeft: '10%'}}>100 g | 125 g | 250 g</span> <br />
+                          <span style={{marginLeft: '10%'}}>100 g | 125 g | 250 g</span> <br />
                         </p>
                         {/* <Button
                           color="link"
@@ -569,10 +571,10 @@ function SectionProduct(){
                         <i className="nc-icon nc-delivery-fast" />
                       </div>
                       <div className="description">
-                        <h4 className="info-title" style = {{fontWeight: '400'}}>Shelf Life</h4>
-                        <p style = {{color: 'black'}}>
-                         14-17 days from day of packaging<br />
-                          No Preservatives 
+                        <h4 className="info-title" style={{fontWeight: '400'}}>Shelf Life</h4>
+                        <p style={{color: 'black'}}>
+                          14-17 days from day of packaging<br />
+                          No Preservatives
                         </p>
                         {/* <Button
                           color="link"
@@ -586,40 +588,41 @@ function SectionProduct(){
                   </Col>
                 </Row>
               </Col>
-                    <Col className="ml-auto" md="6" >
-                        <div style = {{marginTop: '33%'}}>
-                        <img style = {{width: '100%', height: '110%'}}
-                            alt="..."
-                            src={require("assets/kimaye/Arils Products.png")}
-                            />
-                        </div>
-                    </Col>
-                    </Row>
-                    </Container>
-                    </div>
-                    <div className="features-4 section-image" style = {{
-                backgroundImage:
-                "url(" + require("assets/kimaye/BG2.jpg") + ")",}}>
-            <Container>
+              <Col className="ml-auto" md="6" >
+                <div style={{marginTop: '33%'}}>
+                  <img style={{width: '100%', height: '110%'}}
+                    alt="..."
+                    src={require("assets/kimaye/Arils Products.png")}
+                  />
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+        <div className="features-4 section-image" style={{
+          backgroundImage:
+            "url(" + require("assets/kimaye/BG2.jpg") + ")",
+        }}>
+          <Container>
             <Row>
-                <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title">Let's Go Nuts Over...<br /><span style = {{marginLeft: '30%'}}>Good-Fat <span style={{fontWeight: '500'}}>Coconuts</span></span></h2>
+              <Col className="ml-auto mr-auto text-center" md="8">
+                <h2 className="title">Let's Go Nuts Over...<br /><span style={{marginLeft: '30%'}}>Good-Fat <span style={{fontWeight: '500'}}>Coconuts</span></span></h2>
                 {/* <h5 className="description">
                     The more formalized version launching today brings a slate of
                     corporate partners and a more structured application review
                     process.
                 </h5> */}
-                </Col>
+              </Col>
             </Row>
             <Row>
-                <Col md="7">
-                <div style = {{marginTop: '5%'}}>
-                    <img
+              <Col md="7">
+                <div style={{marginTop: '5%'}}>
+                  <img
                     alt="..."
-                    style = {{width: '100%', height: '100%'}}
+                    style={{width: '100%', height: '100%'}}
                     src={require("assets/kimaye/Coconut Products.png")}
-                    />
-                    {/* <Row md = "6" >
+                  />
+                  {/* <Row md = "6" >
                     <Col md="6">
                         <img style = {{borderRadius: '25px', marginLeft: '15%', marginTop: '10%'}}
                     alt="..."
@@ -648,52 +651,52 @@ function SectionProduct(){
                         </Col>
                     </Row> */}
                 </div>
-                </Col>
-                <Col className="offset-1" md="4">
+              </Col>
+              <Col className="offset-1" md="4">
                 <div className="info info-horizontal">
-                    <div className="icon icon-success">
+                  <div className="icon icon-success">
                     <i aria-hidden={true} className="nc-icon nc-ruler-pencil" />
-                    </div>
-                    <div className="description">
-                    <h4 className="info-title" style = {{fontWeight: '400'}}>Varieties</h4>
-                    <p style = {{fontSize: '115%', fontWeight: '400'}}> 
-                        East-Coast Tall
+                  </div>
+                  <div className="description">
+                    <h4 className="info-title" style={{fontWeight: '400'}}>Varieties</h4>
+                    <p style={{fontSize: '115%', fontWeight: '400'}}>
+                      East-Coast Tall
                     </p>
-                    </div>
+                  </div>
                 </div>
                 <div className="info info-horizontal">
-                    <div className="icon icon-danger">
+                  <div className="icon icon-danger">
                     <i aria-hidden={true} className="nc-icon nc-tie-bow" />
-                    </div>
-                    <div className="description">
-                    <h4 className="info-title" style = {{fontWeight: '400'}}>SKUs</h4>
-                    <p style = {{fontSize: '115%', fontWeight: '400'}}>
-                        Grated | Chunks | Mixed <br />
+                  </div>
+                  <div className="description">
+                    <h4 className="info-title" style={{fontWeight: '400'}}>SKUs</h4>
+                    <p style={{fontSize: '115%', fontWeight: '400'}}>
+                      Grated | Chunks | Mixed <br />
                          Bulk - 1 kg | 5 kg | 6 kg <br />
                          Consumer - Cups | Punnets <br />
                          100 g | 125 g | 250 g
                     </p>
-                    </div>
+                  </div>
                 </div>
                 <div className="info info-horizontal">
-                    <div className="icon icon-info">
+                  <div className="icon icon-info">
                     <i aria-hidden={true} className="nc-icon nc-atom" />
-                    </div>
-                    <div className="description">
-                    <h4 className="info-title" style = {{fontWeight: '400'}}>Availability</h4>
-                    <p style = {{fontSize: '115%', fontWeight: '400'}}>
-                        Round the year <br />
+                  </div>
+                  <div className="description">
+                    <h4 className="info-title" style={{fontWeight: '400'}}>Availability</h4>
+                    <p style={{fontSize: '115%', fontWeight: '400'}}>
+                      Round the year <br />
                         14-17 days from day of packaging
                     </p>
-                    </div>
+                  </div>
                 </div>
-                </Col>
+              </Col>
             </Row>
-            </Container>
+          </Container>
         </div>
         <FooterFinal />
-     </div>
-     </>
-    );
+      </div>
+    </>
+  );
 }
 export default SectionProduct;
