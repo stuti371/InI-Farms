@@ -3,7 +3,7 @@ import React from "react";
 
 // reactstrap components
 import {Button, FormGroup, Container, Row, Col} from "reactstrap";
-import styles from "./Footer.module.css"
+import styles from "./Custom.module.css"
 
 export default function FooterFinal() {
   return (

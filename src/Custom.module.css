@@ -1,0 +1,24 @@
+.LinksCont {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.AngelFlex {
+  gap: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .AngelFlex {
+    gap: 4rem;
+    align-items: space-evenly;
+    justify-content: center;
+  }
+
+  .CardCont {
+    width: 90%;
+  }
+}
+
+  
