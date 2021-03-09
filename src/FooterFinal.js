@@ -42,17 +42,17 @@ export default function FooterFinal() {
                   <div className="links">
                     <ul className="uppercase-links stacked-links">
                       <li>
-                        <a href="http://inifarms.com/homepage" >
+                        <a href="/homepage" >
                           Home
                         </a>
                       </li>
                       <li>
-                        <a href="http://inifarms.com/Location" >
+                        <a href="/Location" >
                           Locations
                         </a>
                       </li>
                       <li>
-                        <a href="http://inifarms.com/Media" >
+                        <a href="/Media" >
                           Media
                         </a>
                       </li>
@@ -73,17 +73,17 @@ export default function FooterFinal() {
                   <div className="links">
                     <ul className="uppercase-links stacked-links">
                       <li>
-                        <a href="http://inifarms.com/AboutUs" >
+                        <a href="/AboutUs" >
                           About Us
                         </a>
                       </li>
                       <li>
-                        <a href="http://inifarms.com/AgTech" >
+                        <a href="/AgTech" >
                           Ag-Tech
                         </a>
                       </li>
                       <li>
-                        <a href="http://inifarms.com/Soulful" >
+                        <a href="/Soulful" >
                           Soulful
                         </a>
                       </li>
@@ -94,7 +94,7 @@ export default function FooterFinal() {
                   <div className="links">
                     <ul className="uppercase-links stacked-links">
                       <li>
-                        <a href="http://inifarms.com/Location" >
+                        <a href="/Location/#contactus" >
                           Contact Us
                         </a>
                       </li>

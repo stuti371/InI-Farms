@@ -46,7 +46,7 @@ const SideNav = ({collapseOpen}) => {
           <div className={`${openCompany ? styles.DropMenu : ""} ${styles.DropShow}`}>
             <Link to="/AboutUs" className={styles.DropLi}>About Us</Link>
             <Link to="/Team" className={styles.DropLi}>Team</Link>
-            <Link to="/Locations" className={styles.DropLi}>Locations</Link>
+            <Link to="/Location" className={styles.DropLi}>Locations</Link>
           </div>
         </NavItem>
         <NavItem nav inNavbar>
