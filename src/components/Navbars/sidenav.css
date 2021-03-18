@@ -1,0 +1,10 @@
+.navbar-collapse {
+  background-color: transparent !important;
+  border: none;
+}
+
+
+.navbar-collapse::after {
+  background-color: transparent !important;
+  background-image: linear-gradient(to bottom, transparent, transparent);
+}

@@ -4,6 +4,12 @@
   gap: 4rem;
 }
 
+.VidCont {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, 325px);
+  justify-content: center;
+}
 
 .CardsContainer {
   display: grid;
@@ -16,6 +22,19 @@
   flex-direction: column;
 }
 
+.BlogSection {
+  background-position: center center;
+  background-size: cover;
+  padding: 70px 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+iframe {
+  width: 325px;
+  height: 244px;
+}
+
 @media only screen and (min-width: 768px) {
   .povCard {
     flex-direction: row;
@@ -24,4 +43,17 @@
   .povCard:nth-child(2n) {
     flex-direction: row-reverse;
   }
+
+  .VidCont {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, 420px);
+    justify-content: center;
+  }
+
+  iframe {
+    width: 420px;
+    height: 315;
+  }
+
 }

@@ -1,0 +1,177 @@
+            <Card className="card-blog">
+              <div className="card-image">
+                <a href="https://www.stimulusmag.com/94/Fruits-of-Integration.aspx" >
+                  <img
+                    alt="..."
+                    className="img img-raised"
+                    src={require("assets/kimaye/Profile1.jpg")}
+                  />
+                </a>
+              </div>
+              <CardBody>
+                <CardTitle tag="h5">
+                  <a href="https://www.stimulusmag.com/94/Fruits-of-Integration.aspx" style={{color: '#800000', fontWeight: '400'}}>
+                    Fruits of Integration
+                  </a>
+                </CardTitle>
+                <p style={{color: 'black'}}>
+                  Pankaj Khandelwal talks about the journey
+                  of InI Farms, the expansion of Brand Kimaye and the company's future plans in the domestic market
+                </p>
+              </CardBody>
+            </Card>
+            <Card className="card-blog">
+              <div className="card-image">
+                <a href="http://www.fruitnet.com/asiafruit/article/182696/ini-farms-adds-qr-codes" >
+                  <img
+                    alt="..."
+                    className="img img-raised"
+                    src={require("assets/kimaye/Profile2.jpg")}
+                  />
+                </a>
+              </div>
+              <CardBody>
+                <CardTitle tag="h5" >
+                  <a href="http://www.fruitnet.com/asiafruit/article/182696/ini-farms-adds-qr-codes"
+                    style={{color: '#800000', fontWeight: '400'}}>
+                    InI Farms adds QR Codes
+                  </a>
+                </CardTitle>
+                <p style={{color: 'black'}}>
+                  Kimaye fruits will now provide traceability QR codes which will enable complete transparency and visibility to our consumers on the journey of Kimaye fruits.
+                </p>
+              </CardBody>
+            </Card>
+            <Card className="card-blog">
+              <div className="card-image">
+                <a href="https://hr.economictimes.indiatimes.com/news/trends/leadership/covid-19-has-stress-tested-all-organizations-and-their-leadership-purnima-khandelwal-ini-farms/77363478" >
+                  <img
+                    alt="..."
+                    className="img img-raised"
+                    src={require("assets/kimaye/Profile3.jpg")}
+                  />
+                </a>
+              </div>
+              <CardBody>
+                <CardTitle tag="h5" >
+                  <a href="https://hr.economictimes.indiatimes.com/news/trends/leadership/covid-19-has-stress-tested-all-organizations-and-their-leadership-purnima-khandelwal-ini-farms/77363478"
+                    style={{color: '#800000', fontWeight: '400'}}>
+                    Covid-19 has stress-tested all organizations and their leadership
+                  </a>
+                </CardTitle>
+                <p style={{color: 'black'}}>
+                  Purnima on impact of the pandemic on organization culture, team dynamics and leadership capabilities with ETHRWorld.
+                </p>
+              </CardBody>
+            </Card>
+            <Card className="card-blog">
+              <div className="card-image">
+                <a href="https://cfo.economictimes.indiatimes.com/news/our-farmers-made-up-to-80-losses-in-the-lockdown-says-horticulture-start-up-ini-farms/75464247">
+                  <img
+                    alt="..."
+                    className="img img-raised"
+                    src={require("assets/kimaye/Profile4.jpg")}
+                  />
+                </a>
+              </div>
+              <CardBody>
+                <CardTitle tag="h5" style={{color: '#800000', fontWeight: '400'}}>
+                  <a href="https://cfo.economictimes.indiatimes.com/news/our-farmers-made-up-to-80-losses-in-the-lockdown-says-horticulture-start-up-ini-farms/75464247"
+                    style={{color: '#800000', fontWeight: '400'}}>
+                    Our Farmers made up to 80% losses in the lockdown
+                  </a>
+                </CardTitle>
+                <p style={{color: 'black'}}>
+                  Finance Controller Mr. Sushil Pareek, of InI Farms on how labour shortage and supply chain disruption led the farmers to do distress sale.
+                </p>
+              </CardBody>
+            </Card>
+            <Card className="card-blog">
+              <div className="card-image">
+                <a href="https://yourstory.com/herstory/2020/04/woman-entrepreneur-horticulture-ini-farms-india" >
+                  <img
+                    alt="..."
+                    className="img img-raised"
+                    src={require("assets/kimaye/Profile5.jpg")}
+                  />
+                </a>
+              </div>
+              <CardBody>
+                <CardTitle tag="h5" >
+                  <a href="https://yourstory.com/herstory/2020/04/woman-entrepreneur-horticulture-ini-farms-india"
+                    style={{color: '#800000', fontWeight: '400'}}>
+                    This Woman Entrepreneur is changing the horticulture landscape of India
+                  </a>
+                </CardTitle>
+                <p style={{color: 'black'}}>
+                  A story on organising the unorganised Indian Horticulture industry. </p>
+              </CardBody>
+            </Card>
+            <Card className="card-blog">
+              <div className="card-image">
+                <a href="https://economictimes.indiatimes.com/news/economy/agriculture/ini-farms-joins-hands-with-us-based-munger-farms/articleshow/71045764.cms" >
+                  <img
+                    alt="..."
+                    className="img img-raised"
+                    src={require("assets/kimaye/Profile7.jpg")}
+                  />
+                </a>
+              </div>
+              <CardBody>
+                <CardTitle tag="h5" >
+                  <a href="https://economictimes.indiatimes.com/news/economy/agriculture/ini-farms-joins-hands-with-us-based-munger-farms/articleshow/71045764.cms"
+                    style={{color: '#800000', fontWeight: '400'}} >
+                    INI Farms joins hands with US-based Munger Farms
+                  </a>
+                </CardTitle>
+                <p style={{color: 'black'}}>
+                  INI and Munger Farms, a leading independant blueberry growe from US to create a global-value-chain for blueberries in India
+                </p>
+              </CardBody>
+            </Card>
+            <Card className="card-blog">
+              <div className="card-image">
+                <a href="http://www.inifarms.com/newsmedia/INI-Farms-Asia-Fruit.pdf" >
+                  <img
+                    alt="..."
+                    className="img img-raised"
+                    src={require("assets/kimaye/Profile7b.jpg")}
+                  />
+                </a>
+              </div>
+              <CardBody>
+                <CardTitle tag="h5" >
+                  <a href="http://www.inifarms.com/newsmedia/INI-Farms-Asia-Fruit.pdf"
+                    style={{color: '#800000', fontWeight: '400'}}>
+                    Blazing a Trail
+                  </a>
+                </CardTitle>
+                <p style={{color: 'black'}}>
+                  Purnima Khandelwal, First Lady to feature on the cover of AsiaFruit Magazine,
+                  talks about her personal and professional journey
+                  in establishing one of India's largest exporter of Pomegranates and Bananas
+                </p>
+              </CardBody>
+            </Card>
+            <Card className="card-blog">
+              <div className="card-image">
+                <a href="http://www.inifarms.com/newsmedia/Business-India-INI-Farms-January-30-2017.pdf">
+                  <img
+                    alt="..."
+                    className="img img-raised"
+                    src={require("assets/kimaye/Profile8.jpg")}
+                  />
+                </a>
+              </div>
+              <CardBody>
+                <CardTitle tag="h5" >
+                  <a href="http://www.inifarms.com/newsmedia/Business-India-INI-Farms-January-30-2017.pdf"
+                    style={{color: '#800000', fontWeight: '400'}}>
+                    Setting a Benchmark
+                  </a>
+                </CardTitle>
+                <p style={{color: 'black'}}>
+                  INI Farms is all set to redefine the entire fresh fruit supply chain
+                </p>
+              </CardBody>
+            </Card>

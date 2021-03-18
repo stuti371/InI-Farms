@@ -36,7 +36,7 @@ function WhiteNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand id="navbar-brand" to="/index" tag={Link}>
-              <img alt="qwerty" src={require("assets/kimaye/ini-farms.png")} width="70px" height="30px" />
+              <img alt="qwerty" src={require("assets/kimaye/ini-farms.png")} width="90px" height="40px" />
             </NavbarBrand>
             <button
               className="navbar-toggler"
