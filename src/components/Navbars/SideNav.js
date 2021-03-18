@@ -7,9 +7,10 @@ import {
   NavItem,
   Nav,
 } from "reactstrap";
+
 import styles from "./SideNav.module.css"
 
-const SideNav = ({collapseOpen}) => {
+const SideNav = ({collapseOpen, setCollapseOpen}) => {
 
   const [openCompany, setOpenCompany] = useState(false);
   const [openWork, setOpenWork] = useState(false);
@@ -40,8 +41,8 @@ const SideNav = ({collapseOpen}) => {
   }, [])
 
   return (
-    <Collapse navbar isOpen={collapseOpen}>
-      <Nav className='ml-auto' navbar>
+    <Collapse className={collapseOpen ? styles.SideNav : ""} navbar isOpen={collapseOpen}>
+      <Nav className={`ml-auto ${styles.NavList}`} navbar>
         <NavItem nav inNavbar>
           <div ref={companyRef} className={` nav-link ${styles.Button} ${styles.Drop}`} onClick={() => setOpenCompany(!openCompany)}><span className={styles.toggle}>Company</span></div>
           <div className={`${openCompany ? styles.DropMenu : ""} ${styles.DropShow}`}>
@@ -67,8 +68,15 @@ const SideNav = ({collapseOpen}) => {
         <NavItem>
           <Link to="/Media" className={`nav-link ${styles.Button}`}>Media</Link>
         </NavItem>
+        <button className={styles.CollapseButton} onClick={() => setCollapseOpen(!collapseOpen)}>
+          <span
+            role="img"
+            aria-label="Close"
+          >❌</span>
+        </button>
       </Nav>
     </Collapse>
+
 
   )
 };

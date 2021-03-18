@@ -41,15 +41,10 @@ function MultiDropdownNavbar() {
       {bodyClick ? (
         <div
           id="bodyClick"
-          onClick={() => {
-            document.documentElement.classList.toggle("nav-open");
-            setBodyClick(false);
-            setCollapseOpen(false);
-          }}
         />
       ) : null}
       <Navbar
-        className={classnames("fixed-top", navbarColor)}
+        className={`fixed-top ${navbarColor} ${collapseOpen ? "nav-open" : ""}`}
         id="navbar-main"
         expand="lg"
       >
@@ -58,22 +53,22 @@ function MultiDropdownNavbar() {
             <NavbarBrand id="navbar-brand" href="/homepage">
               <img alt="logo" src={require("assets/kimaye/ini-farms.png")} width="90px" height="40px" />
             </NavbarBrand>
-            <button
-              className="navbar-toggler"
-              id="navigation"
-              type="button"
-              onClick={() => {
-                document.documentElement.classList.toggle("nav-open");
-                setBodyClick(true);
-                setCollapseOpen(true);
-              }}
-            >
-              <span className="navbar-toggler-bar bar1"></span>
-              <span className="navbar-toggler-bar bar2"></span>
-              <span className="navbar-toggler-bar bar3"></span>
-            </button>
+            {!collapseOpen &&
+              <button
+                className="navbar-toggler"
+                id="navigation"
+                type="button"
+                onClick={() => {
+                  setCollapseOpen(!collapseOpen);
+                }}
+              >
+                <span className="navbar-toggler-bar bar1"></span>
+                <span className="navbar-toggler-bar bar2"></span>
+                <span className="navbar-toggler-bar bar3"></span>
+              </button>
+            }
           </div>
-          <SideNav collapseOpen={collapseOpen} />
+          <SideNav setCollapseOpen={setCollapseOpen} collapseOpen={collapseOpen} />
         </Container>
       </Navbar>
     </>

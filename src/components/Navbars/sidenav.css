@@ -1,10 +1,24 @@
 .navbar-collapse {
-  background-color: transparent !important;
+  background-color: #220700 !important;
   border: none;
+  opacity: 0.95;
 }
 
 
 .navbar-collapse::after {
+  background-color: #220700 !important;
+  background-image: linear-gradient(to bottom, #220700, #220700);
+  opacity: 0.95;
+}
+
+@media only screen and (min-width: 768px) {
+.navbar-collapse {
+  background-color: transparent !important;
+  border: none;
+}
+
+.navbar-collapse::after {
   background-color: transparent !important;
   background-image: linear-gradient(to bottom, transparent, transparent);
+}
 }

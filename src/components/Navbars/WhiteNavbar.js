@@ -22,38 +22,33 @@ function WhiteNavbar() {
   });
   return (
     <>
-      {bodyClick ? (
-        <div
-          id="bodyClick"
-          onClick={() => {
-            document.documentElement.classList.toggle("nav-open");
-            setBodyClick(false);
-            setCollapseOpen(false);
-          }}
-        />
-      ) : null}
-      <Navbar className='fixed-top' expand="lg" id="navbar-main" color='dark'>
+      <Navbar
+        className={`fixed-top ${collapseOpen ? "nav-open" : ""}`}
+        expand="lg"
+        id="navbar-main"
+        color='dark'>
         <Container>
           <div className="navbar-translate">
             <NavbarBrand id="navbar-brand" to="/index" tag={Link}>
               <img alt="qwerty" src={require("assets/kimaye/ini-farms.png")} width="90px" height="40px" />
             </NavbarBrand>
-            <button
-              className="navbar-toggler"
-              id="navigation"
-              type="button"
-              onClick={() => {
-                document.documentElement.classList.toggle("nav-open");
-                setBodyClick(true);
-                setCollapseOpen(true);
-              }}
-            >
-              <span className="navbar-toggler-bar bar1" />
-              <span className="navbar-toggler-bar bar2" />
-              <span className="navbar-toggler-bar bar3" />
-            </button>
+            {
+              !collapseOpen &&
+              <button
+                className="navbar-toggler"
+                id="navigation"
+                type="button"
+                onClick={() => {
+                  setCollapseOpen(!collapseOpen);
+                }}
+              >
+                <span className="navbar-toggler-bar bar1" />
+                <span className="navbar-toggler-bar bar2" />
+                <span className="navbar-toggler-bar bar3" />
+              </button>
+            }
           </div>
-          <SideNav collapseOpen={collapseOpen} />
+          <SideNav setCollapseOpen={setCollapseOpen} collapseOpen={collapseOpen} />
         </Container>
       </Navbar>
     </>
