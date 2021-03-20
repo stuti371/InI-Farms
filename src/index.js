@@ -15,9 +15,9 @@
 
 */
 
-import React from "react";
+import React, {useEffect} from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
+import {BrowserRouter, Route, Redirect, Switch} from "react-router-dom";
 
 // styles
 import "assets/css/bootstrap.min.css";
@@ -57,9 +57,11 @@ import SectionBrand from 'views/sections-sections/SectionBrand.js'
 import SectionBM from 'views/sections-sections/SectionBM.js'
 import SectionAgTech from 'views/sections-sections/SectionAgTech.js'
 import PrivacyPolicy from 'views/sections-sections/PrivacyPolicy.js'
+import WriteMedia from "./blog_thing";
 // others
 
 ReactDOM.render(
+
   <BrowserRouter>
     <Switch>
       <Route path="/D2C" render={(props) => <SectionD2C {...props} />} />
@@ -86,6 +88,7 @@ ReactDOM.render(
       <Route path="/AgTech" render={(props) => <SectionAgTech {...props} />} />
       <Route path="/Media" render={(props) => <SectionMedia {...props} />} />
       <Route path="/Soulful" render={(props) => <SectionSoulful {...props} />} />
+      <Route path="/WriteBlog" render={(props) => <WriteMedia {...props} />} />
       <Route
         path="/homepage"
         render={(props) => <LandingPage {...props} />}

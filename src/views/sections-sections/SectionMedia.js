@@ -1,5 +1,7 @@
-import React from "react";
-import {journeyDB, povDB, mediaDB} from "./db";
+import React, {useState, useEffect} from "react";
+import {db} from "../../services/firebase";
+import Paginate from "../../util/pagination";
+
 
 // reactstrap components
 import {
@@ -18,6 +20,53 @@ import styles from "./Media.module.css";
 // core components
 
 function SectionMedia() {
+
+  const [journeyDB, setJourneys] = useState();
+  const [povDB, setPOV] = useState();
+  const [mediaDB, setMedia] = useState();
+
+  const [jCurrentPage, setJCurrentPage] = useState(0);
+  const [pCurrentPage, setPCurrentPage] = useState(0);
+  const [mCurrentPage, setMCurrentPage] = useState(0);
+
+  useEffect(() => {
+    const journeyRef = db.ref("Journey");
+    journeyRef.on("value", (snapshot) => {
+      const jour = snapshot.val();
+      const journeyList = [];
+      for (let id in jour) {
+        journeyList.push({id, ...jour[id]});
+      }
+      setJourneys(journeyList);
+    })
+    console.log("hiiiii");
+  }, [])
+
+  useEffect(() => {
+    const mediaRef = db.ref("Media");
+    mediaRef.on("value", (snapshot) => {
+      const media = snapshot.val();
+      const mediaList = [];
+      for (let id in media) {
+        mediaList.push({id, ...media[id]});
+      }
+      setMedia(mediaList);
+    })
+    console.log("hiiiii");
+  }, [])
+
+  useEffect(() => {
+    const povRef = db.ref("POV");
+    povRef.on("value", (snapshot) => {
+      const pov = snapshot.val();
+      const povList = [];
+      for (let id in pov) {
+        povList.push({id, ...pov[id]});
+      }
+      setPOV(povList);
+    })
+    console.log("hiiiii");
+  }, [])
 
   const map = {
     "youtube": "http://www.youtube.com/embed/",
@@ -47,7 +96,6 @@ function SectionMedia() {
               "url(" + require("assets/kimaye/Decade.jpg") + ")", marginTop: '2%'
           }}
         >
-          {/* <div className="filter" /> */}
           <div className="content-center">
             <Container>
               <Row style={{justifyContent: 'center', marginTop: '60%'}}>
@@ -67,21 +115,22 @@ function SectionMedia() {
       {/* ********* BLOGS 2 ********* */}
 
       <div className={`blog-2 ${styles.BlogSection}`} style={{
+        minHeight: "80vh",
         backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" + require("assets/kimaye/BGN2.jpg") + ")",
       }}>
         <div className={styles.JourneyContainer}>
           <h2 style={{color: '#dbac00', fontWeight: '500', textAlign: 'center'}}>The Journey...</h2>
           <div className={styles.CardsContainer}>
             {
-              journeyDB && journeyDB.map(card => {
+              journeyDB && journeyDB.slice(jCurrentPage * 8, (jCurrentPage + 1) * 8).map(card => {
                 return (
-                  <Card className="card-blog">
+                  <Card key={card.id} className="card-blog">
                     <div className="card-image">
                       <a href={card.link} >
                         <img
                           alt="..."
                           className="img img-raised"
-                          src={card.img}
+                          src={card.imgLink}
                           height="200"
                         />
                       </a>
@@ -94,51 +143,67 @@ function SectionMedia() {
                           {card.title}
                         </a>
                       </CardTitle>
-                      <p style={{color: 'black'}}>{card.body}</p>
+                      <p style={{color: 'black'}}>{card.content}</p>
                     </CardBody>
                   </Card>
                 )
               })
             }
           </div>
+          {
+            journeyDB &&
+            <Paginate
+              data={journeyDB}
+              perPage={8}
+              setCurrentPage={setJCurrentPage}
+              name={"journey_pag"}
+            />
+          }
         </div>
         {/* </Container> */}
       </div>
       {/* ********* END BLOGS 2 ********* */}
       {/* ********* BLOGS 3 ********* */}
-      <div className="blog-3" style={{backgroundColor: '#fffaef'}}>
+      <div className="blog-3" style={{minHeight: "80vh", backgroundColor: '#fffaef'}}>
         <Container>
 
           <Row>
-            <Col className="ml-auto mr-auto" md="10"><br />
+            <Col 
+              className="ml-auto mr-auto" 
+              md="10"
+              style={{
+                paddingBottom: "2rem"
+              }}
+            >
+              <br />
               <h2 style={{textAlign: 'center', color: '#800000', fontWeight: '500'}}>Point of View...</h2>
               <br />
 
               <div className={styles.pov}>
                 {
-                  povDB && povDB.map(card => {
+                  povDB && povDB.slice(pCurrentPage * 3, (pCurrentPage + 1) * 3).map(card => {
                     return (
-                      <Card className={`${styles.povCard} card-plain card-blog`}>
+                      <Card key={card.id} className={`${styles.povCard} card-plain card-blog`}>
                         <Col md="4">
                           <div className="card-image">
                             <img
                               alt="..."
                               className="img"
-                              src={card.img}
+                              src={card.imgLink}
                             />
                           </div>
                         </Col>
                         <Col md="8">
                           <CardBody>
                             <CardTitle tag="h3">
-                              <a href="https://www.thehindubusinessline.com/economy/agri-business/more-players-may-enter-contract-farming/article31741794.ece"
+                              <a href={card.link}
                                 style={{fontWeight: '500'}} >
                                 {card.title}
                               </a>
                             </CardTitle>
                             <p style={{color: 'black'}}>
-                              {card.body + " "}
-                              <a href="https://www.thehindubusinessline.com/economy/agri-business/more-players-may-enter-contract-farming/article31741794.ece"
+                              {card.content + " "}
+                              <a href={card.link}
                                 style={{color: '#800000', fontWeight: '500'}}>
                                 Read More
                                   </a>
@@ -150,6 +215,15 @@ function SectionMedia() {
                   })
                 }
               </div>
+              {
+                povDB &&
+                <Paginate
+                  data={povDB}
+                  perPage={3}
+                  setCurrentPage={setPCurrentPage}
+                  name={"pov_pag"}
+                />
+              }
             </Col>
           </Row>
         </Container>
@@ -158,6 +232,7 @@ function SectionMedia() {
       <div
         className={`blog-2 ${styles.BlogSection}`}
         style={{
+          minHeight: "80vh",
           backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" + require("assets/kimaye/BGN2.jpg") + ")",
           paddingBottom: "3rem"
         }}>
@@ -165,18 +240,27 @@ function SectionMedia() {
           <h2 style={{color: '#dbac00', fontWeight: '500', textAlign: 'center'}}>Media...</h2>
           <div className={styles.VidCont}>
             {
-              mediaDB && mediaDB.map((vid) => {
+              mediaDB && mediaDB.slice(mCurrentPage*6, (mCurrentPage + 1)*6).map((vid, ind) => {
                 return (
                   <iframe
-                    title="video-1"
-                    src={vidLink(vid.link)}>
+                    key={vid.id}
+                    title={`video-${ind + 1}`}
+                    src={vidLink(vid.media)}>
                   </iframe>
                 )
               })
             }
           </div>
+          {
+            mediaDB &&
+            <Paginate
+              data={mediaDB}
+              perPage={6}
+              setCurrentPage={setMCurrentPage}
+              name={"media_pag"}
+            />
+          }
         </div>
-        {/* </Container> */}
       </div>
       <FooterFinal />
     </>

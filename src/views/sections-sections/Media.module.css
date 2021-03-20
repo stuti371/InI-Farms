@@ -18,6 +18,11 @@
   justify-content: center;
 }
 
+.povCard {
+  align-items: center;
+  justify-content: center;
+}
+
 .povCard:nth-child(2n) {
   flex-direction: column;
 }
