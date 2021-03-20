@@ -60,18 +60,22 @@ const SideNav = ({collapseOpen, setCollapseOpen}) => {
           </div>
         </NavItem>
         <NavItem nav inNavbar>
-          <Link to="/AgTech" className={`nav-link ${styles.Button}`}>AgTech</Link>
+          <Link to="/AgTech" className={`nav-link ${styles.Button}`}><div style={{color: "white"}}>AgTech</div></Link>
         </NavItem>
         <NavItem nav inNavbar>
-          <Link to="/Soulful" className={`nav-link ${styles.Button}`}>Soulful</Link>
+          <Link to="/Soulful" className={`nav-link ${styles.Button}`}><div style={{ color: "white" }}>Soulful</div></Link>
         </NavItem>
         <NavItem>
-          <Link to="/Media" className={`nav-link ${styles.Button}`}>Media</Link>
+          <Link to="/Media" className={`nav-link ${styles.Button}`}><div style={{ color: "white" }}>Media</div></Link>
         </NavItem>
         <button className={styles.CollapseButton} onClick={() => setCollapseOpen(!collapseOpen)}>
           <span
             role="img"
             aria-label="Close"
+            style={{
+              color: "transparent",
+              textShadow: "0 0 0 rgb(219, 172, 0)"
+            }}
           >❌</span>
         </button>
       </Nav>

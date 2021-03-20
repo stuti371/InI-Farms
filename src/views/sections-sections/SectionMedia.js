@@ -21,51 +21,60 @@ import styles from "./Media.module.css";
 
 function SectionMedia() {
 
-  const [journeyDB, setJourneys] = useState();
-  const [povDB, setPOV] = useState();
-  const [mediaDB, setMedia] = useState();
+  const [journeyDB, setJourneys] = useState([]);
+  const [povDB, setPOV] = useState([]);
+  const [mediaDB, setMedia] = useState([]);
 
-  const [jCurrentPage, setJCurrentPage] = useState(0);
-  const [pCurrentPage, setPCurrentPage] = useState(0);
-  const [mCurrentPage, setMCurrentPage] = useState(0);
+  const jPerPage = 8;
+  const pPerPage = 3;
+  const mPerPage = 6;
+
+
+  const getNext = (perPage, ref, DB, setDB) => {
+    if (DB.length > 0 && DB.length - 1 < perPage) {
+      setDB(DB);
+      console.log("Already Last Page.")
+      return;
+    }
+
+    let testRef = db.ref(ref)
+      .orderByKey()
+      .limitToFirst(perPage + 1);
+    testRef = DB.length !== 0 ? testRef.startAt(DB[DB.length - 1].id) : testRef
+    testRef.on("value", (snapshot) => {
+        const tests = snapshot.val();
+        const testList = [];
+        for (let id in tests) {
+          testList.push({id, ...tests[id]});
+        }
+        setDB(testList);
+      });
+  }
+
+  const getPrev = (perPage, ref, DB, setDB) => {
+    db.ref(ref)
+      .orderByKey()
+      .limitToLast(perPage + 1)
+      .endAt(DB[0].id)
+      .on("value", (snapshot) => {
+        const tests = snapshot.val();
+        const testList = [];
+        for (let id in tests) {
+          testList.push({id, ...tests[id]});
+        }
+        if (testList.length < perPage + 1) {
+          setDB(DB);
+          console.log("Already at first page");
+          return;
+        }
+        setDB(testList);
+      });
+  }
 
   useEffect(() => {
-    const journeyRef = db.ref("Journey");
-    journeyRef.on("value", (snapshot) => {
-      const jour = snapshot.val();
-      const journeyList = [];
-      for (let id in jour) {
-        journeyList.push({id, ...jour[id]});
-      }
-      setJourneys(journeyList);
-    })
-    console.log("hiiiii");
-  }, [])
-
-  useEffect(() => {
-    const mediaRef = db.ref("Media");
-    mediaRef.on("value", (snapshot) => {
-      const media = snapshot.val();
-      const mediaList = [];
-      for (let id in media) {
-        mediaList.push({id, ...media[id]});
-      }
-      setMedia(mediaList);
-    })
-    console.log("hiiiii");
-  }, [])
-
-  useEffect(() => {
-    const povRef = db.ref("POV");
-    povRef.on("value", (snapshot) => {
-      const pov = snapshot.val();
-      const povList = [];
-      for (let id in pov) {
-        povList.push({id, ...pov[id]});
-      }
-      setPOV(povList);
-    })
-    console.log("hiiiii");
+    getNext(jPerPage, "Journey", journeyDB, setJourneys);
+    getNext(mPerPage, "Media", mediaDB, setMedia);
+    getNext(pPerPage, "POV", povDB, setPOV);
   }, [])
 
   const map = {
@@ -119,14 +128,14 @@ function SectionMedia() {
         backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" + require("assets/kimaye/BGN2.jpg") + ")",
       }}>
         <div className={styles.JourneyContainer}>
-          <h2 style={{color: '#dbac00', fontWeight: '500', textAlign: 'center'}}>The Journey...</h2>
+          <h2 id="journeyJump" style={{color: '#dbac00', fontWeight: '500', textAlign: 'center'}}>The Journey...</h2>
           <div className={styles.CardsContainer}>
             {
-              journeyDB && journeyDB.slice(jCurrentPage * 8, (jCurrentPage + 1) * 8).map(card => {
+              journeyDB && journeyDB.slice(0, jPerPage).map(card => {
                 return (
                   <Card key={card.id} className="card-blog">
                     <div className="card-image">
-                      <a href={card.link} >
+                      <a target="_blanck" href={card.link} >
                         <img
                           alt="..."
                           className="img img-raised"
@@ -139,11 +148,12 @@ function SectionMedia() {
                       <CardTitle tag="h5">
                         <a
                           href={card.link}
+                          target="_blanck"
                           style={{color: '#800000', fontWeight: '400'}}>
                           {card.title}
                         </a>
                       </CardTitle>
-                      <p style={{color: 'black'}}>{card.content}</p>
+                      <p className={styles.CardContent} style={{ color: 'black' }}>{`${card.content.substring(0, 200)}...`}</p>
                     </CardBody>
                   </Card>
                 )
@@ -153,10 +163,14 @@ function SectionMedia() {
           {
             journeyDB &&
             <Paginate
-              data={journeyDB}
-              perPage={8}
-              setCurrentPage={setJCurrentPage}
-              name={"journey_pag"}
+              next={() => {
+                getNext(jPerPage, "Journey", journeyDB, setJourneys);
+                document.getElementById("journeyJump").scrollIntoView({ behavior: 'smooth' });
+              }}
+              prev={() => {
+                getPrev(jPerPage, "Journey", journeyDB, setJourneys);
+                document.getElementById("journeyJump").scrollIntoView({ behavior: 'smooth' });
+              }}
             />
           }
         </div>
@@ -164,7 +178,7 @@ function SectionMedia() {
       </div>
       {/* ********* END BLOGS 2 ********* */}
       {/* ********* BLOGS 3 ********* */}
-      <div className="blog-3" style={{minHeight: "80vh", backgroundColor: '#fffaef'}}>
+      <div className="blog-3" style={{ backgroundColor: '#fffaef'}}>
         <Container>
 
           <Row>
@@ -176,12 +190,12 @@ function SectionMedia() {
               }}
             >
               <br />
-              <h2 style={{textAlign: 'center', color: '#800000', fontWeight: '500'}}>Point of View...</h2>
+              <h2 id="povJump" style={{textAlign: 'center', color: '#800000', fontWeight: '500'}}>Point of View...</h2>
               <br />
 
               <div className={styles.pov}>
                 {
-                  povDB && povDB.slice(pCurrentPage * 3, (pCurrentPage + 1) * 3).map(card => {
+                  povDB && povDB.slice(0, pPerPage).map(card => {
                     return (
                       <Card key={card.id} className={`${styles.povCard} card-plain card-blog`}>
                         <Col md="4">
@@ -197,6 +211,7 @@ function SectionMedia() {
                           <CardBody>
                             <CardTitle tag="h3">
                               <a href={card.link}
+                                target="_blanck"
                                 style={{fontWeight: '500'}} >
                                 {card.title}
                               </a>
@@ -204,6 +219,7 @@ function SectionMedia() {
                             <p style={{color: 'black'}}>
                               {card.content + " "}
                               <a href={card.link}
+                                target="_blanck"
                                 style={{color: '#800000', fontWeight: '500'}}>
                                 Read More
                                   </a>
@@ -218,10 +234,15 @@ function SectionMedia() {
               {
                 povDB &&
                 <Paginate
-                  data={povDB}
-                  perPage={3}
-                  setCurrentPage={setPCurrentPage}
-                  name={"pov_pag"}
+                  next={() => {
+                    getNext(pPerPage, "POV", povDB, setPOV);
+                    document.getElementById("povJump").scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  prev={() => {
+                    getPrev(pPerPage, "POV", povDB, setPOV);
+                    document.getElementById("povJump").scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  variable={true}
                 />
               }
             </Col>
@@ -232,19 +253,26 @@ function SectionMedia() {
       <div
         className={`blog-2 ${styles.BlogSection}`}
         style={{
-          minHeight: "80vh",
           backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" + require("assets/kimaye/BGN2.jpg") + ")",
           paddingBottom: "3rem"
         }}>
-        <div className={styles.JourneyContainer}>
-          <h2 style={{color: '#dbac00', fontWeight: '500', textAlign: 'center'}}>Media...</h2>
+        <div style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "4rem"
+        }}>
+          <h2 id="mediaJump" style={{color: '#dbac00', fontWeight: '500', textAlign: 'center'}}>Media...</h2>
           <div className={styles.VidCont}>
             {
-              mediaDB && mediaDB.slice(mCurrentPage*6, (mCurrentPage + 1)*6).map((vid, ind) => {
+              mediaDB && mediaDB.slice(0, mPerPage).map((vid, ind) => {
                 return (
                   <iframe
                     key={vid.id}
                     title={`video-${ind + 1}`}
+                    style={{
+                      borderRadius: "10px",
+                      borderColor: "rgb(219, 172, 0)"
+                    }}
                     src={vidLink(vid.media)}>
                   </iframe>
                 )
@@ -254,10 +282,14 @@ function SectionMedia() {
           {
             mediaDB &&
             <Paginate
-              data={mediaDB}
-              perPage={6}
-              setCurrentPage={setMCurrentPage}
-              name={"media_pag"}
+              next={() => {
+                getNext(mPerPage, "Media", mediaDB, setMedia);
+                document.getElementById("mediaJump").scrollIntoView({ behavior: 'smooth' });
+              }}
+              prev={() => {
+                getPrev(mPerPage, "Media", mediaDB, setMedia);
+                document.getElementById("mediaJump").scrollIntoView({ behavior: 'smooth' });
+              }}
             />
           }
         </div>

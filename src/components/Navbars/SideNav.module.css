@@ -1,10 +1,10 @@
 .Button {
-  color: #9A9A9A !important;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.5em;
   text-align: center;
+  color: white !important;
 }
 
 .Drop {
@@ -24,7 +24,7 @@
 
 .DropLi{
   display: block;
-  color: #66615b;
+  color: #ffffff;
   font-size: 14px;
   padding: 10px 15px 10px 15px;
   clear: both;
@@ -35,8 +35,11 @@
 }
 
 .DropLi:hover {
-  color: black;
-  background-color: #e73a19;
+  color: #66615b;
+}
+
+.toggle {
+  color: white;
 }
 
 .toggle::after {
@@ -92,6 +95,7 @@
 
   .DropLi {
     border-radius: 5px;
+    color: #66615b;
     padding: 10px 45px 10px 15px;
     text-align: left;
   }

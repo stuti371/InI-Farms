@@ -1,31 +1,25 @@
 import React from "react"
-import ReactPaginate from 'react-paginate';
+import styles from "./Pagination.module.css";
 
+const Paginate = ({next, prev, variable}) => {
 
-const Paginate = ({data, perPage, setCurrentPage, name}) => {
+  const customStyle = variable ? 
+    {
+      borderColor: "#260900",
+      color: "#260900"
+    }
+    :
+    {
+      borderColor: "#DBAC00",
+      color: "#DBAC00"
+    };
 
-  const pageCount = Math.ceil(data.length / perPage);
-
-  const handlePageChange = (d) => {
-    let selected = d.selected;
-    setCurrentPage(selected);
-  }
 
   return (
-    <ReactPaginate
-      previousLabel={"<"}
-      nextLabel={">"}
-      breakLabel={"..."}
-      pageCount={pageCount}
-      marginPagesDisplayed={2}
-      onPageChange={handlePageChange}
-      pageRangeDisplayed={3}
-      containerClassName={`pagination ${name}`}
-      previousLinkClassName={"pagination_pn"}
-      nextLinkClassName={"pagination_pn"}
-      disabledClassName={"paginationDisabled"}
-      activeClassName={"paginationActive"}
-    />
+    <div className={styles.Paginate} style={customStyle}>
+      <button className={`${styles.Button}`} onClick={prev}>⬅</button>
+      <button className={`${styles.Button}`} onClick={next}>➡</button>
+    </div>
   );
 };
 
