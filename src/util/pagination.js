@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "./Pagination.module.css";
 
-const Paginate = ({next, prev, variable}) => {
+const Paginate = ({next, prev, first, last, variable}) => {
 
   const customStyle = variable ? 
     {
@@ -17,8 +17,10 @@ const Paginate = ({next, prev, variable}) => {
 
   return (
     <div className={styles.Paginate} style={customStyle}>
+      <button className={`${styles.Button}`} onClick={first}>{"First"}</button>
       <button className={`${styles.Button}`} onClick={prev}>⬅</button>
       <button className={`${styles.Button}`} onClick={next}>➡</button>
+      <button className={`${styles.Button}`} onClick={last}>{"Last"}</button>
     </div>
   );
 };

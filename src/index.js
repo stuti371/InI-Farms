@@ -15,7 +15,7 @@
 
 */
 
-import React, {useEffect} from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import {BrowserRouter, Route, Redirect, Switch} from "react-router-dom";
 
@@ -26,19 +26,11 @@ import "assets/demo/demo.css";
 import "assets/demo/react-demo.css";
 // pages
 import Index from "views/Index.js";
-import NucleoIcons from "views/NucleoIcons.js";
 import Sections from "views/Sections.js";
-import Presentation from "views/Presentation.js";
 import AboutUs from "views/examples/AboutUs.js";
-import AddProduct from "views/examples/AddProduct.js";
 import BlogPost from "views/examples/BlogPost.js";
 import BlogPosts from "views/examples/BlogPosts.js";
 import ContactUs from "views/examples/ContactUs.js";
-import Discover from "views/examples/Discover.js";
-import Ecommerce from "views/examples/Ecommerce.js";
-import Error404 from "views/examples/Error404.js";
-import Error422 from "views/examples/Error422.js";
-import Error500 from "views/examples/Error500.js";
 import LandingPage from "views/examples/LandingPage.js";
 import LoginPage from "views/examples/LoginPage.js";
 import ProductPage from "views/examples/ProductPage.js";

@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-import classnames from "classnames";
 import Headroom from "headroom.js";
 import {
   NavbarBrand,
@@ -11,7 +10,7 @@ import SideNav from "./SideNav"
 function MultiDropdownNavbar() {
 
   const [navbarColor, setNavbarColor] = useState("navbar-transparent");
-  const [bodyClick, setBodyClick] = useState(false);
+  // const [bodyClick, setBodyClick] = useState(false);
   const [collapseOpen, setCollapseOpen] = useState(false);
 
   useEffect(() => {
@@ -38,11 +37,11 @@ function MultiDropdownNavbar() {
   });
   return (
     <>
-      {bodyClick ? (
+      {/* {bodyClick ? (
         <div
           id="bodyClick"
         />
-      ) : null}
+      ) : null} */}
       <Navbar
         className={`fixed-top ${navbarColor} ${collapseOpen ? "nav-open" : ""}`}
         id="navbar-main"

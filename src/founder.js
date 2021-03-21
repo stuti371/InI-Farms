@@ -11,16 +11,6 @@ import {
   Container,
   Row,
   Col,
-  UncontrolledCollapse,
-  FormGroup,
-  Form,
-  Input,
-  NavbarBrand,
-  Navbar,
-  Nav,
-  Carousel,
-  CarouselItem,
-  CarouselIndicators,
 } from "reactstrap";
 
 export default function Founders(){

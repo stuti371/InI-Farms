@@ -13,7 +13,6 @@ import SideNav from "./SideNav";
 // core components
 
 function WhiteNavbar() {
-  const [bodyClick, setBodyClick] = React.useState(false);
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   React.useEffect(() => {
     let headroom = new Headroom(document.getElementById("navbar-main"));

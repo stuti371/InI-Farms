@@ -43,7 +43,7 @@ const SideNav = ({collapseOpen, setCollapseOpen}) => {
   return (
     <Collapse className={collapseOpen ? styles.SideNav : ""} navbar isOpen={collapseOpen}>
       <Nav className={`ml-auto ${styles.NavList}`} navbar>
-        <NavItem nav inNavbar>
+        <NavItem>
           <div ref={companyRef} className={` nav-link ${styles.Button} ${styles.Drop}`} onClick={() => setOpenCompany(!openCompany)}><span className={styles.toggle}>Company</span></div>
           <div className={`${openCompany ? styles.DropMenu : ""} ${styles.DropShow}`}>
             <Link to="/AboutUs" className={styles.DropLi}>About Us</Link>
@@ -51,7 +51,7 @@ const SideNav = ({collapseOpen, setCollapseOpen}) => {
             <Link to="/Location" className={styles.DropLi}>Locations</Link>
           </div>
         </NavItem>
-        <NavItem nav inNavbar>
+        <NavItem>
           <div ref={workRef} className={` nav-link ${styles.Button} ${styles.Drop}`} onClick={() => setOpenWork(!openWork)}><span className={styles.toggle}>Our Work</span></div>
           <div className={`${openWork ? styles.DropMenu : ""} ${styles.DropShow}`}>
             <Link to="/Products" className={styles.DropLi}>Products</Link>
@@ -59,10 +59,10 @@ const SideNav = ({collapseOpen, setCollapseOpen}) => {
             <Link to="/D2C" className={styles.DropLi}>D2C</Link>
           </div>
         </NavItem>
-        <NavItem nav inNavbar>
+        <NavItem>
           <Link to="/AgTech" className={`nav-link ${styles.Button}`}><div style={{color: "white"}}>AgTech</div></Link>
         </NavItem>
-        <NavItem nav inNavbar>
+        <NavItem>
           <Link to="/Soulful" className={`nav-link ${styles.Button}`}><div style={{ color: "white" }}>Soulful</div></Link>
         </NavItem>
         <NavItem>

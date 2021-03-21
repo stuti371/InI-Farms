@@ -29,11 +29,38 @@ function SectionMedia() {
   const pPerPage = 3;
   const mPerPage = 6;
 
+  const getFirst = (perPage, ref, setDB) => {
+    db.ref(ref)
+      .orderByKey()
+      .limitToFirst(perPage + 1)
+      .on("value", snapshot => {
+        const tests = snapshot.val();
+        const testList = [];
+        for (let id in tests) {
+          testList.push({ id, ...tests[id] });
+        }
+        setDB(testList);
+      });
+  }
+
+  const getlast = (ref, setDB) => {
+    db.ref(ref)
+      .orderByKey()
+      .limitToLast(1)
+      .on("value", snapshot => {
+        const tests = snapshot.val();
+        const testList = [];
+        for (let id in tests) {
+          testList.push({ id, ...tests[id] });
+        }
+        setDB(testList);
+      });
+  }
 
   const getNext = (perPage, ref, DB, setDB) => {
     if (DB.length > 0 && DB.length - 1 < perPage) {
       setDB(DB);
-      console.log("Already Last Page.")
+      console.log("Already Last Page.", DB);
       return;
     }
 
@@ -48,7 +75,7 @@ function SectionMedia() {
           testList.push({id, ...tests[id]});
         }
         setDB(testList);
-      });
+    });
   }
 
   const getPrev = (perPage, ref, DB, setDB) => {
@@ -163,6 +190,10 @@ function SectionMedia() {
           {
             journeyDB &&
             <Paginate
+              first={() => {
+                getFirst(jPerPage, "Journey", setJourneys);
+                document.getElementById("journeyJump").scrollIntoView({ behavior: 'smooth' });
+              }}
               next={() => {
                 getNext(jPerPage, "Journey", journeyDB, setJourneys);
                 document.getElementById("journeyJump").scrollIntoView({ behavior: 'smooth' });
@@ -171,6 +202,11 @@ function SectionMedia() {
                 getPrev(jPerPage, "Journey", journeyDB, setJourneys);
                 document.getElementById("journeyJump").scrollIntoView({ behavior: 'smooth' });
               }}
+              last={() => {
+                getlast("Journey", setJourneys);
+                document.getElementById("journeyJump").scrollIntoView({ behavior: 'smooth' });
+              }}
+              variable={false}
             />
           }
         </div>
@@ -234,12 +270,20 @@ function SectionMedia() {
               {
                 povDB &&
                 <Paginate
+                  first={() => {
+                    getFirst(pPerPage, "POV", setPOV);
+                    document.getElementById("povJump").scrollIntoView({ behavior: 'smooth' });
+                  }}
                   next={() => {
                     getNext(pPerPage, "POV", povDB, setPOV);
                     document.getElementById("povJump").scrollIntoView({ behavior: 'smooth' });
                   }}
                   prev={() => {
                     getPrev(pPerPage, "POV", povDB, setPOV);
+                    document.getElementById("povJump").scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  last={() => {
+                    getlast("POV", setPOV);
                     document.getElementById("povJump").scrollIntoView({ behavior: 'smooth' });
                   }}
                   variable={true}
@@ -282,6 +326,10 @@ function SectionMedia() {
           {
             mediaDB &&
             <Paginate
+              first={() => {
+                getFirst(mPerPage, "Media", setMedia);
+                document.getElementById("mediaJump").scrollIntoView({ behavior: 'smooth' });
+              }}
               next={() => {
                 getNext(mPerPage, "Media", mediaDB, setMedia);
                 document.getElementById("mediaJump").scrollIntoView({ behavior: 'smooth' });
@@ -290,6 +338,11 @@ function SectionMedia() {
                 getPrev(mPerPage, "Media", mediaDB, setMedia);
                 document.getElementById("mediaJump").scrollIntoView({ behavior: 'smooth' });
               }}
+              last={() => {
+                getlast("Media", setMedia);
+                document.getElementById("mediaJump").scrollIntoView({ behavior: 'smooth' });
+              }}
+              variable={false}
             />
           }
         </div>
