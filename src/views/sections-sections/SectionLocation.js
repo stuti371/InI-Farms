@@ -1,5 +1,4 @@
-/*eslint-disable*/
-import React from "react";
+import React, {useState} from "react";
 
 // reactstrap components
 import {
@@ -27,6 +26,12 @@ import WhiteNavbar from 'components/Navbars/WhiteNavbar'
 import FooterFinal from "FooterFinal";
 
 export default function SectionLocation() {
+
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("")
+  const [subject, setSubject] = useState("");
+  const [body, setBody] = useState("");
+
   return (
     <>
       <WhiteNavbar />
@@ -252,10 +257,12 @@ export default function SectionLocation() {
                               <label className="control-label">
                                 First name
                                 </label>
-                              <Input
+                              <input
                                 name="name"
                                 placeholder="First Name"
                                 type="text"
+                                className="form-control"
+                                onChange={(e) => setFirstName(e.target.value)}
                               />
                             </FormGroup>
                           </Col>
@@ -264,34 +271,41 @@ export default function SectionLocation() {
                               <label className="control-label">
                                 Last name
                                 </label>
-                              <Input
+                              <input
                                 name="name"
                                 placeholder="Last Name"
+                                className="form-control"
                                 type="text"
+                                onChange={(e) => setLastName(e.target.value)}
                               />
                             </FormGroup>
                           </Col>
                         </Row>
                         <FormGroup className="label-floating">
                           <label className="control-label">
-                            Email address
+                            Subject
                             </label>
-                          <Input
-                            name="email"
-                            placeholder="Email"
-                            type="email"
+                          <input
+                            name="subject"
+                            id="subject"
+                            placeholder="Subject"
+                            type="text"
+                            className="form-control"
+                            onChange={(e) => {setSubject(e.target.value);}}
                           />
                         </FormGroup>
                         <FormGroup className="label-floating">
                           <label className="control-label">
                             Your message
                             </label>
-                          <Input
+                          <textarea
                             id="message"
                             name="message"
                             placeholder="Message"
-                            type="textarea"
                             rows="6"
+                            resize="none"
+                            className="form-control"
+                            onChange={(e) => setBody(e.target.value)}
                           />
                         </FormGroup>
                         <Row>
@@ -309,10 +323,9 @@ export default function SectionLocation() {
                               className="pull-right"
                               color="primary"
                               type="submit"
-                              onClick={(e) => e.preventDefault()}
-                            >
-                              Send Message
-                              </Button>
+                              onClick={(e) => { e.preventDefault(); window.open(`mailto:kimayedb@gmail.com?subject=${subject}&body=${`${body}%0D%0AFrom,%0D%0A${firstName} ${lastName}`}`)}}
+                            >Send Message
+                            </Button>
                           </Col>
                         </Row>
                       </CardBody>
