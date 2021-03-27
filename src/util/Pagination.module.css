@@ -9,11 +9,14 @@
 
 .Button {
   background-color: transparent;
-  border: 2px solid;
-  border-radius: 5px;
+  border: 1px solid;
+  border-radius: 50%;
   border-color: inherit;
   color: inherit;
-  font-size: larger;
+  font-size: x-large;
+  font-weight: 500;
+  height: 3rem;
+  width: 3rem;
   /* DBAC00 */
 }
 

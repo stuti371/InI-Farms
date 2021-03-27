@@ -315,7 +315,7 @@ function SectionMedia() {
                     title={`video-${ind + 1}`}
                     style={{
                       borderRadius: "10px",
-                      borderColor: "rgb(219, 172, 0)"
+                      borderColor: "#000"
                     }}
                     src={vidLink(vid.media)}>
                   </iframe>
