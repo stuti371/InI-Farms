@@ -85,32 +85,6 @@ ReactDOM.render(
         path="/homepage"
         render={(props) => <LandingPage {...props} />}
       />
-      <Route
-        path="/Privacypolicy"
-        render={(props) => <PrivacyPolicy {...props} />}
-      />
-      <Route path="/login-page" render={(props) => <LoginPage {...props} />} />
-      <Route
-        path="/product-page"
-        render={(props) => <ProductPage {...props} />}
-      />
-      <Route
-        path="/profile-page"
-        render={(props) => <ProfilePage {...props} />}
-      />
-      <Route
-        path="/register-page"
-        render={(props) => <RegisterPage {...props} />}
-      />
-      <Route
-        path="/search-with-sidebar"
-        render={(props) => <SearchWithSidebar {...props} />}
-      />
-      <Route path="/settings" render={(props) => <Settings {...props} />} />
-      <Route
-        path="/twitter-redesign"
-        render={(props) => <TwitterRedesign {...props} />}
-      />
       <Redirect to="/homepage" />
     </Switch>
   </BrowserRouter>,

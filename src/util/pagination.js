@@ -3,7 +3,7 @@ import styles from "./Pagination.module.css";
 
 const Paginate = ({next, prev, first, last, variable}) => {
 
-  const customStyle = variable ? 
+  const customStyle = variable ?
     {
       borderColor: "#260900",
       color: "#260900"
@@ -17,10 +17,10 @@ const Paginate = ({next, prev, first, last, variable}) => {
 
   return (
     <div className={styles.Paginate} style={customStyle}>
-      <button className={`${styles.Button}`} onClick={first}>{"<<"}</button>
+      {/* <button className={`${styles.Button}`} onClick={first}>{"<<"}</button> */}
       <button className={`${styles.Button}`} onClick={prev}>⬅</button>
       <button className={`${styles.Button}`} onClick={next}>➡</button>
-      <button className={`${styles.Button}`} onClick={last}>{">>"}</button>
+      {/* <button className={`${styles.Button}`} onClick={last}>{">>"}</button> */}
     </div>
   );
 };

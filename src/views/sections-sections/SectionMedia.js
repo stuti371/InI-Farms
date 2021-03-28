@@ -32,7 +32,7 @@ function SectionMedia() {
   const getFirst = (perPage, ref, setDB) => {
     db.ref(ref)
       .orderByKey()
-      .limitToFirst(perPage + 1)
+      .limitToLast(perPage + 1)
       .on("value", snapshot => {
         const tests = snapshot.val();
         const testList = [];
@@ -46,7 +46,7 @@ function SectionMedia() {
   const getlast = (ref, setDB) => {
     db.ref(ref)
       .orderByKey()
-      .limitToLast(1)
+      .limitToFirst(1)
       .on("value", snapshot => {
         const tests = snapshot.val();
         const testList = [];
@@ -66,23 +66,23 @@ function SectionMedia() {
 
     let testRef = db.ref(ref)
       .orderByKey()
-      .limitToFirst(perPage + 1);
-    testRef = DB.length !== 0 ? testRef.startAt(DB[DB.length - 1].id) : testRef
+      .limitToLast(perPage + 1);
+    testRef = DB.length !== 0 ? testRef.endAt(DB[DB.length - 1].id) : testRef
     testRef.on("value", (snapshot) => {
-        const tests = snapshot.val();
-        const testList = [];
-        for (let id in tests) {
-          testList.push({id, ...tests[id]});
-        }
-        setDB(testList);
+      const tests = snapshot.val();
+      const testList = [];
+      for (let id in tests) {
+        testList.push({id, ...tests[id]});
+      }
+      setDB(testList);
     });
   }
 
   const getPrev = (perPage, ref, DB, setDB) => {
     db.ref(ref)
       .orderByKey()
-      .limitToLast(perPage + 1)
-      .endAt(DB[0].id)
+      .limitToFirst(perPage + 1)
+      .startAt(DB[0].id)
       .on("value", (snapshot) => {
         const tests = snapshot.val();
         const testList = [];
@@ -156,9 +156,10 @@ function SectionMedia() {
       }}>
         <div className={styles.JourneyContainer}>
           <h2 id="journeyJump" style={{color: '#dbac00', fontWeight: '500', textAlign: 'center'}}>The Journey...</h2>
+          {console.log(journeyDB)}
           <div className={styles.CardsContainer}>
             {
-              journeyDB && journeyDB.slice(0, jPerPage).map(card => {
+              journeyDB && journeyDB.reverse().slice(0, jPerPage).map(card => {
                 return (
                   <Card key={card.id} className="card-blog">
                     <div className="card-image">
@@ -180,7 +181,7 @@ function SectionMedia() {
                           {card.title}
                         </a>
                       </CardTitle>
-                      <p className={styles.CardContent} style={{ color: 'black' }}>{`${card.content.substring(0, 200)}...`}</p>
+                      <p className={styles.CardContent} style={{color: 'black'}}>{`${card.content.substring(0, 200)}...`}</p>
                     </CardBody>
                   </Card>
                 )
@@ -192,19 +193,19 @@ function SectionMedia() {
             <Paginate
               first={() => {
                 getFirst(jPerPage, "Journey", setJourneys);
-                document.getElementById("journeyJump").scrollIntoView({ behavior: 'smooth' });
+                document.getElementById("journeyJump").scrollIntoView({behavior: 'smooth'});
               }}
               next={() => {
                 getNext(jPerPage, "Journey", journeyDB, setJourneys);
-                document.getElementById("journeyJump").scrollIntoView({ behavior: 'smooth' });
+                document.getElementById("journeyJump").scrollIntoView({behavior: 'smooth'});
               }}
               prev={() => {
                 getPrev(jPerPage, "Journey", journeyDB, setJourneys);
-                document.getElementById("journeyJump").scrollIntoView({ behavior: 'smooth' });
+                document.getElementById("journeyJump").scrollIntoView({behavior: 'smooth'});
               }}
               last={() => {
                 getlast("Journey", setJourneys);
-                document.getElementById("journeyJump").scrollIntoView({ behavior: 'smooth' });
+                document.getElementById("journeyJump").scrollIntoView({behavior: 'smooth'});
               }}
               variable={false}
             />
@@ -214,12 +215,12 @@ function SectionMedia() {
       </div>
       {/* ********* END BLOGS 2 ********* */}
       {/* ********* BLOGS 3 ********* */}
-      <div className="blog-3" style={{ backgroundColor: '#fffaef'}}>
+      <div className="blog-3" style={{backgroundColor: '#fffaef'}}>
         <Container>
 
           <Row>
-            <Col 
-              className="ml-auto mr-auto" 
+            <Col
+              className="ml-auto mr-auto"
               md="10"
               style={{
                 paddingBottom: "2rem"
@@ -231,7 +232,7 @@ function SectionMedia() {
 
               <div className={styles.pov}>
                 {
-                  povDB && povDB.slice(0, pPerPage).map(card => {
+                  povDB && povDB.reverse().slice(0, pPerPage).map(card => {
                     return (
                       <Card key={card.id} className={`${styles.povCard} card-plain card-blog`}>
                         <Col md="4">
@@ -272,19 +273,19 @@ function SectionMedia() {
                 <Paginate
                   first={() => {
                     getFirst(pPerPage, "POV", setPOV);
-                    document.getElementById("povJump").scrollIntoView({ behavior: 'smooth' });
+                    document.getElementById("povJump").scrollIntoView({behavior: 'smooth'});
                   }}
                   next={() => {
                     getNext(pPerPage, "POV", povDB, setPOV);
-                    document.getElementById("povJump").scrollIntoView({ behavior: 'smooth' });
+                    document.getElementById("povJump").scrollIntoView({behavior: 'smooth'});
                   }}
                   prev={() => {
                     getPrev(pPerPage, "POV", povDB, setPOV);
-                    document.getElementById("povJump").scrollIntoView({ behavior: 'smooth' });
+                    document.getElementById("povJump").scrollIntoView({behavior: 'smooth'});
                   }}
                   last={() => {
                     getlast("POV", setPOV);
-                    document.getElementById("povJump").scrollIntoView({ behavior: 'smooth' });
+                    document.getElementById("povJump").scrollIntoView({behavior: 'smooth'});
                   }}
                   variable={true}
                 />
@@ -308,7 +309,7 @@ function SectionMedia() {
           <h2 id="mediaJump" style={{color: '#dbac00', fontWeight: '500', textAlign: 'center'}}>Media...</h2>
           <div className={styles.VidCont}>
             {
-              mediaDB && mediaDB.slice(0, mPerPage).map((vid, ind) => {
+              mediaDB && mediaDB.reverse().slice(0, mPerPage).map((vid, ind) => {
                 return (
                   <iframe
                     key={vid.id}
@@ -328,19 +329,19 @@ function SectionMedia() {
             <Paginate
               first={() => {
                 getFirst(mPerPage, "Media", setMedia);
-                document.getElementById("mediaJump").scrollIntoView({ behavior: 'smooth' });
+                document.getElementById("mediaJump").scrollIntoView({behavior: 'smooth'});
               }}
               next={() => {
                 getNext(mPerPage, "Media", mediaDB, setMedia);
-                document.getElementById("mediaJump").scrollIntoView({ behavior: 'smooth' });
+                document.getElementById("mediaJump").scrollIntoView({behavior: 'smooth'});
               }}
               prev={() => {
                 getPrev(mPerPage, "Media", mediaDB, setMedia);
-                document.getElementById("mediaJump").scrollIntoView({ behavior: 'smooth' });
+                document.getElementById("mediaJump").scrollIntoView({behavior: 'smooth'});
               }}
               last={() => {
                 getlast("Media", setMedia);
-                document.getElementById("mediaJump").scrollIntoView({ behavior: 'smooth' });
+                document.getElementById("mediaJump").scrollIntoView({behavior: 'smooth'});
               }}
               variable={false}
             />
