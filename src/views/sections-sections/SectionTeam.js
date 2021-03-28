@@ -2,22 +2,8 @@ import React from "react";
 
 // reactstrap components
 import {
-  Button,
-  Card,
-  CardBody,
-  CardFooter,
-  CardImg,
-  CardTitle,
   Container,
   Row,
-  Col,
-  UncontrolledCollapse,
-  FormGroup,
-  Form,
-  Input,
-  NavbarBrand,
-  Navbar,
-  Nav,
   Carousel,
   CarouselItem,
   CarouselIndicators,

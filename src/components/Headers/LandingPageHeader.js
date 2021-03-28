@@ -143,7 +143,7 @@ const items = [
         <Container>
           <Row>
             <Col md="2">
-              <h2 className="title" style = {{marginTop: '50%', fontWeight: '400'}}>#AddingLifeToFruit</h2>
+              <h2 className="title" style = {{marginTop: '100%', fontWeight: '400'}}>#AddingLifeToFruit</h2>
               {/* <h5>
                 Now you have no excuses, it's time to surprise your clients, your
                 competitors, and why not, the world. You probably won't have a
