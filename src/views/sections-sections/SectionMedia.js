@@ -60,7 +60,7 @@ function SectionMedia() {
   const getNext = (perPage, ref, DB, setDB) => {
     if (DB.length > 0 && DB.length - 1 < perPage) {
       setDB(DB);
-      console.log("Already Last Page.", DB);
+      // console.log("Already Last Page.", DB);
       return;
     }
 
@@ -91,7 +91,7 @@ function SectionMedia() {
         }
         if (testList.length < perPage + 1) {
           setDB(DB);
-          console.log("Already at first page");
+          // console.log("Already at first page");
           return;
         }
         setDB(testList);
@@ -156,7 +156,6 @@ function SectionMedia() {
       }}>
         <div className={styles.JourneyContainer}>
           <h2 id="journeyJump" style={{color: '#dbac00', fontWeight: '500', textAlign: 'center'}}>The Journey...</h2>
-          {console.log(journeyDB)}
           <div className={styles.CardsContainer}>
             {
               journeyDB && journeyDB.reverse().slice(0, jPerPage).map(card => {
