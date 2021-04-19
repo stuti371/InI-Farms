@@ -25,20 +25,8 @@ import "assets/scss/paper-kit.scss";
 import "assets/demo/demo.css";
 import "assets/demo/react-demo.css";
 // pages
-import Index from "views/Index.js";
 import Sections from "views/Sections.js";
-import AboutUs from "views/examples/AboutUs.js";
-import BlogPost from "views/examples/BlogPost.js";
-import BlogPosts from "views/examples/BlogPosts.js";
-import ContactUs from "views/examples/ContactUs.js";
-import LandingPage from "views/examples/LandingPage.js";
-import LoginPage from "views/examples/LoginPage.js";
-import ProductPage from "views/examples/ProductPage.js";
-import ProfilePage from "views/examples/ProfilePage.js";
-import RegisterPage from "views/examples/RegisterPage.js";
-import SearchWithSidebar from "views/examples/SearchWithSidebar.js";
-import Settings from "views/examples/Settings.js";
-import TwitterRedesign from "views/examples/TwitterRedesign.js";
+import LandingPage from "./LandingPage.js";
 import SectionD2C from 'views/sections-sections/SectionD2C.js'
 import SectionSoulful from 'views/sections-sections/SectionSoulful.js'
 import SectionLocation from 'views/sections-sections/SectionLocation.js'
@@ -48,7 +36,6 @@ import SectionProducts from 'views/sections-sections/SectionProducts.js'
 import SectionBrand from 'views/sections-sections/SectionBrand.js'
 import SectionBM from 'views/sections-sections/SectionBM.js'
 import SectionAgTech from 'views/sections-sections/SectionAgTech.js'
-import PrivacyPolicy from 'views/sections-sections/PrivacyPolicy.js'
 import WriteMedia from "./blog_thing";
 // others
 
@@ -66,14 +53,10 @@ ReactDOM.render(
         path="/homepage"
         render={(props) => <LandingPage {...props} />}
       />
-      <Route path="/about-us" render={(props) => <AboutUs {...props} />} />
       <Route
         path="/Team"
         render={(props) => <SectionTeam {...props} />}
       />
-      <Route path="/blog-post" render={(props) => <BlogPost {...props} />} />
-      <Route path="/blog-posts" render={(props) => <BlogPosts {...props} />} />
-      <Route path="/contact-us" render={(props) => <ContactUs {...props} />} />
       <Route path="/Products" render={(props) => <SectionProducts {...props} />} />
       <Route path="/Brand" render={(props) => <SectionBrand {...props} />} />
       <Route path="/AboutUs" render={(props) => <SectionBM {...props} />} />

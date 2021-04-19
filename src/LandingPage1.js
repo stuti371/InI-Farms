@@ -37,7 +37,7 @@ export default function LandingPage1(){
                 
               </Col>
               <Col sm = '3' md = '3' style ={{justifyContent: 'center', alignItems: 'center'}}>
-                 
+
               </Col>
               <Col sm = '3' md = '3' style ={{justifyContent: 'center', alignItems: 'center'}}>
                 
@@ -51,8 +51,8 @@ export default function LandingPage1(){
                 
                   <img src = {require("assets/kimaye/talk2.jpg")} width = '95%' height = '90%'/>
                 
-               </Col> <br />
-               <Col md="7" sm = '7' style ={{alignItems: 'center'}}>
+              </Col> <br />
+              <Col md="7" sm = '7' style ={{alignItems: 'center'}}>
                     
                       <h2 className="title" style = {{fontWeight: '500', textAlign: 'center', marginTop: '8%', color: '#800000'}}>The Divine World of Kimaye</h2>
                       <h6 style = {{textAlign: 'center'}}>At InI Farms we are changing the horticulture landscape of India</h6><br />
