@@ -238,10 +238,11 @@ export default function SectionLocation() {
                           <i className="nc-icon nc-badge" />
                         </div>
                         <div className="description">
-                          <h4 style={{color: 'black', fontWeight: '400'}}>Reach us at</h4>
+                          <h4 style={{color: 'black', fontWeight: '400'}}>Reach us on</h4>
                           <p style={{color: 'black'}}>
+                            E-mail: kimayedb@gmail.com <br />
                             Tel: +91 22 4260 0700 <br />
-                              Fax: +91 22 4260 0731
+                            Fax: +91 22 4260 0731
                             </p>
                         </div>
                       </div>

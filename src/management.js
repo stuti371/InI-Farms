@@ -11,16 +11,6 @@ import {
   Container,
   Row,
   Col,
-  UncontrolledCollapse,
-  FormGroup,
-  Form,
-  Input,
-  NavbarBrand,
-  Navbar,
-  Nav,
-  Carousel,
-  CarouselItem,
-  CarouselIndicators,
 } from "reactstrap";
 
 export default function Management(){
@@ -37,7 +27,9 @@ export default function Management(){
                 </h5>
               </Col>
             </Row>
+            
             <Row>
+              
               <Col md="3">
                 <Card className="card-profile card-category">
                   <div className="card-avatar">
@@ -68,29 +60,20 @@ export default function Management(){
                       className="btn-link btn-just-icon mr-1"
                       color="twitter"
                       href="https://twitter.com/raghuwanshiash?s=20"
-                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-twitter" />
                     </Button>
-                    {/* <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-dribbble" />
-                    </Button> */}
                     <Button
                       className="btn-link btn-just-icon"
                       color="linkedin"
                       href="https://www.linkedin.com/in/ashwin-raghuwanshi-51b1416"
-                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-linkedin" />
                     </Button>
                   </CardFooter>
                 </Card>
               </Col>
+              
               <Col md="3">
               <Card className="card-profile card-category">
                   <div className="card-avatar">
@@ -124,25 +107,17 @@ export default function Management(){
                     >
                       <i className="fa fa-twitter" />
                     </Button>
-                    {/* <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-dribbble" />
-                    </Button> */}
                     <Button
                       className="btn-link btn-just-icon"
                       color="linkedin"
                       href="https://www.linkedin.com/in/sushil-parikh-pareek-6b8a9123"
-                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-linkedin" />
                     </Button>
                   </CardFooter>
                 </Card>
               </Col>
+              
               <Col md="3">
               <Card className="card-profile card-category">
                   <div className="card-avatar">
@@ -158,7 +133,7 @@ export default function Management(){
                       <div className="author">
                         <CardTitle tag="h5" style = {{fontWeight: '500'}}>Ajit Kumar</CardTitle>
                         <h6 className="card-category" style = {{fontWeight: '450', color: '#800000'}}>
-                         CSR & PPP
+                          CSR & PPP
                         </h6>
                       </div>
                     </a>
@@ -172,29 +147,20 @@ export default function Management(){
                       className="btn-link btn-just-icon mr-1"
                       color="twitter"
                       href="#pablo"
-                      //onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-twitter" />
                     </Button>
-                    {/* <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-dribbble" />
-                    </Button> */}
                     <Button
                       className="btn-link btn-just-icon"
                       color="linkedin"
                       href="https://www.linkedin.com/in/ajit-kumar-36ab8168"
-                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-linkedin" />
                     </Button>
                   </CardFooter>
                 </Card>
               </Col>
+              
               <Col md="3">
               <Card className="card-profile card-category">
                   <div className="card-avatar">
@@ -210,7 +176,7 @@ export default function Management(){
                       <div className="author">
                         <CardTitle tag="h5" style = {{fontWeight: '500'}}>Kalpesh Khivasara</CardTitle>
                         <h6 className="card-category" style = {{fontWeight: '450', color: '#800000'}}>
-                         International Sales
+                          International Sales
                         </h6>
                       </div>
                     </a>
@@ -224,23 +190,13 @@ export default function Management(){
                       className="btn-link btn-just-icon mr-1"
                       color="twitter"
                       href="#pablo"
-                      //onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-twitter" />
                     </Button>
-                    {/* <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-dribbble" />
-                    </Button> */}
                     <Button
                       className="btn-link btn-just-icon"
                       color="linkedin"
                       href="https://www.linkedin.com/in/kalpeshk"
-                      //onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-linkedin" />
                     </Button>
@@ -248,69 +204,9 @@ export default function Management(){
                 </Card>
               </Col>
             </Row>
+            
             <Row>
-              {/* <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title">Our Stunning Team 1</h2>
-                <h5 className="description">
-                  This is the paragraph where you can write more details about
-                  your team. Keep you user engaged by providing meaningful
-                  information.
-                </h5>
-              </Col>
-            </Row>
-            <Row> */}
-              <Col md="3">
-              <Card className="card-profile card-category">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={require("assets/kimaye/SARABJEET.jpg")}
-                      />
-                    </a>
-                  </div>
-                  <CardBody>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <div className="author">
-                        <CardTitle tag="h5" style = {{fontWeight: '500'}}>Sarabjeet Kohli</CardTitle>
-                        <h6 className="card-category" style = {{fontWeight: '450', color: '#800000'}}>
-                          Commercial & Analytics
-                        </h6>
-                      </div>
-                    </a>
-                    <p className="card-description text-center" style = {{color: 'black'}}>
-                      B.Com, MBA (IIMA) <br />
-                      DCM Shriram 
-                    </p>
-                  </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="twitter"
-                      href="https://twitter.com/iamsarabjeetk"
-                      // onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    {/* <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-dribbble" />
-                    </Button> */}
-                    <Button
-                      className="btn-link btn-just-icon"
-                      color="linkedin"
-                      href="https://www.linkedin.com/in/sarabjeet-kaur-174a7420"
-                      // onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
-                </Card>
-              </Col>
+
               <Col md="3">
               <Card className="card-profile card-category">
                   <div className="card-avatar">
@@ -340,29 +236,20 @@ export default function Management(){
                       className="btn-link btn-just-icon mr-1"
                       color="twitter"
                       href="#pablo"
-                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-twitter" />
                     </Button>
-                    {/* <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-dribbble" />
-                    </Button> */}
                     <Button
                       className="btn-link btn-just-icon"
                       color="linkedin"
                       href="https://www.linkedin.com/in/prachi-singh-5a691821"
-                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-linkedin" />
                     </Button>
                   </CardFooter>
                 </Card>
               </Col>
+              
               <Col md="3">
               <Card className="card-profile card-category">
                   <div className="card-avatar">
@@ -392,18 +279,9 @@ export default function Management(){
                       className="btn-link btn-just-icon mr-1"
                       color="twitter"
                       href="https://mobile.twitter.com/ShalabhAgrawa14"
-                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-twitter" />
                     </Button>
-                    {/* <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-dribbble" />
-                    </Button> */}
                     <Button
                       className="btn-link btn-just-icon"
                       color="linkedin"
@@ -415,6 +293,7 @@ export default function Management(){
                   </CardFooter>
                 </Card>
               </Col>
+              
               <Col md="3">
               <Card className="card-profile card-category">
                   <div className="card-avatar">
@@ -430,7 +309,7 @@ export default function Management(){
                       <div className="author">
                         <CardTitle tag="h5" style = {{fontWeight: '500'}}>Indravadan Jadhav</CardTitle>
                         <h6 className="card-category" style = {{fontWeight: '450', color: '#800000'}}>
-                         Fruit Procurement
+                          Fruit Procurement
                         </h6>
                       </div>
                     </a>
@@ -448,25 +327,108 @@ export default function Management(){
                     >
                       <i className="fa fa-twitter" />
                     </Button>
-                    {/* <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-dribbble" />
-                    </Button> */}
                     <Button
                       className="btn-link btn-just-icon"
                       color="linkedin"
                       href="https://www.linkedin.com/in/indravadanjadav"
-                      // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-linkedin" />
                     </Button>
                   </CardFooter>
                 </Card>
               </Col>
+
+            <Col md="3">
+              <Card className="card-profile card-category">
+                <div className="card-avatar">
+                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <img
+                      alt="..."
+                      src={require("assets/kimaye/Parag.JPG")}
+                    />
+                  </a>
+                </div>
+                <CardBody>
+                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <div className="author">
+                      <CardTitle tag="h5" style={{ fontWeight: '500' }}>Parag H Dhakan</CardTitle>
+                      <h6 className="card-category" style={{ fontWeight: '450', color: '#800000' }}>
+                        Chief Technology Officer
+                      </h6>
+                    </div>
+                  </a>
+                  <p className="card-description text-center" style={{ color: 'black' }}>
+                    BE, MIM, Cyber Law
+                    <br />
+                    Arvind, Tommy Hilfiger
+                  </p>
+                </CardBody>
+                <CardFooter className="text-center">
+                  <Button
+                    className="btn-link btn-just-icon mr-1"
+                    color="twitter"
+                    // href="https://twitter.com/iamsarabjeetk"
+                    href="https://twitter.com/"
+                  >
+                    <i className="fa fa-twitter" />
+                  </Button>
+                  <Button
+                    className="btn-link btn-just-icon"
+                    color="linkedin"
+                    href="https://www.linkedin.com/in/parag-dhakan-76562713/"
+                  >
+                    <i className="fa fa-linkedin" />
+                  </Button>
+                </CardFooter>
+              </Card>
+            </Col>
+            </Row>
+            
+            <Row style={{justifyContent: "center"}}>
+            <Col md="3">
+              <Card className="card-profile card-category">
+                <div className="card-avatar">
+                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <img
+                      alt="..."
+                      src={require("assets/kimaye/Vaibhav.jpg")}
+                    />
+                  </a>
+                </div>
+                <CardBody>
+                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <div className="author">
+                      <CardTitle tag="h5" style={{ fontWeight: '500' }}>Vaibhav Batra</CardTitle>
+                      <h6 className="card-category" style={{ fontWeight: '450', color: '#800000' }}>
+                        Business Head – D2C
+                      </h6>
+                    </div>
+                  </a>
+                  <p className="card-description text-center" style={{ color: 'black' }}>
+                    MBA, Marketing, FMS
+                    <br />
+                    HUL, Lenskart, Lodha Group
+                  </p>
+                </CardBody>
+                <CardFooter className="text-center">
+                  <Button
+                    className="btn-link btn-just-icon mr-1"
+                    color="twitter"
+                    href="https://twitter.com/"
+                    // href="https://twitter.com/iamsarabjeetk"
+                  >
+                    <i className="fa fa-twitter" />
+                  </Button>
+                  <Button
+                    className="btn-link btn-just-icon"
+                    color="linkedin"
+                    href="https://www.linkedin.com/in/vaibhav-batra-a3217b8/"
+                  >
+                    <i className="fa fa-linkedin" />
+                  </Button>
+                </CardFooter>
+              </Card>
+            </Col>
             </Row>
           </Container>
         </div>
