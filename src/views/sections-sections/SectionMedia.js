@@ -105,7 +105,7 @@ function SectionMedia() {
   }, [])
 
   const map = {
-    "youtube": "http://www.youtube.com/embed/",
+    "youtube": "https://www.youtube.com/embed/",
     "vimeo": "https://player.vimeo.com/video/",
     "dailymotion": "https://www.dailymotion.com/embed/video/"
   }
