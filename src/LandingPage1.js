@@ -23,28 +23,16 @@ export default function LandingPage1(){
             <Row >
               <Col md = '6' sm = '6'>
                 <Row style ={{justifyContent: 'space-around'}}>
-                  <img src = {require("assets/kimaye/pomologo.jpeg")} style = {{width: '25%', height: '15%'}}/>
-                  <img src = {require("assets/kimaye/bananalogo.jpeg")} style = {{width: '25%', height: '15%'}}/>
+                  <img src = {"https://res.cloudinary.com/ini-farms/image/upload/v1618863965/media/kimaye/pomologo_ehb90y.jpg"} style = {{width: '25%', height: '15%'}}/>
+                  <img src = {"https://res.cloudinary.com/ini-farms/image/upload/v1618863944/media/kimaye/bananalogo_s12cil.jpg"} style = {{width: '25%', height: '15%'}}/>
                 </Row>
               </Col>
               <Col md = '6' sm = '6'>
               <Row style ={{justifyContent: 'space-around'}}>
-                  <img src = {require("assets/kimaye/arilslogo.jpeg")} style = {{width: '25%', height: '15%'}}/>
-                  <img src = {require("assets/kimaye/cocologo.jpeg")} style = {{width: '25%', height: '15%'}}/>
+                  <img src = {"https://res.cloudinary.com/ini-farms/image/upload/v1618863983/media/kimaye/arilslogo_tj6ltj.jpg"} style = {{width: '25%', height: '15%'}}/>
+                  <img src = {"https://res.cloudinary.com/ini-farms/image/upload/v1618863949/media/kimaye/cocologo_hmmvf5.jpg"} style = {{width: '25%', height: '15%'}}/>
                 </Row>
               </Col>
-              {/* <Col sm = '3' md = '3' style ={{justifyContent: 'center', alignItems: 'center'}}>
-                
-              </Col>
-              <Col sm = '3' md = '3' style ={{justifyContent: 'center', alignItems: 'center'}}>
-
-              </Col>
-              <Col sm = '3' md = '3' style ={{justifyContent: 'center', alignItems: 'center'}}>
-                
-              </Col>
-              <Col sm = '3' md = '3' style ={{justifyContent: 'center', alignItems: 'center'}}>
-                <
-              </Col> */}
             </Row><br /><br />
             <Row >
               <Col  md="5"  sm = '5' style ={{justifyItems: 'start', marginTop: 55}}>
@@ -67,15 +55,6 @@ export default function LandingPage1(){
                         <span style = {{fontSize: 18, fontWeight: 400}}> Making agriculture gender neutral </span>
                       </p>
 
-                {/* <br /> */}
-                {/* <Button
-                  className="btn-fill btn-round"
-                  color="danger"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  See Details
-                </Button> */}
               </Col>
             </Row>
             <br />
@@ -90,14 +69,6 @@ export default function LandingPage1(){
                     <p className="description" style = {{ fontWeight: 500}}>
                       Middle East, Europe, India, North America, South-East Asia, <br /> New Zealand
                     </p>
-                    {/* <Button
-                      className="btn-link"
-                      color="danger"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      See more
-                    </Button> */}
                   </div>
                 </div>
               </Col>
@@ -111,14 +82,6 @@ export default function LandingPage1(){
                     <p className="description" style = {{ fontWeight: 500}}>
                       Amongst Top 3 exporters <br /> from India by volume
                     </p>
-                    {/* <Button
-                      className="btn-link"
-                      color="danger"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      See more
-                    </Button> */}
                   </div>
                 </div>
               </Col>
@@ -132,14 +95,6 @@ export default function LandingPage1(){
                     <p className="description" style = {{ fontWeight: 500}}>
                       Premium for quality model<br /> Improving Farmer profits by 40%
                     </p>
-                    {/* <Button
-                      className="btn-link"
-                      color="danger"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      See more
-                    </Button> */}
                   </div>
                 </div>
               </Col>
@@ -153,34 +108,6 @@ export default function LandingPage1(){
                     <p className="description" style = {{ fontWeight: 500}}>
                       Maharashtra, Andhra Pradesh, Gujarat, Kerala,  Madhya Pradesh, Tamil Nadu, Karnataka, Rajasthan
                     </p>
-                    {/* <Button
-                      className="btn-link"
-                      color="danger"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      See more
-                    </Button> */}
-                  {/* </div>
-                </div>
-                <div className="info">
-                  <div className="icon icon-danger">
-                    <i className="nc-icon nc-bulb-63" />
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">{">"}50% Women</h4>
-                    <p>
-                      In all direct jobs created <br />
-                      management, supervisor, labour
-                    </p> */}
-                    {/* <Button
-                      className="btn-link"
-                      color="danger"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      See more
-                    </Button> */}
                   </div>
                 </div>
               </Col>

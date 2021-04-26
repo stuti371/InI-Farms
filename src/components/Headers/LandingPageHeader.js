@@ -23,55 +23,13 @@ import {
 
 const items = [
     {
-      src: "url(" + require("assets/kimaye/landing.jpg") + ")",
+      src: "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863958/media/kimaye/landing_qgnuj6.jpg" + ")",
       content: (
         <Container>
           <Row>
             <Col className="text-left" md="8" style ={{marginTop: '50%', fontWeight: '400'}}>
               <h2 className="title">Grown With Passion <br /> 
               <span style ={{marginLeft: '5%'}}>Delivered With Care</span></h2>
-              {/* <h5>
-                Now you have no excuses, it's time to surprise your clients, your
-                competitors, and why not, the world. You probably won't have a
-                better chance to show off all your potential if it's not by
-                designing a website for your own agency or web studio.
-              </h5> */}
-              <br />
-              {/* <div className="buttons">
-                <Button
-                  className="btn-round"
-                  color="danger"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                  size="lg"
-                >
-                  Read More
-                </Button>
-                <Button
-                  className="btn-neutral btn-just-icon"
-                  color="link"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="fa fa-twitter" />
-                </Button>
-                <Button
-                  className="btn-neutral btn-just-icon"
-                  color="link"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="fa fa-facebook-square" />
-                </Button>
-                <Button
-                  className="btn-neutral btn-just-icon"
-                  color="link"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="fa fa-get-pocket" />
-                </Button>
-              </div> */}
             </Col>
           </Row>
         </Container>
@@ -80,7 +38,7 @@ const items = [
       caption: "",
     },
     {
-      src: "url(" + require("assets/kimaye/banana10.jpg") + ")",
+      src: "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863941/media/kimaye/banana10_jx2d57.jpg" + ")",
       content: (
         <Container>
           <Row>
@@ -94,42 +52,13 @@ const items = [
       caption: "",
     },
     {
-      src: "url(" + require("assets/kimaye/Woman5.jpg") + ")",
+      src: "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863979/media/kimaye/Woman5_dblhxq.jpg" + ")",
       content: (
         <Container>
           <Row>
           <Col className="text-left" md="8" style ={{marginTop: '50%', fontWeight: '400'}}>
               <h2 className="title">Doing Good <br /> 
               <span style ={{marginLeft: '5%'}}>As we do well</span></h2>
-              {/* <h5>
-                Now you have no excuses, it's time to surprise your clients, your
-                competitors, and why not, the world. You probably won't have an
-                better chance to show off all your potential if it's not by
-                designing a website for your own agency or web studio.
-              </h5>
-              <br />
-              <div className="buttons">
-                <Button
-                  className="btn-neutral"
-                  color="link"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                  size="lg"
-                >
-                  <i className="fa fa-share-alt" />
-                  Share Offer
-                </Button>
-                <Button
-                  className="btn-round"
-                  color="success"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                  size="lg"
-                >
-                  <i className="fa fa-shopping-cart" />
-                  Shop Now
-                </Button>
-              </div> */}
             </Col>
           </Row>
         </Container>
@@ -138,41 +67,13 @@ const items = [
       caption: "",
             } ,
     {
-      src: "url(" + require("assets/kimaye/Product1.jpg") + ")",
+      src: "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863971/media/kimaye/Product1_swckvi.jpg" + ")",
       content: (
         <Container>
           <Row>
             <Col md="2">
               <h2 className="title" style = {{marginTop: '100%', fontWeight: '400'}}>#AddingLifeToFruit</h2>
-              {/* <h5>
-                Now you have no excuses, it's time to surprise your clients, your
-                competitors, and why not, the world. You probably won't have a
-                better chance to show off all your potential if it's not by
-                designing a website for your own agency or web studio.
-              </h5>
-              <br />
-              <div className="buttons">
-                <Button
-                  className="btn-neutral"
-                  color="link"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                  size="lg"
-                >
-                  <i className="fa fa-share-alt" />
-                  Share Offer
-                </Button>
-                <Button
-                  className="btn-round"
-                  color="success"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                  size="lg"
-                >
-                  <i className="fa fa-shopping-cart" />
-                  Shop Now
-                </Button>
-              </div> */}
+    
             </Col>
           </Row>
         </Container>
@@ -221,62 +122,7 @@ export default function SectionHeader() {
     };
     return (
     <div className="header-3">
-    {/* <Navbar className="navbar-transparent navbar-absolute" expand="lg">
-    <Container>
-        <NavbarBrand className="mb-0" href="www.creative-tim.com">
-        Creative Tim
-        </NavbarBrand>
-        <button
-        className="navbar-toggler"
-        id="navbarSupportedContent3"
-        type="button"
-        >
-        <span className="navbar-toggler-bar" />
-        <span className="navbar-toggler-bar" />
-        <span className="navbar-toggler-bar" />
-        </button>
-        <UncontrolledCollapse navbar toggler="#navbarSupportedContent3">
-        <Nav className="ml-auto" navbar>
-            <Button
-            className="btn-neutral"
-            color="link"
-            href="#pablo"
-            onClick={(e) => e.preventDefault()}
-            >
-            Components
-            </Button>
-            <Button
-            className="btn-neutral"
-            color="link"
-            href="#pablo"
-            onClick={(e) => e.preventDefault()}
-            >
-            Tutorial
-            </Button>
-            <Button
-            className="btn-neutral"
-            color="link"
-            href="#pablo"
-            onClick={(e) => e.preventDefault()}
-            target="_blank"
-            >
-            <i className="fa fa-twitter" />
-            </Button>
-            <Button
-            className="btn-neutral"
-            color="link"
-            href="#pablo"
-            onClick={(e) => e.preventDefault()}
-            target="_blank"
-            >
-            <i className="fa fa-facebook" />
-            </Button>
-        </Nav>
-        </UncontrolledCollapse>
-    </Container>
-    </Navbar> */}
     <div className="page-carousel">
-    {/* <div className="filter" /> */}
     <Carousel activeIndex={activeIndex} next={next} previous={previous}>
         <CarouselIndicators
         items={items}

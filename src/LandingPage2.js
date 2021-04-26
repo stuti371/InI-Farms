@@ -2,17 +2,9 @@ import React from "react";
 
 // reactstrap components
 import {
-  Button,
-  Card,
-  CardBody,
-  CardFooter,
-  CardTitle,
-  Form,
-  Input,
   Container,
   Row,
   Col,
-  CardColumns,
 } from "reactstrap";
 
 export default function LandingPage2(){
@@ -22,7 +14,7 @@ export default function LandingPage2(){
           style={{
             backgroundImage:
               "url(" +
-              require("assets/kimaye/BG2.jpg") +
+              "https://res.cloudinary.com/ini-farms/image/upload/v1618863946/media/kimaye/BG2_cpea02.jpg" +
               ")",
           }}
         >
@@ -38,7 +30,7 @@ export default function LandingPage2(){
             <Col className="ml-auto" sm="5">
                 <div className="info">
                   <div >
-                    <img src = {require("assets/kimaye/care.jpg")}/>
+                    <img src = "https://res.cloudinary.com/ini-farms/image/upload/v1618863948/media/kimaye/care_w3gkjx.jpg"/>
                   </div>
                   <br />
                   <h4  style = {{fontWeight: '400', color: '#dbac00'}}>Farm To Home</h4>
@@ -52,7 +44,7 @@ export default function LandingPage2(){
               <Col className="mr-auto" sm="5">
                 <div className="info">
                   <div >
-                  <img src = {require("assets/kimaye/brand5.png")}/>
+                  <img src = {"https://res.cloudinary.com/ini-farms/image/upload/v1618863948/media/kimaye/brand5_ataxki.png"}/>
                   </div>
                   <br />
                   <h4  style = {{fontWeight: '400', color: '#dbac00'}}>Branded Fruit</h4>
@@ -68,7 +60,7 @@ export default function LandingPage2(){
               <Col className="ml-auto" sm="5">
                 <div className="info">
                   <div >
-                    <img src = {require("assets/kimaye/fruits.jpg")}/>
+                    <img src = "https://res.cloudinary.com/ini-farms/image/upload/v1618863954/media/kimaye/fruits_slvxnj.jpg"/>
                   </div>
                   <br />
                   <h4 style = {{fontWeight: '400', color: '#dbac00'}}>Product Ownership</h4>
@@ -82,7 +74,7 @@ export default function LandingPage2(){
               <Col className="mr-auto" sm="5">
                 <div className="info">
                   <div >
-                    <img src = {require("assets/kimaye/farmerlogo.jpg")}/>
+                    <img src = {"https://res.cloudinary.com/ini-farms/image/upload/v1618863953/media/kimaye/farmerlogo_ufmxcx.jpg"}/>
                   </div>
                   <br />
                   <h4 style = {{fontWeight: '400', color: '#dbac00'}}>Tech Driven</h4>
