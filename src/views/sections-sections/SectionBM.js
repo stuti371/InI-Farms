@@ -26,48 +26,13 @@ export default function SectionBM(){
             className="page-header"
             style={{
               backgroundImage:
-                "url(" + require("assets/kimaye/about.jpg") + ")",
+                "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863946/media/kimaye/about_xqts6f.jpg" + ")",
             }}
           >
-            {/* <div className="content-center">
-              <Container>
-                <Row>
-                  <Col md="5">
-                    <div className="iframe-container">
-                      <iframe
-                        title="iframe-container"
-                        allowFullScreen=""
-                        frameBorder="0"
-                        height="250"
-                        src="https://www.youtube.com/embed/RcmrbNRK-jY?modestbranding=1&amp;autohide=1&amp;showinfo=0"
-                      />
-                    </div>
-                  </Col>
-                  <Col className="ml-auto" md="6">
-                    <h2 className="title">Travel with us</h2>
-                    <h5 className="description">
-                      There's no doubt that Tesla is delighted with the
-                      interest, but the data also raises a few questions. How
-                      long will it take for Tesla to fulfill all those extra
-                      orders?
-                    </h5>
-                    <br />
-                    <Button
-                      color="danger"
-                      href="https://www.youtube.com/watch?v=RcmrbNRK-jY?ref=creativetim"
-                      target="_blank"
-                    >
-                      <i className="nc-icon nc-cart-simple mr-1" />
-                      Order Now
-                    </Button>
-                  </Col>
-                </Row>
-              </Container> */}
-            {/* </div> */}
           </div>
         <div className="section-image" style ={{
             backgroundImage:
-            "url(" + require("assets/kimaye/BGN2.jpg") + ")",
+            "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863946/media/kimaye/BGN2_k1eun0.jpg" + ")",
         }}>
         <Container>
           <Row>
@@ -87,7 +52,7 @@ export default function SectionBM(){
                       <img
                         alt="..."
                         className="avatar img-raised mr-2"
-                        src={require("assets/kimaye/integrated.jpg")}
+                        src={"https://res.cloudinary.com/ini-farms/image/upload/v1618863957/media/kimaye/integrated_i9vdqa.jpg"}
                       />
                       <span style = {{color: '#800000', fontSize: '102%', fontWeight: '600'}}>Integrated & Focused</span>
                     </a>
@@ -112,7 +77,7 @@ export default function SectionBM(){
                       <img
                         alt="..."
                         className="avatar img-raised mr-2"
-                        src={require("assets/kimaye/global.jpg")}
+                        src={"https://res.cloudinary.com/ini-farms/image/upload/v1618863955/media/kimaye/global_drx9kl.jpg"}
                       />
                       <span style = {{color: '#800000', fontSize: '102%', fontWeight: '600'}}>
                         Global
@@ -139,7 +104,7 @@ export default function SectionBM(){
                       <img
                         alt="..."
                         className="avatar img-raised mr-2"
-                        src={require("assets/kimaye/brand4.jpg")}
+                        src={"https://res.cloudinary.com/ini-farms/image/upload/v1618863947/media/kimaye/brand4_ovjrzo.jpg"}
                       />
                       <span style = {{color: '#800000', fontSize: '102%', fontWeight: '600'}}>
                         Brand
@@ -168,7 +133,7 @@ export default function SectionBM(){
                       <img
                         alt="..."
                         className="avatar img-raised mr-2"
-                        src={require("assets/kimaye/soulful2.jpg")}
+                        src={"https://res.cloudinary.com/ini-farms/image/upload/v1618863976/media/kimaye/soulful2_lwczqw.jpg"}
                       />
                       <span style = {{color: '#f49f00', fontSize: '102%', fontWeight: '600'}}>
                         Soulful
@@ -195,7 +160,7 @@ export default function SectionBM(){
                       <img
                         alt="..."
                         className="avatar img-raised"
-                        src={require("assets/kimaye/equitable.jpg")}
+                        src={"https://res.cloudinary.com/ini-farms/image/upload/v1618863952/media/kimaye/equitable_jomh5c.jpg"}
                       />
                       <span style = {{color: '#f49f00', fontSize: '102%', fontWeight: '600'}}>Equitable Partnerships</span>
                     </a>
@@ -248,32 +213,6 @@ export default function SectionBM(){
                     95% farmer retention – highly scalable model
                     </p>
                   </CardBody>
-                  {/* <CardFooter className="text-center">
-                    <Button
-                      className="btn-just-icon mr-1"
-                      color="linkedin"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon mr-1"
-                      color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-dribbble" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon"
-                      color="pinterest"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-pinterest" />
-                    </Button>
-                  </CardFooter> */}
                 </Card>
               </Col>
               <Col md="4">
@@ -292,32 +231,7 @@ export default function SectionBM(){
                     to long distance markets
                     </p>
                   </CardBody>
-                  {/* <CardFooter className="text-center">
-                    <Button
-                      className="btn-just-icon mr-1"
-                      color="youtube"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-youtube" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon mr-1"
-                      color="twitter"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon"
-                      color="instagram"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-instagram" />
-                    </Button>
-                  </CardFooter> */}
+                
                 </Card>
               </Col>
               <Col md="4">   
@@ -335,32 +249,6 @@ export default function SectionBM(){
                     in 35 countries and Direct-to-Consumer through kimaye.com and online aggregators
                     </p>
                   </CardBody>
-                  {/* <CardFooter className="text-center">
-                    <Button
-                      className="btn-just-icon mr-1"
-                      color="linkedin"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon mr-1"
-                      color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-dribbble" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon"
-                      color="instagram"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-instagram" />
-                    </Button>
-                  </CardFooter> */}
                 </Card>
               </Col>
             </Row>
@@ -381,32 +269,6 @@ export default function SectionBM(){
                     and post-harvest processes
                     </p>
                   </CardBody>
-                  {/* <CardFooter className="text-center">
-                    <Button
-                      className="btn-just-icon mr-1"
-                      color="linkedin"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon mr-1"
-                      color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-dribbble" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon"
-                      color="pinterest"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-pinterest" />
-                    </Button>
-                  </CardFooter> */}
                 </Card>
               </Col>
               <Col md="4">
@@ -425,32 +287,6 @@ export default function SectionBM(){
                     quality-gate system and traceability
                     </p>
                   </CardBody>
-                  {/* <CardFooter className="text-center">
-                    <Button
-                      className="btn-just-icon mr-1"
-                      color="youtube"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-youtube" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon mr-1"
-                      color="twitter"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon"
-                      color="instagram"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-instagram" />
-                    </Button>
-                  </CardFooter> */}
                 </Card>
               </Col>
               <Col md="4">   
@@ -469,32 +305,6 @@ export default function SectionBM(){
                     governance goals compliant with UN-SDGs.
                     </p>
                   </CardBody>
-                  {/* <CardFooter className="text-center">
-                    <Button
-                      className="btn-just-icon mr-1"
-                      color="linkedin"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon mr-1"
-                      color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-dribbble" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon"
-                      color="instagram"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-instagram" />
-                    </Button>
-                  </CardFooter> */}
                 </Card>
               </Col>
             </Row>
@@ -503,15 +313,12 @@ export default function SectionBM(){
         </div>
         <div className="section-image" style ={{
             backgroundImage:
-            "url(" + require("assets/kimaye/BGN2.jpg") + ")",}}>
+            "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863946/media/kimaye/BGN2_k1eun0.jpg" + ")",}}>
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="12">
-                {/* <h6 className="text-muted">Our work</h6> */}
                 <h2 style = {{color: 'white'}}>Integrated Platform providing Branded Safe Fruits</h2>
-                {/* <h5 style = {{color: 'white'}}>
-                  Integrated platform providing branded safe fruits
-                </h5> */}<br />
+              <br />
               </Col>
             </Row>
             <div className="space-top" />
@@ -519,25 +326,15 @@ export default function SectionBM(){
               <Col md="4">
                 <Card className="card-plain">
                   <CardImg top tag="div">
-                    {/* <a
-                      href="http://www.creative-tim.com/product/paper-kit-react?ref=pkpr-sections-page"
-                      target="_blank"
-                    > */}
                       <img
                         alt="..."
                         className="img"
-                        src={require("assets/kimaye/farmeraward.jpg")}
+                        src={"https://res.cloudinary.com/ini-farms/image/upload/v1618863953/media/kimaye/farmeraward_fjzsiv.jpg"}
                       />
                     {/* </a> */}
                   </CardImg>
                   <CardBody>
-                    {/* <a
-                      href="http://www.creative-tim.com/product/paper-kit-react?ref=pkpr-sections-page"
-                      target="_blank"
-                    > */}
                      <CardTitle tag="h4" style = {{color: '#dbac00', fontWeight: '500'}}>Our Award Winning Farmers</CardTitle>
-                    {/* </a> */}
-                    {/* <h6 className="card-category text-muted">Free Ui kit</h6> */}
                     <p className="card-description" style = {{color: 'white'}}>
                     Our farmers are our most important partners. Working with them, bringing advanced
                     technologies to farms, de-risking their business, improving their livelihood and celebrating
@@ -549,14 +346,10 @@ export default function SectionBM(){
               <Col md="4">
                 <Card className="card-plain">
                   <CardImg top tag="div">
-                    {/* <a
-                      href="https://www.creative-tim.com/product/argon-dashboard-pro-react?ref=pkpr-sections-page"
-                      target="_blank"
-                    > */}
                       <img
                         alt="..."
                         className="img"
-                        src={require("assets/kimaye/Plant 13.jpg")}
+                        src={"https://res.cloudinary.com/ini-farms/image/upload/v1618863959/media/kimaye/Plant_13_ujhe68.jpg"}
                       />
                     {/* </a> */}
                   </CardImg>
@@ -581,27 +374,17 @@ export default function SectionBM(){
               <Col md="4">
                 <Card className="card-plain">
                   <CardImg top tag="div">
-                    {/* <a
-                      href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=pkpr-sections-page"
-                      target="_blank"
-                    > */}
                       <img
                         alt="..."
                         className="img"
-                        src={require("assets/kimaye/shelfretail.jpg")}
+                        src={"https://res.cloudinary.com/ini-farms/image/upload/v1618863975/media/kimaye/shelfretail_nc3y3g.jpg"}
                       />
                     {/* </a> */}
                   </CardImg>
                   <CardBody>
-                    {/* <a
-                      href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=pkpr-sections-page"
-                      target="_blank" */}
-                    {/* > */}
                       <CardTitle tag="h4" style = {{color: 'white', fontWeight: '500'}}>
                       World Class Products
                       </CardTitle>
-                    {/* </a> */}
-                    {/* <h6 className="card-category text-muted">Premium UI kit</h6> */}
                     <p className="card-description" style = {{color: 'white'}}>
                     We are on a mission to provide safe fruits. Hygienic, contamination-free,
                     zero health-risk and nutritious products are available to consumers in 35+
