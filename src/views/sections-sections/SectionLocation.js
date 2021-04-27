@@ -240,7 +240,6 @@ export default function SectionLocation() {
                         <div className="description">
                           <h4 style={{color: 'black', fontWeight: '400'}}>Reach us on</h4>
                           <p style={{color: 'black'}}>
-                            E-mail: kimayedb@gmail.com <br />
                             Tel: +91 22 4260 0700 <br />
                             Fax: +91 22 4260 0731
                             </p>
@@ -324,7 +323,7 @@ export default function SectionLocation() {
                               className="pull-right"
                               color="primary"
                               type="submit"
-                              onClick={(e) => { e.preventDefault(); window.open(`mailto:kimayedb@gmail.com?subject=${subject}&body=${`${body}%0D%0AFrom,%0D%0A${firstName} ${lastName}`}`)}}
+                              onClick={(e) => { e.preventDefault(); window.open(`mailto:?subject=${subject}&body=${`${body}%0D%0AFrom,%0D%0A${firstName} ${lastName}`}`)}}
                             >Send Message
                             </Button>
                           </Col>

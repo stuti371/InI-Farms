@@ -1,5 +1,4 @@
 import React from "react";
-// react plugin used to create google maps
 import {
   withScriptjs,
   withGoogleMap,
@@ -258,7 +257,6 @@ function SectionContactUs() {
                           <div className="description">
                             <h4 className="info-title">Reach us on</h4>
                             <p>
-                              e-mail: kimayedb@gmail.com <br />
                               Tel: +91 22 4260 0700 <br />
                               Fax: +91 22 4260 0731
                             </p>
