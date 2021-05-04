@@ -56,16 +56,6 @@ export default function FooterFinal() {
                           Media
                         </a>
                       </li>
-                      {/* <li>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        Live Support
-                    </a>
-                    </li>
-                    <li>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        Money Back
-                    </a>
-                    </li> */}
                     </ul>
                   </div>
                 </div>
@@ -112,33 +102,7 @@ export default function FooterFinal() {
                   </div>
                 </div>
               </div>
-              {/* <hr />
-            <div className="copyright">
-            <div className="pull-left">
-                © {new Date().getFullYear()} InI Farms Pvt Ltd, All Rights Reserved
-            </div> */}
-              {/* <div className="links pull-right">
-                <ul>
-                <li className="mr-1">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    Company Policy
-                    </a>
-                </li>
-                |{" "}
-                <li className="mr-1">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    Terms
-                    </a>
-                </li>
-                |{" "}
-                <li>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    Privacy
-                    </a>
-                </li>
-                </ul>
-            </div> */}
-              {/* </div> */}
+
             </Col>
             <Col className="text-center ml-auto mr-auto" md="2" sm="2" xs="12">
               <h4>Kimaye</h4>
@@ -150,27 +114,6 @@ export default function FooterFinal() {
             <div className="pull-left">
               © {new Date().getFullYear()} InI Farms Pvt Ltd, All Rights Reserved
             </div>
-            {/* <div className="links pull-right">
-                <ul>
-                <li className="mr-1">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    Company Policy
-                    </a>
-                </li>
-                |{" "}
-                <li className="mr-1">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    Terms
-                    </a>
-                </li>
-                |{" "}
-                <li>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    Privacy
-                    </a>
-                </li>
-                </ul>
-            </div> */}
           </div>
         </Container>
       </footer>
