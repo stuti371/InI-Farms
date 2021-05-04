@@ -17,7 +17,7 @@ export default function Management(){
     return(
         <div className="section section-team cd-section" id="teams" style = {{
           backgroundImage:
-          "url(" + require("assets/kimaye/BG3.jpg") + ")",}}>
+          `url("https://res.cloudinary.com/ini-farms/image/upload/v1618863946/media/kimaye/BG3_aj4sfe.jpg")`,}}>
           <Container >
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
@@ -36,7 +36,7 @@ export default function Management(){
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={require("assets/kimaye/ashwin.jpg")}
+                        src="https://res.cloudinary.com/ini-farms/image/upload/v1618863984/media/kimaye/ashwin_zzkbp8.jpg"
                       />
                     </a>
                   </div>
@@ -80,7 +80,7 @@ export default function Management(){
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={require("assets/kimaye/Sushil.jpg")}
+                        src="https://res.cloudinary.com/ini-farms/image/upload/v1618863976/media/kimaye/Sushil_f29z2e.jpg"
                       />
                     </a>
                   </div>
@@ -124,7 +124,7 @@ export default function Management(){
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={require("assets/kimaye/ajit-kumar.jpg")}
+                        src="https://res.cloudinary.com/ini-farms/image/upload/v1618863981/media/kimaye/ajit-kumar_iwqckh.jpg"
                       />
                     </a>
                   </div>
@@ -167,7 +167,7 @@ export default function Management(){
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={require("assets/kimaye/kalpesh.jpg")}
+                        src="https://res.cloudinary.com/ini-farms/image/upload/v1618863957/media/kimaye/kalpesh_lnl1lh.jpg"
                       />
                     </a>
                   </div>
@@ -213,7 +213,7 @@ export default function Management(){
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={require("assets/kimaye/prachi.jpg")}
+                        src="https://res.cloudinary.com/ini-farms/image/upload/v1618863970/media/kimaye/prachi_xsrafl.jpg"
                       />
                     </a>
                   </div>
@@ -256,7 +256,7 @@ export default function Management(){
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={require("assets/kimaye/SHALABH.jpg")}
+                        src="https://res.cloudinary.com/ini-farms/image/upload/v1618863975/media/kimaye/SHALABH_ildazr.jpg"
                       />
                     </a>
                   </div>
@@ -300,7 +300,7 @@ export default function Management(){
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={require("assets/kimaye/Indravadan.jpg")}
+                        src="https://res.cloudinary.com/ini-farms/image/upload/v1618863956/media/kimaye/Indravadan_abczxj.jpg"
                       />
                     </a>
                   </div>
@@ -344,7 +344,7 @@ export default function Management(){
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
                     <img
                       alt="..."
-                      src={require("assets/kimaye/Parag.JPG")}
+                      src="https://res.cloudinary.com/ini-farms/image/upload/v1620048603/media/kimaye/parag_kpci6x.jpg"
                     />
                   </a>
                 </div>
@@ -391,7 +391,7 @@ export default function Management(){
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
                     <img
                       alt="..."
-                      src={require("assets/kimaye/Vaibhav.jpg")}
+                      src="https://res.cloudinary.com/ini-farms/image/upload/v1620048602/media/kimaye/vaibhav_bxgfst.jpg"
                     />
                   </a>
                 </div>

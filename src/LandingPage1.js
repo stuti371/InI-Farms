@@ -37,7 +37,10 @@ export default function LandingPage1(){
             <Row >
               <Col  md="5"  sm = '5' style ={{justifyItems: 'start', marginTop: 55}}>
                 
-                  <img src = {require("assets/kimaye/talk2.jpg")} width = '95%' height = '90%'/>
+                  <img 
+                    src = "https://res.cloudinary.com/ini-farms/image/upload/v1618863977/media/kimaye/talk2_haajpy.jpg" 
+                    width = '95%' 
+                    height = '90%'/>
                 
               </Col> <br />
               <Col md="7" sm = '7' style ={{alignItems: 'center'}}>

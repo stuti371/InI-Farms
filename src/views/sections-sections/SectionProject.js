@@ -123,7 +123,7 @@ function SectionProject() {
                     filter: 120,
                     backgroundImage:
                       "url(" +
-                      require("assets/kimaye/farmer2.jpg") +
+                      "https://res.cloudinary.com/ini-farms/image/upload/v1618863953/media/kimaye/farmer2_bur0wi.jpg" +
                       ")",
                   }}
                 >
@@ -156,7 +156,7 @@ function SectionProject() {
                   style={{
                     backgroundImage:
                       "url(" +
-                      require("assets/kimaye/banana8.jpg") +
+                      "https://res.cloudinary.com/ini-farms/image/upload/v1618863944/media/kimaye/banana8_ktv2gh.jpg" +
                       ")",
                   }}
                 >
@@ -191,7 +191,7 @@ function SectionProject() {
                   style={{
                     backgroundImage:
                       "url(" +
-                      require("assets/kimaye/banana3.jpg") +
+                      "https://res.cloudinary.com/ini-farms/image/upload/v1618863944/media/kimaye/banana3_aujpsf.jpg" +
                       ")",
                   }}
                 >

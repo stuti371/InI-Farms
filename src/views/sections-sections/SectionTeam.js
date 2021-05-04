@@ -17,7 +17,8 @@ import WhiteNavbar from 'components/Navbars/WhiteNavbar.js'
 // core components
 const items = [
   {
-    src: "url(" + require("assets/kimaye/INI-Team.jpg") + ")",
+    src: "url(" + 
+    "https://res.cloudinary.com/ini-farms/image/upload/v1618863956/media/kimaye/INI-Team_oigqze.jpg" + ")",
     content: (
       <Container>
         <Row>
@@ -73,7 +74,8 @@ const items = [
     caption: "",
   },
   {
-    src: "url(" + require("assets/kimaye/Board.JPG") + ")",
+    src: "url(" + 
+    "https://res.cloudinary.com/ini-farms/image/upload/v1618863947/media/kimaye/Board_vcu8ht.jpg" + ")",
     content: (
       <Container>
         <Row>
@@ -129,7 +131,8 @@ const items = [
     caption: "",
   },
   {
-    src: "url(" + require("assets/kimaye/Team10.JPG") + ")",
+    src: "url(" + 
+    "https://res.cloudinary.com/ini-farms/image/upload/v1618863977/media/kimaye/Team10_hdufbg.jpg" + ")",
     content: (
       <Container>
         <Row>

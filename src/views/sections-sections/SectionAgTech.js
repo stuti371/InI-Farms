@@ -77,7 +77,7 @@ export default function SectionAgTech() {
           className="page-header"
           style={{
             backgroundImage:
-              "url(" + require("assets/kimaye/AgTechH.png") + ")",
+              "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863980/media/kimaye/AgTechH_pa2hpk.png" + ")",
           }}
         >
           {/* <div className="filter" /> */}
@@ -85,7 +85,7 @@ export default function SectionAgTech() {
       </div>
       <div className="features-3 section-image" style={{
         backgroundImage:
-          "url(" + require("assets/kimaye/BGN2.jpg") + ")",
+          "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863946/media/kimaye/BGN2_k1eun0.jpg" + ")",
       }}>
         <Container>
           <Row>
@@ -185,12 +185,12 @@ export default function SectionAgTech() {
               <div className={`${styles.AgPhoneImg}`}>
                 <img
                   alt="..."
-                  src={require("assets/kimaye/agtech0.png")}
+                  src="https://res.cloudinary.com/ini-farms/image/upload/v1618863945/media/kimaye/agtech0_rzknua.png"
                   style={{width: '95%', height: '95%'}}
                 /><br /><br />
                 <img
                   alt="..."
-                  src={require("assets/kimaye/agtech1.png")}
+                  src="https://res.cloudinary.com/ini-farms/image/upload/v1618863980/media/kimaye/agtech1_z6vseq.png"
                   style={{width: '60%', height: '60%'}}
                 />
               </div>
@@ -297,12 +297,12 @@ export default function SectionAgTech() {
               <div style={{marginTop: '20%'}}>
                 <img
                   alt="..."
-                  src={require("assets/kimaye/agtech11.png")}
+                  src="https://res.cloudinary.com/ini-farms/image/upload/v1618863980/media/kimaye/agtech11_daljpg.png"
                   style={{width: '95%', height: '95%'}}
                 /><br /><br />
                 <img
                   alt="..."
-                  src={require("assets/kimaye/agtech00.png")}
+                  src="https://res.cloudinary.com/ini-farms/image/upload/v1618863945/media/kimaye/agtech00_hbebey.png"
                   style={{width: '90%', height: '90%', marginLeft: '5%', }}
                 />
               </div>
@@ -312,7 +312,7 @@ export default function SectionAgTech() {
       </div>
       <div className="features-4 section-image" style={{
         backgroundImage:
-          "url(" + require("assets/kimaye/BGN2.jpg") + ")",
+          "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863946/media/kimaye/BGN2_k1eun0.jpg" + ")",
       }}>
         <Container>
           <Row >
@@ -328,12 +328,12 @@ export default function SectionAgTech() {
               <div style={{marginTop: '8%'}}>
                 <img
                   alt="..."
-                  src={require("assets/kimaye/agtech15.png")}
+                  src="https://res.cloudinary.com/ini-farms/image/upload/v1618863980/media/kimaye/agtech15_jbge4h.png"
                   style={{width: '65%', height: '65%', marginLeft: '20%'}}
                 /><br /><br />
                 <img
                   alt="..."
-                  src={require("assets/kimaye/agtech12.jpg")}
+                  src="https://res.cloudinary.com/ini-farms/image/upload/v1618863980/media/kimaye/agtech12_hov8mf.jpg"
                   style={{width: '45%', height: '45%', marginLeft: '28%', borderRadius: '2%'}}
                 />
               </div>

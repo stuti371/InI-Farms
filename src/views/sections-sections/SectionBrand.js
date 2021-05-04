@@ -77,7 +77,7 @@ export default function SectionBrand() {
           className="page-header"
           style={{
             backgroundImage:
-              "url(" + require("assets/kimaye/D2C5.png") + ")",
+              "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863951/media/kimaye/D2C5_bkpdfb.png" + ")",
           }}
         >
           {/* <div className="filter" /> */}
@@ -165,7 +165,7 @@ export default function SectionBrand() {
                     {/* <a href="#pablo" onClick={(e) => e.preventDefault()}> */}
                     <img
                       alt="..."
-                      src={require("assets/kimaye/Safety.png")}
+                      src="https://res.cloudinary.com/ini-farms/image/upload/v1618863974/media/kimaye/Safety_snvyz7.png"
                     />
                     <CardTitle tag="h4">Eric Thomson</CardTitle>
                     {/* </a> */}
@@ -213,7 +213,7 @@ export default function SectionBrand() {
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={require("assets/kimaye/quality.png")}
+                        src="https://res.cloudinary.com/ini-farms/image/upload/v1618863973/media/kimaye/quality_ynstl0.png"
                       />
                       <CardTitle tag="h4">Sophia West</CardTitle>
                     </a>
@@ -260,7 +260,7 @@ export default function SectionBrand() {
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={require("assets/kimaye/Consistency.png")}
+                        src="https://res.cloudinary.com/ini-farms/image/upload/v1618863949/media/kimaye/Consistency_gueme2.png"
                       />
                       {/* <CardTitle tag="h4">Lucas Andrew</CardTitle> */}
                     </a>
@@ -306,7 +306,7 @@ export default function SectionBrand() {
       </div>
       <div className="team-4 section-image" style={{
         backgroundImage:
-          "url(" + require("assets/kimaye/BG2.jpg") + ")",
+          "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863946/media/kimaye/BG2_cpea02.s" + ")",
       }}>
         <Container>
           <Row>
@@ -322,7 +322,7 @@ export default function SectionBrand() {
                       <div className='card-avatar'>
                         <img
                           alt="..."
-                          src={require("assets/kimaye/Grown Responsibly.png")}
+                          src="https://res.cloudinary.com/ini-farms/image/upload/v1618863955/media/kimaye/Grown_Responsibly_osptje.png"
                         />
                       </div>
                       <h6 style={{color: '#800000', fontWeight: '700'}}>Grown Responsibly</h6>
@@ -341,7 +341,7 @@ export default function SectionBrand() {
                       <div className='card-avatar'>
                         <img
                           alt="..."
-                          src={require("assets/kimaye/Handpicked.png")}
+                          src="https://res.cloudinary.com/ini-farms/image/upload/v1618863955/media/kimaye/Handpicked_nz0zq3.png"
                         />
                       </div>
                       <h6 style={{color: '#800000', fontWeight: '700'}}>Handpicked at Farms</h6>
@@ -358,7 +358,10 @@ export default function SectionBrand() {
             </Col>
             <Col md='6'>
               <Row md='2'>
-                <img src={require("assets/kimaye/flying.png")} alt="flying" className={`${styles.ImgFlying}`} />
+                <img 
+                  src="https://res.cloudinary.com/ini-farms/image/upload/v1618863954/media/kimaye/flying_qpnoxm.png" 
+                  alt="flying" 
+                  className={`${styles.ImgFlying}`} />
               </Row>
               <Row md='10'>
                 <Col>
@@ -368,7 +371,7 @@ export default function SectionBrand() {
                       <div className='card-avatar'>
                         <img
                           alt="..."
-                          src={require("assets/kimaye/Kimaye Badge.png")}
+                          src="https://res.cloudinary.com/ini-farms/image/upload/v1618863957/media/kimaye/Kimaye_Badge_iux03r.png"
                         />
                       </div>
                       <h6 style={{color: '#800000', fontWeight: '700'}}>Earning the Kimaye Badge</h6>
@@ -388,7 +391,7 @@ export default function SectionBrand() {
                       <div className='card-avatar'>
                         <img
                           alt="..."
-                          src={require("assets/kimaye/Delivery.png")}
+                          src="https://res.cloudinary.com/ini-farms/image/upload/v1618863951/media/kimaye/Delivery_cxxbdc.png"
                         />
                       </div>
                       <h6 style={{color: '#800000', fontWeight: '700'}}>No-Touch Delivery</h6>
@@ -433,17 +436,35 @@ export default function SectionBrand() {
                         </p><br />
                     <Row style={{justifyContent: 'center'}}>
                       <Col md='3' style={{justifyContent: 'center'}}>
-                        <img alt="..." src={require("assets/kimaye/HACCP.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <img 
+                          alt="..." 
+                          src="https://res.cloudinary.com/ini-farms/image/upload/v1618863955/media/kimaye/HACCP_g1ebjt.png"
+                          width='120' 
+                          height='150' 
+                          style={{borderRadius: '0'}} 
+                        />
                         <br /><br />
                         <h6 style={{color: 'white'}}>HACCP</h6>
                       </Col>
                       <Col md='3' style={{justifyContent: 'center'}}>
-                        <img alt="..." src={require("assets/kimaye/FSSC.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <img 
+                          alt="..." 
+                          src="https://res.cloudinary.com/ini-farms/image/upload/v1618863954/media/kimaye/FSSC_jggov4.png"
+                          width='120' 
+                          height='150' 
+                          style={{borderRadius: '0'}}
+                        />
                         <br /><br />
                         <h6 style={{color: 'white'}}>FSSC</h6>
                       </Col>
                       <Col md='3' style={{justifyContent: 'center'}}>
-                        <img alt="..." src={require("assets/kimaye/FSSAI.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <img 
+                          alt="..." 
+                          src="https://res.cloudinary.com/ini-farms/image/upload/v1618863954/media/kimaye/FSSAI_crmsre.png" 
+                          width='120' 
+                          height='150' 
+                          style={{borderRadius: '0'}} 
+                        />
                         <br /><br />
                         <h6 style={{color: 'white'}}>FSSAI</h6>
                       </Col>
@@ -463,17 +484,35 @@ export default function SectionBrand() {
                         </p><br />
                     <Row style={{justifyContent: 'center'}}>
                       <Col md='3' style={{justifyContent: 'center'}}>
-                        <img alt="..." src={require("assets/kimaye/GGAPOP2.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <img 
+                          alt="..." 
+                          src="https://res.cloudinary.com/ini-farms/image/upload/v1618863955/media/kimaye/GGAPOP2_sgxotx.png"
+                          width='120' 
+                          height='150' 
+                          style={{borderRadius: '0'}} 
+                        />
                         <br /><br />
                         <h6 style={{color: 'white'}}>Group-GAP</h6>
                       </Col>
                       <Col md='3' style={{justifyContent: 'center'}}>
-                        <img alt="..." src={require("assets/kimaye/GRASPOP2.png")} width='120' height='150' style={{borderRadius: '0', marginTop: '30%'}} />
+                        <img 
+                          alt="..." 
+                          src="https://res.cloudinary.com/ini-farms/image/upload/v1618863955/media/kimaye/GRASPOP2_exbsbz.png" 
+                          width='120' 
+                          height='150' 
+                          style={{borderRadius: '0', marginTop: '30%'}} 
+                        />
                         <br /><br />
                         <h6 style={{color: 'white'}}>Group-GRASP</h6>
                       </Col>
                       <Col md='3' style={{justifyContent: 'center'}}>
-                        <img alt="..." src={require("assets/kimaye/GGAP.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <img 
+                          alt="..." 
+                          src="https://res.cloudinary.com/ini-farms/image/upload/v1618863954/media/kimaye/GGAP_otgzb6.png" 
+                          width='120' 
+                          height='150' 
+                          style={{borderRadius: '0'}} 
+                        />
                         <br /><br />
                         <h6 style={{color: 'white'}}>GlobalGap</h6>
                       </Col>
@@ -495,17 +534,35 @@ export default function SectionBrand() {
                             </p><br />
                     <Row style={{justifyContent: 'center'}}>
                       <Col md='3' style={{justifyContent: 'center'}}>
-                        <img alt="..." src={require("assets/kimaye/APEDA.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <img 
+                          alt="..." 
+                          src="https://res.cloudinary.com/ini-farms/image/upload/v1618863982/media/kimaye/APEDA_p828km.png" 
+                          width='120' 
+                          height='150' 
+                          style={{borderRadius: '0'}} 
+                        />
                         <br /><br />
                         <h6 style={{color: 'white'}}>APEDA</h6>
                       </Col>
                       <Col md='3' style={{justifyContent: 'center'}}>
-                        <img alt="..." src={require("assets/kimaye/BRC.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <img 
+                          alt="..." 
+                          src="https://res.cloudinary.com/ini-farms/image/upload/v1618863948/media/kimaye/BRC_zwigml.png" 
+                          width='120' 
+                          height='150' 
+                          style={{borderRadius: '0'}} 
+                        />
                         <br /><br />
                         <h6 style={{color: 'white'}}>BRC</h6>
                       </Col>
                       <Col md='3' style={{justifyContent: 'center'}}>
-                        <img alt="..." src={require("assets/kimaye/SEH.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <img 
+                          alt="..." 
+                          src="https://res.cloudinary.com/ini-farms/image/upload/v1618863975/media/kimaye/SEH_htlyhp.png" 
+                          width='120' 
+                          height='150' 
+                          style={{borderRadius: '0'}} 
+                        />
                         <br /><br />
                         <h6 style={{color: 'white'}}>star export HOUSE</h6>
                       </Col>
@@ -525,12 +582,24 @@ export default function SectionBrand() {
                             </p><br />
                     <Row style={{justifyContent: 'center'}}>
                       <Col md='3' style={{justifyContent: 'center'}}>
-                        <img alt="..." src={require("assets/kimaye/SMETA.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <img 
+                          alt="..." 
+                          src="https://res.cloudinary.com/ini-farms/image/upload/v1618863975/media/kimaye/SMETA_fv2nte.png" 
+                          width='120' 
+                          height='150' 
+                          style={{borderRadius: '0'}} 
+                        />
                         <br /><br />
                         <h6 style={{color: 'white'}}>SMETA</h6>
                       </Col>
                       <Col md='3' style={{justifyContent: 'center'}}>
-                        <img alt="..." src={require("assets/kimaye/GRASP.png")} width='120' height='150' style={{borderRadius: '0'}} />
+                        <img 
+                          alt="..." 
+                          src="https://res.cloudinary.com/ini-farms/image/upload/v1618863955/media/kimaye/GRASP_sthxvw.png" 
+                          width='120' 
+                          height='150' 
+                          style={{borderRadius: '0'}} 
+                        />
                         <br /><br />
                         <h6 style={{color: 'white'}}>Grasp</h6><br />
                       </Col>

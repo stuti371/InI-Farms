@@ -19,7 +19,7 @@ import MultiDropdownNavbar from "components/Navbars/MultiDropdownNavbar.js";
 import FooterFinal from "FooterFinal";
 const items = [
   {
-    src: "url(" + require("assets/kimaye/bananac1.jpg") + ")",
+    src: "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863944/media/kimaye/bananac1_iuehtq.jpg" + ")",
     content: (
       <Container>
         <Row>
@@ -75,7 +75,7 @@ const items = [
     caption: "",
   },
   {
-    src: "url(" + require("assets/kimaye/bananabox.jpg") + ")",
+    src: "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863943/media/kimaye/bananabox_yqumi3.jpg" + ")",
     content: (
       <Container>
         <Row>
@@ -131,7 +131,7 @@ const items = [
     caption: "",
   },
   {
-    src: "url(" + require("assets/kimaye/bananac2.jpg") + ")",
+    src: "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863944/media/kimaye/bananac2_zidtxf.jpg" + ")",
     content: (
       <Container>
         <Row>
@@ -217,7 +217,7 @@ function SectionProduct() {
         <div className="projects-2 section section-image"
           style={{
             backgroundImage:
-              "url(" + require("assets/kimaye/BG2.jpg") + ")",
+              "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863946/media/kimaye/BG2_cpea02.jpg" + ")",
           }}>
           <Container>
             <Row>
@@ -243,7 +243,7 @@ function SectionProduct() {
                     <img
                       alt="..."
                       className="img"
-                      src={require("assets/kimaye/Pom Cover 2.jpg")}
+                      src="https://res.cloudinary.com/ini-farms/image/upload/v1618863964/media/kimaye/Pom_Cover_2_k1mfok.jpg"
                     />
                     {/* </a> */}
                   </CardImg>
@@ -273,7 +273,7 @@ function SectionProduct() {
                     <img
                       alt="..."
                       className="img"
-                      src={require("assets/kimaye/Banana cover.jpg")}
+                      src="https://res.cloudinary.com/ini-farms/image/upload/v1618863940/media/kimaye/Banana_cover_wfqfyp.jpg"
                     />
                     {/* </a> */}
                   </CardImg>
@@ -306,7 +306,7 @@ function SectionProduct() {
                     <img
                       alt="..."
                       className="img"
-                      src={require("assets/kimaye/Fresh Cut.jpg")}
+                      src="https://res.cloudinary.com/ini-farms/image/upload/v1618863954/media/kimaye/Fresh_Cut_otoxzv.jpg"
                     />
                     {/* </a> */}
                   </CardImg>
@@ -426,7 +426,8 @@ function SectionProduct() {
                 <div style={{marginTop: '25%', }}>
                   <img alt="..."
                     style={{width: '100%', height: '110%'}}
-                    src={require("assets/kimaye/Pom Products.png")} />
+                    src="https://res.cloudinary.com/ini-farms/image/upload/v1618863965/media/kimaye/Pom_Products_yydrec.png" 
+                  />
                 </div>
               </Col>
             </Row>
@@ -434,7 +435,7 @@ function SectionProduct() {
         </div>
         <div className="features-4 section-image" style={{
           backgroundImage:
-            "url(" + require("assets/kimaye/BG2.jpg") + ")",
+            "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863946/media/kimaye/BG2_cpea02.jpg" + ")",
         }}>
           <Container>
             <Row>
@@ -453,7 +454,7 @@ function SectionProduct() {
                   <img
                     alt="..."
                     style={{width: '100%', height: '110%'}}
-                    src={require("assets/kimaye/Banana Products.png")}
+                    src="https://res.cloudinary.com/ini-farms/image/upload/v1618863941/media/kimaye/Banana_Products_gok57u.png"
                   />
                 </div>
               </Col>
@@ -592,7 +593,7 @@ function SectionProduct() {
                 <div style={{marginTop: '33%'}}>
                   <img style={{width: '100%', height: '110%'}}
                     alt="..."
-                    src={require("assets/kimaye/Arils Products.png")}
+                    src="https://res.cloudinary.com/ini-farms/image/upload/v1618863983/media/kimaye/Arils_Products_uyt94l.png"
                   />
                 </div>
               </Col>
@@ -601,7 +602,7 @@ function SectionProduct() {
         </div>
         <div className="features-4 section-image" style={{
           backgroundImage:
-            "url(" + require("assets/kimaye/BG2.jpg") + ")",
+            "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863946/media/kimaye/BG2_cpea02.jpg" + ")",
         }}>
           <Container>
             <Row>
@@ -620,7 +621,7 @@ function SectionProduct() {
                   <img
                     alt="..."
                     style={{width: '100%', height: '100%'}}
-                    src={require("assets/kimaye/Coconut Products.png")}
+                    src="https://res.cloudinary.com/ini-farms/image/upload/v1618863950/media/kimaye/Coconut_Products_etf0uz.png"
                   />
                   {/* <Row md = "6" >
                     <Col md="6">

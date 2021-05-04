@@ -222,7 +222,7 @@ function SectionContactUs() {
           className="contactus-1 section-image"
           style={{
             backgroundImage:
-              "url(" + require("assets/kimaye/BGN2.jpg") + ")",
+              "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863946/media/kimaye/BGN2_k1eun0.jpg" + ")",
           }}
         >
           <Container>

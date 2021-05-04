@@ -130,7 +130,7 @@ function SectionMedia() {
           className="page-header"
           style={{
             backgroundImage:
-              "url(" + require("assets/kimaye/Decade.jpg") + ")", marginTop: '2%'
+              "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863950/media/kimaye/Decade_w51fze.jpg" + ")", marginTop: '2%'
           }}
         >
           <div className="content-center">
@@ -153,7 +153,7 @@ function SectionMedia() {
 
       <div className={`blog-2 ${styles.BlogSection}`} style={{
         minHeight: "80vh",
-        backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" + require("assets/kimaye/BGN2.jpg") + ")",
+        backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863946/media/kimaye/BGN2_k1eun0.jpg" + ")",
       }}>
         <div className={styles.JourneyContainer}>
           <h2 id="journeyJump" style={{color: '#dbac00', fontWeight: '500', textAlign: 'center'}}>The Journey...</h2>
@@ -302,7 +302,7 @@ function SectionMedia() {
       <div
         className={`blog-2 ${styles.BlogSection}`}
         style={{
-          backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" + require("assets/kimaye/BGN2.jpg") + ")",
+          backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863946/media/kimaye/BGN2_k1eun0.jpg" + ")",
           paddingBottom: "3rem"
         }}>
         <div style={{

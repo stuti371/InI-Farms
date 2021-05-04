@@ -18,7 +18,7 @@ import styles from "./SectionStyles.module.css";
 
 const items = [
   {
-    src: "url(" + require("assets/kimaye/D2C4.png") + ")",
+    src: "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863951/media/kimaye/D2C4_jzrvos.png" + ")",
     content: (
       <Container>
         {/* <Row>
@@ -75,7 +75,7 @@ const items = [
     caption: "",
   },
   {
-    src: "url(" + require("assets/kimaye/D2C7.png") + ")",
+    src: "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863951/media/kimaye/D2C7_x3c0w0.png" + ")",
     content: (
       <Container>
         {/* <Row>
@@ -89,7 +89,7 @@ const items = [
     caption: "",
   },
   {
-    src: "url(" + require("assets/kimaye/D2C6.png") + ")",
+    src: "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863951/media/kimaye/D2C6_amccat.png" + ")",
     content: (
       <Container>
         {/* <Row>
@@ -286,7 +286,7 @@ export default function SectionHeader() {
       </div>
       <div className="blog-2 section section-image" style={{
         backgroundImage:
-          "url(" + require("assets/kimaye/BGN2.jpg") + ")",
+          "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863946/media/kimaye/BGN2_k1eun0.jpg" + ")",
       }}>
         <Container>
           <Row>
@@ -301,7 +301,7 @@ export default function SectionHeader() {
                         <img
                           alt="..."
                           className="img img-raised"
-                          src={require("assets/kimaye/core.jpg")}
+                          src="https://res.cloudinary.com/ini-farms/image/upload/v1618863950/media/kimaye/core_ke0mnq.jpg"
                         />
                       </a>
                     </div>
@@ -328,7 +328,7 @@ export default function SectionHeader() {
                         <img
                           alt="..."
                           className="img img-raised"
-                          src={require("assets/kimaye/assorted.jpg")}
+                          src="https://res.cloudinary.com/ini-farms/image/upload/v1618863939/media/kimaye/assorted_td4ati.jpg"
                         />
                       </a>
                     </div>
@@ -355,7 +355,7 @@ export default function SectionHeader() {
                       <img
                         alt="..."
                         className="img img-raised"
-                        src={require("assets/kimaye/imported1.jpg")}
+                        src="https://res.cloudinary.com/ini-farms/image/upload/v1618863956/media/kimaye/imported1_mgmwwg.jpg"
                       />
                       {/* </a> */}
                     </div>
@@ -401,7 +401,7 @@ export default function SectionHeader() {
               <div className="ipad-container">
                 <img
                   alt="..."
-                  src={require("assets/kimaye/basket.jpg")}
+                  src="https://res.cloudinary.com/ini-farms/image/upload/v1618863945/media/kimaye/basket_j3cs6x.jpg"
                   style={{marginTop: '12%'}}
                 />
               </div>
@@ -451,7 +451,7 @@ export default function SectionHeader() {
       <div className='section section-image'
         style={{
           backgroundImage:
-            "url(" + require("assets/kimaye/BGN2.jpg") + ")",
+            "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863946/media/kimaye/BGN2_k1eun0.jpg" + ")",
         }}>
         <Container>
           <Row>
@@ -462,24 +462,36 @@ export default function SectionHeader() {
           <Col className="ml-auto mr-auto text-center" md="12">
             <Row  >
               <Col md='4' xs='12' style={{marginTop: '2%'}}>
-                <img src={require("assets/kimaye/swiggy.png")} />
+                <img 
+                  src="https://res.cloudinary.com/ini-farms/image/upload/v1618863976/media/kimaye/swiggy_tyur1r.png" 
+                />
               </Col>
               <Col md='4' xs='12' style={{marginTop: '2%'}}>
-                <img src={require("assets/kimaye/nearstores.jpg")} />
+                <img 
+                  src="https://res.cloudinary.com/ini-farms/image/upload/v1618863958/media/kimaye/nearstores_af35mn.jpg" 
+                />
               </Col><br />
               <Col md='4' xs='12' style={{marginTop: '2%'}}>
-                <img src={require("assets/kimaye/dunzo.jpg")} />
+                <img 
+                  src="https://res.cloudinary.com/ini-farms/image/upload/v1618863951/media/kimaye/dunzo_qxsiix.jpg" 
+                />
               </Col>
             </Row><br />
             <Row >
               <Col md='4' xs='12 ' style={{marginTop: '3%'}}>
-                <img src={require("assets/kimaye/staples.jpg")} />
+                <img 
+                  src="https://res.cloudinary.com/ini-farms/image/upload/v1618863976/media/kimaye/staples_zlgu4d.jpg"
+                />
               </Col>
               <Col md='4' xs='12' style={{marginTop: '3%'}}>
-                <img src={require("assets/kimaye/bbrrmm.jpg")} />
+                <img 
+                  src="https://res.cloudinary.com/ini-farms/image/upload/v1618863945/media/kimaye/bbrrmm_lakycw.jpg" 
+                />
               </Col>
               <Col md='4' xs='12' style={{marginTop: '3%'}}>
-                <img src={require("assets/kimaye/lokal.png")} />
+                <img 
+                  src="https://res.cloudinary.com/ini-farms/image/upload/v1618863958/media/kimaye/lokal_mo8zin.png"
+                />
               </Col>
             </Row>
           </Col>

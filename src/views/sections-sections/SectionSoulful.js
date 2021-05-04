@@ -23,7 +23,9 @@ export default function SectionSoulful(){
             className="page-header"
             style={{
               backgroundImage:
-                "url(" + require("assets/kimaye/Plant8.jpg") + ")", marginTop: '3%'
+                "url(" + 
+                "https://res.cloudinary.com/ini-farms/image/upload/v1618863963/media/kimaye/Plant8_vmkk1w.jpg" 
+                + ")", marginTop: '3%'
             }}
             
           >
@@ -67,7 +69,8 @@ export default function SectionSoulful(){
         </div>
         <div
           className="section-image section"
-          style = {{backgroundImage: "url(" + require("assets/kimaye/BGN2.jpg") + ")",}}
+          style = {{backgroundImage: "url(" + 
+          "https://res.cloudinary.com/ini-farms/image/upload/v1618863946/media/kimaye/BGN2_k1eun0.jpg" + ")",}}
         >
           <Container>
             <Row>
@@ -86,7 +89,7 @@ export default function SectionSoulful(){
                       {/* <a href="#pablo" onClick={(e) => e.preventDefault()}> */}
                         <img
                           alt="..."
-                          src={require("assets/kimaye/sdg1.jpg")}
+                          src="https://res.cloudinary.com/ini-farms/image/upload/v1618863974/media/kimaye/sdg1_jxmbjm.jpg"
                         />
                         {/* <CardTitle tag="h4">Eric Thomson</CardTitle> */}
                       {/* </a> */}
@@ -134,7 +137,7 @@ export default function SectionSoulful(){
                       {/* <a href="#pablo" onClick={(e) => e.preventDefault()}> */}
                         <img
                           alt="..."
-                          src={require("assets/kimaye/sdg2.jpg")}
+                          src="https://res.cloudinary.com/ini-farms/image/upload/v1618863975/media/kimaye/sdg2_srubfg.jpg"
                         />
                         {/* <CardTitle tag="h4">Eric Thomson</CardTitle> */}
                       {/* </a> */}
@@ -182,7 +185,7 @@ export default function SectionSoulful(){
                       {/* <a href="#pablo" onClick={(e) => e.preventDefault()}> */}
                         <img
                           alt="..."
-                          src={require("assets/kimaye/sdg3.jpg")}
+                          src="https://res.cloudinary.com/ini-farms/image/upload/v1618863975/media/kimaye/sdg3_gpa6ki.jpg"
                         />
                         {/* <CardTitle tag="h4">Eric Thomson</CardTitle> */}
                       {/* </a> */}
