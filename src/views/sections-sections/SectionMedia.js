@@ -133,8 +133,13 @@ function SectionMedia() {
         <div
           className="page-header"
           style={{
+<<<<<<< HEAD
             backgroundImage: "url(" + require("assets/kimaye/Decade.jpg") + ")",
             marginTop: "2%",
+=======
+            backgroundImage:
+              "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863950/media/kimaye/Decade_w51fze.jpg" + ")", marginTop: '2%'
+>>>>>>> origin/feature-cdn
           }}
         >
           <div className="content-center">
@@ -155,16 +160,10 @@ function SectionMedia() {
       </div>
       {/* ********* BLOGS 2 ********* */}
 
-      <div
-        className={`blog-2 ${styles.BlogSection}`}
-        style={{
-          minHeight: "80vh",
-          backgroundImage:
-            "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" +
-            require("assets/kimaye/BGN2.jpg") +
-            ")",
-        }}
-      >
+      <div className={`blog-2 ${styles.BlogSection}`} style={{
+        minHeight: "80vh",
+        backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863946/media/kimaye/BGN2_k1eun0.jpg" + ")",
+      }}>
         <div className={styles.JourneyContainer}>
           <h2
             id="journeyJump"
@@ -356,6 +355,7 @@ function SectionMedia() {
       <div
         className={`blog-2 ${styles.BlogSection}`}
         style={{
+<<<<<<< HEAD
           backgroundImage:
             "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" +
             require("assets/kimaye/BGN2.jpg") +
@@ -376,6 +376,17 @@ function SectionMedia() {
           >
             Media...
           </h2>
+=======
+          backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863946/media/kimaye/BGN2_k1eun0.jpg" + ")",
+          paddingBottom: "3rem"
+        }}>
+        <div style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "4rem"
+        }}>
+          <h2 id="mediaJump" style={{color: '#dbac00', fontWeight: '500', textAlign: 'center'}}>Media...</h2>
+>>>>>>> origin/feature-cdn
           <div className={styles.VidCont}>
             {mediaDB &&
               mediaDB

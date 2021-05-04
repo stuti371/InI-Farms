@@ -20,7 +20,7 @@ export default function Investors() {
     <div
       className="team-2 section-image" style={{
         backgroundImage:
-          "url(" + require("assets/kimaye/BG2.jpg") + ")",
+          `url("https://res.cloudinary.com/ini-farms/image/upload/v1618863946/media/kimaye/BG2_cpea02.jpg")`,
       }}>
       <Container>
         <Row>
@@ -39,7 +39,7 @@ export default function Investors() {
                   <img
                     alt="..."
                     className="img"
-                    src={require("assets/kimaye/aavishkaar.png")}
+                    src="https://res.cloudinary.com/ini-farms/image/upload/v1618863943/media/kimaye/aavishkaar_aqzuvd.png"
                   />
                 </a>
               </CardImg>
@@ -82,7 +82,7 @@ export default function Investors() {
                   <img
                     alt="..."
                     className="img"
-                    src={require("assets/kimaye/aspada.png")}
+                    src="https://res.cloudinary.com/ini-farms/image/upload/v1618863939/media/kimaye/aspada_yshykf.png"
                   />
                 </a>
               </CardImg>
@@ -125,7 +125,7 @@ export default function Investors() {
                   <img
                     alt="..."
                     className="img"
-                    src={require("assets/kimaye/unilazer.jpg")}
+                    src="https://res.cloudinary.com/ini-farms/image/upload/v1618863978/media/kimaye/unilazer_crlrls.jpg"
                   />
                 </a>
               </CardImg>
@@ -178,7 +178,7 @@ export default function Investors() {
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
                   <img
                     alt="..."
-                    src={require("assets/kimaye/ashish.jpg")}
+                    src="https://res.cloudinary.com/ini-farms/image/upload/v1618863984/media/kimaye/ashish_snyvkm.jpg"
                   />
                 </a>
               </div>
@@ -202,7 +202,7 @@ export default function Investors() {
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
                   <img
                     alt="..."
-                    src={require("assets/kimaye/pavan.jpg")}
+                    src="https://res.cloudinary.com/ini-farms/image/upload/v1618863959/media/kimaye/pavan_wenflp.jpg"
                   />
                 </a>
               </div>
@@ -226,7 +226,7 @@ export default function Investors() {
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
                   <img
                     alt="..."
-                    src={require("assets/kimaye/rahul.png")}
+                    src="https://res.cloudinary.com/ini-farms/image/upload/v1618863973/media/kimaye/rahul_gh7zht.png"
                   />
                 </a>
               </div>

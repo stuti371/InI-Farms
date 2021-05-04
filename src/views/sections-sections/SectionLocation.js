@@ -55,7 +55,7 @@ export default function SectionLocation() {
                     <img
                       alt="..."
                       className="img"
-                      src={require("assets/kimaye/HO.jpg")}
+                      src="https://res.cloudinary.com/ini-farms/image/upload/v1618863955/media/kimaye/HO_qfk9yu.jpg"
                     />
                   </a>
                 </CardImg>
@@ -80,7 +80,7 @@ export default function SectionLocation() {
                     <img
                       alt="..."
                       className="img"
-                      src={require("assets/kimaye/intnoffices.jpg")}
+                      src="https://res.cloudinary.com/ini-farms/image/upload/v1618863957/media/kimaye/intnoffices_aksv4a.jpg"
                     />
                   </a>
                 </CardImg>
@@ -106,7 +106,7 @@ export default function SectionLocation() {
                     <img
                       alt="..."
                       className="img"
-                      src={require("assets/kimaye/farmsourcing.png")}
+                      src="https://res.cloudinary.com/ini-farms/image/upload/v1618863953/media/kimaye/farmsourcing_ccqxsv.png"
                     />
                   </a>
                 </CardImg>
@@ -133,7 +133,7 @@ export default function SectionLocation() {
                     <img
                       alt="..."
                       className="img"
-                      src={require("assets/kimaye/Packhouse.jpg")}
+                      src="https://res.cloudinary.com/ini-farms/image/upload/v1618863958/media/kimaye/Packhouse_hnzatj.jpg"
                     />
                   </a>
                 </CardImg>
@@ -158,7 +158,7 @@ export default function SectionLocation() {
                     <img
                       alt="..."
                       className="img"
-                      src={require("assets/kimaye/ripeningcenters.jpg")}
+                      src="https://res.cloudinary.com/ini-farms/image/upload/v1618863973/media/kimaye/ripeningcenters_lbo1mh.jpg"
                     />
                   </a>
                 </CardImg>
@@ -182,7 +182,7 @@ export default function SectionLocation() {
                     <img
                       alt="..."
                       className="img"
-                      src={require("assets/kimaye/farms.jpg")}
+                      src="https://res.cloudinary.com/ini-farms/image/upload/v1618863953/media/kimaye/farms_gcwq3o.jpg"
                     />
                   </a>
                 </CardImg>
@@ -204,7 +204,7 @@ export default function SectionLocation() {
         id="contactus"
         style={{
           backgroundImage:
-            "url(" + require("assets/kimaye/BGN2.jpg") + ")",
+            "url(" + "https://res.cloudinary.com/ini-farms/image/upload/v1618863946/media/kimaye/BGN2_k1eun0.jpg" + ")",
         }}
       >
         <Container>

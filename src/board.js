@@ -27,7 +27,7 @@ export default function board(){
     return(
         <div className="section section-team cd-section" id="teams"  style = {{
           backgroundImage:
-          "url(" + require("assets/kimaye/BG3.jpg") + ")",}}>
+          `url("https://res.cloudinary.com/ini-farms/image/upload/v1618863946/media/kimaye/BG3_aj4sfe.jpg")`,}}>
           <Container >
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
@@ -96,7 +96,7 @@ export default function board(){
                     {/* <a href="#pablo" onClick={(e) => e.preventDefault()}> */}
                       <img
                         alt="..."
-                        src={require("assets/kimaye/arun.jpg")}
+                        src="https://res.cloudinary.com/ini-farms/image/upload/v1618863983/media/kimaye/arun_nolp6x.jpg"
                       />
                     {/* </a> */}
                   </div>
@@ -145,7 +145,7 @@ export default function board(){
                     {/* <a href="#pablo" onClick={(e) => e.preventDefault()}> */}
                       <img
                         alt="..."
-                        src={require("assets/kimaye/dhara.jpg")}
+                        src="https://res.cloudinary.com/ini-farms/image/upload/v1618863951/media/kimaye/dhara_seosrl.jpg"
                       />
                     {/* </a> */}
                   </div>
@@ -195,7 +195,7 @@ export default function board(){
                     {/* <a href="#pablo" onClick={(e) => e.preventDefault()}> */}
                       <img
                         alt="..."
-                        src={require("assets/kimaye/sudhir.jpg")}
+                        src="https://res.cloudinary.com/ini-farms/image/upload/v1618863976/media/kimaye/sudhir_zyxe58.jpg"
                       />
                     {/* </a> */}
                   </div>
@@ -368,7 +368,7 @@ export default function board(){
                     {/* <a href="#pablo" onClick={(e) => e.preventDefault()}> */}
                       <img
                         alt="..."
-                        src={require("assets/kimaye/ajaym.jpg")}
+                        src="https://res.cloudinary.com/ini-farms/image/upload/v1618863981/media/kimaye/ajaym_ij4ui5.jpg"
                       />
                     {/* </a> */}
                   </div>
@@ -417,7 +417,7 @@ export default function board(){
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={require("assets/kimaye/kartik.jpg")}
+                        src="https://res.cloudinary.com/ini-farms/image/upload/v1618863957/media/kimaye/kartik_p44qw2.jpg"
                       />
                     </a>
                   </div>
@@ -468,7 +468,7 @@ export default function board(){
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={require("assets/kimaye/chetan.jpg")}
+                        src="https://res.cloudinary.com/ini-farms/image/upload/v1618863948/media/kimaye/chetan_hfydvu.jpg"
                       />
                     </a>
                   </div>
