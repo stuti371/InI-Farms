@@ -139,7 +139,7 @@ function SectionMedia() {
         >
           <div className="content-center">
             <Container>
-              <Row style={{ justifyContent: "center", marginTop: "60%" }}>
+              <Row style={{ justifyContent: "center" }}>
                 <Button
                   className="btn-round"
                   color="default"
@@ -358,7 +358,7 @@ function SectionMedia() {
           flexDirection: "column",
           gap: "4rem"
         }}>
-          <h2 id="mediaJump" style={{color: '#dbac00', fontWeight: '500', textAlign: 'center'}}>Media...</h2>
+          <h2 id="mediaJump" style={{color: '#dbac00', fontWeight: '500', textAlign: 'center'}}>Videos...</h2>
           <div className={styles.VidCont}>
             {mediaDB &&
               mediaDB

@@ -87,7 +87,7 @@ export default function Management(){
                   <CardBody>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
-                        <CardTitle tag="h5" style = {{fontWeight: '500'}}>Sushil Pareek</CardTitle>
+                        <CardTitle tag="h5" style = {{fontWeight: '500'}}>Sushil Parikh</CardTitle>
                         <h6 className="card-category" style = {{fontWeight: '450', color: '#800000'}}>
                           Finance
                         </h6>
