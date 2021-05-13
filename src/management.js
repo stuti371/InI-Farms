@@ -391,7 +391,7 @@ export default function Management(){
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
                     <img
                       alt="..."
-                      src={require('../src/assets/kimaye/Vaibhav_Batra.jpg')}
+                      src="https://res.cloudinary.com/ini-farms/image/upload/v1620915232/media/kimaye/Vaibhav_Batra_jch1a0.jpg"
                     />
                   </a>
                 </div>
