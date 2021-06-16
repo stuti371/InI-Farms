@@ -139,24 +139,24 @@ export default function board(){
                   </CardFooter>
                 </Card>
               </Col>
-              <Col md="4">
+              {/* <Col md="4">
                 <Card className="card-profile card-category">
                   <div className="card-avatar">
                     {/* <a href="#pablo" onClick={(e) => e.preventDefault()}> */}
-                      <img
+                      {/* <img
                         alt="..."
                         src="https://res.cloudinary.com/ini-farms/image/upload/v1618863951/media/kimaye/dhara_seosrl.jpg"
-                      />
+                      /> */}
                     {/* </a> */}
-                  </div>
-                  <CardBody>
+                  {/* </div>
+                  <CardBody> */}
                     {/* <a href="#pablo" onClick={(e) => e.preventDefault()}> */}
-                      <div className="author">
+                      {/* <div className="author">
                         <CardTitle tag="h4" style = {{fontWeight: '500'}}>Dhara Mehta</CardTitle>
                         <h6 className="card-category" style = {{color: '#800000', fontWeight: '450'}}>Director</h6>
-                      </div>
+                      </div> */}
                     {/* </a> */}
-                    <p className="card-description text-center" style = {{color: 'black'}}>
+                    {/* <p className="card-description text-center" style = {{color: 'black'}}>
                     Core founding member Samridhi fund <br />
                     Chartered Accountant & Bachelor of Law <br /> 
                     Worked with Big 4 accounting firms
@@ -169,7 +169,7 @@ export default function board(){
                       href=""
                     >
                       <i className="fa fa-twitter" />
-                    </Button>
+                    </Button> */}
                     {/* <Button
                       className="btn-link btn-just-icon mr-1"
                       color="dribbble"
@@ -178,7 +178,7 @@ export default function board(){
                     >
                       <i className="fa fa-dribbble" />
                     </Button> */}
-                    <Button
+                    {/* <Button
                       className="btn-link btn-just-icon"
                       color="linkedin"
                       href="https://www.linkedin.com/in/dhara-mehta-a0728a50"
@@ -188,7 +188,7 @@ export default function board(){
                     </Button>
                   </CardFooter>
                 </Card>
-              </Col>
+              </Col>  */}
               <Col md="4">
                 <Card className="card-profile card-category">
                   <div className="card-avatar">
@@ -235,6 +235,55 @@ export default function board(){
                       className="btn-link btn-just-icon"
                       color="linkedin"
                       href="https://www.linkedin.com/in/kamathsudhir"
+                      // onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-linkedin" />
+                    </Button>
+                  </CardFooter>
+                </Card>
+              </Col>
+              <Col md="4">
+                <Card className="card-profile card-category">
+                  <div className="card-avatar">
+                    {/* <a href="#pablo" onClick={(e) => e.preventDefault()}> */}
+                      <img
+                        alt="..."
+                        src="https://res.cloudinary.com/ini-farms/image/upload/v1618863981/media/kimaye/ajaym_ij4ui5.jpg"
+                      />
+                    {/* </a> */}
+                  </div>
+                  <CardBody>
+                    {/* <a href="#pablo" onClick={(e) => e.preventDefault()}> */}
+                      <div className="author">
+                        <CardTitle tag="h4" style = {{fontWeight: '500'}}>Ajay Maniar</CardTitle>
+                        <h6 className="card-category" style = {{fontWeight: '450', color: '#800000'}}>Observer</h6>
+                      </div>
+                    {/* </a> */}
+                    <p className="card-description text-center" style = {{color: 'black'}}>
+                      Partner - Aavishkaar <br /> Chemical Engineer, MMS (JBIMS) <br /> CARE, CitiBank
+                    </p>
+                  </CardBody>
+                  <CardFooter className="text-center">
+                    <Button
+                      className="btn-link btn-just-icon mr-1"
+                      color="twitter"
+                      href="https://twitter.com/AjayManiar?s=20"
+                      // onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-twitter" />
+                    </Button>
+                    {/* <Button
+                      className="btn-link btn-just-icon mr-1"
+                      color="dribbble"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-dribbble" />
+                    </Button> */}
+                    <Button
+                      className="btn-link btn-just-icon"
+                      color="linkedin"
+                      href="https://www.linkedin.com/in/ajay-maniar-6b229622"
                       // onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-linkedin" />
@@ -309,7 +358,7 @@ export default function board(){
               </Col> */}
 
             </Row>
-            <Row>
+            <Row className="justify-content-center">
               {/* <Col md="3"> */}
                 {/* <Card className="card-profile card-category">
                   <div className="card-avatar">
@@ -362,55 +411,6 @@ export default function board(){
                   </CardFooter>
                 </Card> */}
               {/* </Col> */}
-              <Col md="4">
-                <Card className="card-profile card-category">
-                  <div className="card-avatar">
-                    {/* <a href="#pablo" onClick={(e) => e.preventDefault()}> */}
-                      <img
-                        alt="..."
-                        src="https://res.cloudinary.com/ini-farms/image/upload/v1618863981/media/kimaye/ajaym_ij4ui5.jpg"
-                      />
-                    {/* </a> */}
-                  </div>
-                  <CardBody>
-                    {/* <a href="#pablo" onClick={(e) => e.preventDefault()}> */}
-                      <div className="author">
-                        <CardTitle tag="h4" style = {{fontWeight: '500'}}>Ajay Maniar</CardTitle>
-                        <h6 className="card-category" style = {{fontWeight: '450', color: '#800000'}}>Observer</h6>
-                      </div>
-                    {/* </a> */}
-                    <p className="card-description text-center" style = {{color: 'black'}}>
-                      Partner - Aavishkaar <br /> Chemical Engineer, MMS (JBIMS) <br /> CARE, CitiBank
-                    </p>
-                  </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="twitter"
-                      href="https://twitter.com/AjayManiar?s=20"
-                      // onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    {/* <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-dribbble" />
-                    </Button> */}
-                    <Button
-                      className="btn-link btn-just-icon"
-                      color="linkedin"
-                      href="https://www.linkedin.com/in/ajay-maniar-6b229622"
-                      // onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
-                </Card>
-              </Col>
               <Col md="4">
                 <Card className="card-profile card-category">
                   <div className="card-avatar">
