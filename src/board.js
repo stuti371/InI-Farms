@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 // reactstrap components
 import {
@@ -22,8 +22,80 @@ import {
   CarouselItem,
   CarouselIndicators,
 } from "reactstrap";
+import { db } from "services/firebase";
 
-export default function board(){
+const RenderPerson=({person})=>{
+
+  return (
+    <Col md="4">
+      <Card className="card-profile card-category">
+        <div className="card-avatar">
+            <img
+              alt="..."
+              src={person.image}
+            />
+        </div>
+
+        <CardBody>
+            <div className="author">
+              <CardTitle tag="h4" style = {{fontWeight: '500'}}>{person.name}</CardTitle>
+              <h6 className="card-category" style = {{fontWeight: '450', color: '#800000'}}>{person.designation}</h6>
+            </div>
+
+            <p 
+              className="card-description text-center" 
+              style = {{color: 'black'}} 
+              dangerouslySetInnerHTML={{__html:person.description}}>
+            </p>
+        </CardBody>
+
+        <CardFooter className="text-center">
+          <Button
+            className="btn-link btn-just-icon mr-1"
+            color="twitter"
+            href={person.twitter}
+          >
+            <i className="fa fa-twitter" />
+          </Button>
+
+          <Button
+            className="btn-link btn-just-icon"
+            color="linkedin"
+            href={person.linkdin}
+          >
+            <i className="fa fa-linkedin" />
+          </Button>
+        </CardFooter>
+      </Card>
+    </Col>
+  )
+}
+
+export default function Board(){
+
+    const [people, setPeople] = useState([])
+
+    useEffect(() => {
+        var peopleRef=db.ref("Team/Board");
+        peopleRef.on("value",(snapshot)=>{
+            var mypeople=snapshot.val();
+            var newPeople=[]
+            
+            for(var personId in mypeople){
+                newPeople.push({
+                    id: personId,
+                    image:mypeople[personId].image,
+                    name:mypeople[personId].name,
+                    designation:mypeople[personId].designation,
+                    description:mypeople[personId].description,
+                    twitter:mypeople[personId].twitter,
+                    linkdin:mypeople[personId].linkdin
+                })
+            }
+            setPeople(newPeople)
+        })
+    }, [])
+
     return(
         <div className="section section-team cd-section" id="teams"  style = {{
           backgroundImage:
@@ -37,261 +109,11 @@ export default function board(){
                 </h5>
               </Col>
             </Row>
-            <Row>
-              {/* <Col md="3"> */}
-                {/* <Card className="card-profile card-category">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={require("assets/kimaye/ajit-kumar.jpg")}
-                      />
-                    </a>
-                  </div>
-                  <CardBody>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <div className="author">
-                        <CardTitle tag="h4">Henry Ford</CardTitle>
-                        <h6 className="card-category text-muted">
-                          Product Manager
-                        </h6>
-                      </div>
-                    </a>
-                    <p className="card-description text-center">
-                      Teamwork is so important that it is virtually impossible
-                      for you to reach 
-                    </p>
-                  </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="twitter"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-dribbble" />
-                    </Button>
-                    <Button
-                      className="btn-link btn-just-icon"
-                      color="linkedin"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
-                </Card> */}
-              {/* </Col> */}
-              <Col md="4">
-                <Card className="card-profile card-category">
-                  <div className="card-avatar">
-                    {/* <a href="#pablo" onClick={(e) => e.preventDefault()}> */}
-                      <img
-                        alt="..."
-                        src="https://res.cloudinary.com/ini-farms/image/upload/v1618863983/media/kimaye/arun_nolp6x.jpg"
-                      />
-                    {/* </a> */}
-                  </div>
-                  <CardBody>
-                    {/* <a href="#pablo" onClick={(e) => e.preventDefault()}> */}
-                      <div className="author">
-                        <CardTitle tag="h4" style = {{fontWeight: '500'}}>Arun Diaz</CardTitle>
-                        <h6 className="card-category" style = {{fontWeight: '450', color: '#800000'}}>Director</h6>
-                      </div>
-                    {/* </a> */}
-                    <p className="card-description text-center" style = {{color: 'black'}}>
-                      Founding Member - Aavishkaar <br /> 28 years with Standard Chartered Bank <br /> Led  Reuters Consulting in South Asia
-                    </p>
-                  </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="twitter"
-                      href="https://twitter.com/arun_diaz?s=20"
-                      // onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    {/* <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-dribbble" />
-                    </Button> */}
-                    <Button
-                      className="btn-link btn-just-icon"
-                      color="linkedin"
-                      href="https://www.linkedin.com/in/arun-diaz-70b606"
-                      // onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
-                </Card>
-              </Col>
-              {/* <Col md="4">
-                <Card className="card-profile card-category">
-                  <div className="card-avatar">
-                    {/* <a href="#pablo" onClick={(e) => e.preventDefault()}> */}
-                      {/* <img
-                        alt="..."
-                        src="https://res.cloudinary.com/ini-farms/image/upload/v1618863951/media/kimaye/dhara_seosrl.jpg"
-                      /> */}
-                    {/* </a> */}
-                  {/* </div>
-                  <CardBody> */}
-                    {/* <a href="#pablo" onClick={(e) => e.preventDefault()}> */}
-                      {/* <div className="author">
-                        <CardTitle tag="h4" style = {{fontWeight: '500'}}>Dhara Mehta</CardTitle>
-                        <h6 className="card-category" style = {{color: '#800000', fontWeight: '450'}}>Director</h6>
-                      </div> */}
-                    {/* </a> */}
-                    {/* <p className="card-description text-center" style = {{color: 'black'}}>
-                    Core founding member Samridhi fund <br />
-                    Chartered Accountant & Bachelor of Law <br /> 
-                    Worked with Big 4 accounting firms
-                    </p>
-                  </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="twitter"
-                      href=""
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button> */}
-                    {/* <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-dribbble" />
-                    </Button> */}
-                    {/* <Button
-                      className="btn-link btn-just-icon"
-                      color="linkedin"
-                      href="https://www.linkedin.com/in/dhara-mehta-a0728a50"
-                      // onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
-                </Card>
-              </Col>  */}
-              <Col md="4">
-                <Card className="card-profile card-category">
-                  <div className="card-avatar">
-                    {/* <a href="#pablo" onClick={(e) => e.preventDefault()}> */}
-                      <img
-                        alt="..."
-                        src="https://res.cloudinary.com/ini-farms/image/upload/v1618863976/media/kimaye/sudhir_zyxe58.jpg"
-                      />
-                    {/* </a> */}
-                  </div>
-                  <CardBody>
-                    {/* <a href="#pablo" onClick={(e) => e.preventDefault()}> */}
-                      <div className="author">
-                        <CardTitle tag="h4" style = {{fontWeight: '500'}}>Sudhir Kamath</CardTitle>
-                        <h6 className="card-category" style = {{color: '#800000', fontWeight: '450'}}>
-                          Director
-                        </h6>
-                      </div>
-                    {/* </a> */}
-                    <p className="card-description text-center" style = {{color: 'black'}}>
-                      Co-founder 9Stacks & Faboom <br />
-                      DIT, IIMA, McKinsey <br />
-                      Managing Director Sunterra
-                    </p>
-                  </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="twitter"
-                      href="https://twitter.com/SudhirKamath2?s=20"
-                      // onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    {/* <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-dribbble" />
-                    </Button> */}
-                    <Button
-                      className="btn-link btn-just-icon"
-                      color="linkedin"
-                      href="https://www.linkedin.com/in/kamathsudhir"
-                      // onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
-                </Card>
-              </Col>
-              <Col md="4">
-                <Card className="card-profile card-category">
-                  <div className="card-avatar">
-                    {/* <a href="#pablo" onClick={(e) => e.preventDefault()}> */}
-                      <img
-                        alt="..."
-                        src="https://res.cloudinary.com/ini-farms/image/upload/v1618863981/media/kimaye/ajaym_ij4ui5.jpg"
-                      />
-                    {/* </a> */}
-                  </div>
-                  <CardBody>
-                    {/* <a href="#pablo" onClick={(e) => e.preventDefault()}> */}
-                      <div className="author">
-                        <CardTitle tag="h4" style = {{fontWeight: '500'}}>Ajay Maniar</CardTitle>
-                        <h6 className="card-category" style = {{fontWeight: '450', color: '#800000'}}>Observer</h6>
-                      </div>
-                    {/* </a> */}
-                    <p className="card-description text-center" style = {{color: 'black'}}>
-                      Partner - Aavishkaar <br /> Chemical Engineer, MMS (JBIMS) <br /> CARE, CitiBank
-                    </p>
-                  </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="twitter"
-                      href="https://twitter.com/AjayManiar?s=20"
-                      // onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    {/* <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-dribbble" />
-                    </Button> */}
-                    <Button
-                      className="btn-link btn-just-icon"
-                      color="linkedin"
-                      href="https://www.linkedin.com/in/ajay-maniar-6b229622"
-                      // onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
-                </Card>
-              </Col>
+
+            <Row className="justify-content-center">
+                {people.map(person=><RenderPerson person={person}/>)}
             </Row>
+
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
                 {/* <h2 className="title">Our Stunning Team 1</h2> */}
@@ -302,220 +124,7 @@ export default function board(){
                 </h5> */}
               </Col>
             </Row>
-            <Row>
-              {/* <Col md="3">
-                <Card className="card-profile card-plain">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={require("assets/kimaye/AJIT.jpg")}
-                      />
-                    </a>
-                  </div>
-                  <CardBody>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <div className="author">
-                        <CardTitle tag="h4">Henry Ford</CardTitle>
-                        <h6 className="card-category text-muted">
-                          Product Manager
-                        </h6>
-                      </div>
-                    </a>
-                    <p className="card-description text-center">
-                      Teamwork is so important that it is virtually impossible
-                      for you to reach the heights of your capabilities or make
-                      the money that you want without becoming very good at it.
-                    </p>
-                  </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="twitter"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-dribbble" />
-                    </Button>
-                    <Button
-                      className="btn-link btn-just-icon"
-                      color="linkedin"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
-                </Card>
-              </Col> */}
-
-            </Row>
-            <Row className="justify-content-center">
-              {/* <Col md="3"> */}
-                {/* <Card className="card-profile card-category">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={require("assets/kimaye/ajit-kumar.jpg")}
-                      />
-                    </a>
-                  </div>
-                  <CardBody>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <div className="author">
-                        <CardTitle tag="h4">Henry Ford</CardTitle>
-                        <h6 className="card-category text-muted">
-                          Product Manager
-                        </h6>
-                      </div>
-                    </a>
-                    <p className="card-description text-center">
-                      Teamwork is so important that it is virtually impossible
-                      for you to reach 
-                    </p>
-                  </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="twitter"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-dribbble" />
-                    </Button>
-                    <Button
-                      className="btn-link btn-just-icon"
-                      color="linkedin"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
-                </Card> */}
-              {/* </Col> */}
-              <Col md="4">
-                <Card className="card-profile card-category">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src="https://res.cloudinary.com/ini-farms/image/upload/v1618863957/media/kimaye/kartik_p44qw2.jpg"
-                      />
-                    </a>
-                  </div>
-                  <CardBody>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <div className="author">
-                        <CardTitle tag="h4" style = {{fontWeight: '500'}}>Kartik Srivatsa</CardTitle>
-                        <h6 className="card-category" style = {{color: '#800000', fontWeight: '450'}}>Observer</h6>
-                      </div>
-                    </a>
-                    <p className="card-description text-center" style = {{color: 'black'}}>
-                    Managing Partner LGT Lightstone Aspada<br />
-                    IITM, McKinsey <br /> 
-                    Lightspeed, SONG
-                    </p>
-                  </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="twitter"
-                      href="https://twitter.com/kartik_srivatsa?s=20"
-                      // onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    {/* <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-dribbble" />
-                    </Button> */}
-                    <Button
-                      className="btn-link btn-just-icon"
-                      color="linkedin"
-                      href="https://www.linkedin.com/in/kartiksrivatsa"
-                      // onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
-                </Card>
-              </Col>
-              <Col md="4">
-                <Card className="card-profile card-category">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src="https://res.cloudinary.com/ini-farms/image/upload/v1618863948/media/kimaye/chetan_hfydvu.jpg"
-                      />
-                    </a>
-                  </div>
-                  <CardBody>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <div className="author">
-                        <CardTitle tag="h4" style = {{fontWeight: '500'}}>Chetan Juthani</CardTitle>
-                        <h6 className="card-category" style = {{color: '#800000', fontWeight: '450'}}>
-                          Observer
-                        </h6>
-                      </div>
-                    </a>
-                    <p className="card-description text-center" style = {{color: 'black'}}>
-                      CFO Unilazer Ventures <br />
-                      Chartered Accoountant & CS<br />
-                      UTV, Walt Disney
-                    </p>
-                  </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="twitter"
-                      href="https://twitter.com/ChetanJuthani?s=20"
-                      // onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    {/* <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-dribbble" />
-                    </Button> */}
-                    <Button
-                      className="btn-link btn-just-icon"
-                      color="linkedin"
-                      href="https://www.linkedin.com/in/chetan-juthani-6b8b0811"
-                      // onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
-                </Card>
-              </Col>
-            </Row>
+          
           </Container>
         </div>
     );

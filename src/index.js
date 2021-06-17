@@ -36,7 +36,8 @@ import SectionProducts from 'views/sections-sections/SectionProducts.js'
 import SectionBrand from 'views/sections-sections/SectionBrand.js'
 import SectionBM from 'views/sections-sections/SectionBM.js'
 import SectionAgTech from 'views/sections-sections/SectionAgTech.js'
-import WriteMedia from "./blog_thing";
+import WriteMedia from "./CMS/blog_thing";
+import CmsLogin from "./CMS/CmsLogin"
 // others
 
 ReactDOM.render(
@@ -63,7 +64,7 @@ ReactDOM.render(
       <Route path="/AgTech" render={(props) => <SectionAgTech {...props} />} />
       <Route path="/Media" render={(props) => <SectionMedia {...props} />} />
       <Route path="/Soulful" render={(props) => <SectionSoulful {...props} />} />
-      <Route path="/WriteBlog" render={(props) => <WriteMedia {...props} />} />
+      <Route path="/CMS" render={(props) => <CmsLogin {...props} />} />
       <Route
         path="/homepage"
         render={(props) => <LandingPage {...props} />}
